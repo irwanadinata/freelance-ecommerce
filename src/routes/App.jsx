@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from "@/pages/login";
-import Footer2 from "@/components/footer-2";
+import Footer4 from "@/components/footer-4";
 
 export default function Router() {
 
@@ -11,7 +11,7 @@ export default function Router() {
     },
     {
       path: "footer",
-      element: <Footer2/>
+      element: <Footer4/>
     },
     {
       path: "*",
