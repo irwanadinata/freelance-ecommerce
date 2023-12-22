@@ -20,43 +20,44 @@ const Footer2 = () => {
         <p className="mb-4 text-xs font-medium">Metode Pembayaran</p>
         <div className="flex">
           <div>
-            <img src={Visa} alt="" />
-            <img src={Cod} alt="" className="ml-4" />
+            <img src={Visa} alt="visa-image" />
+            <img src={Cod} alt="cod-image" className="ml-4" />
           </div>
           <div className="ml-4">
-            <img src={Mastercard} alt="" />
+            <img src={Mastercard} alt="mastercard-image" />
+          </div>
+        </div>
+      </div>
+      <div className="flex mx-4 flex-col items-center">
+        <p className="mb-4 text-xs font-medium">Jasa pengiriman</p>
+        <div className="flex">
+          <div>
+            <img src={LazadaLogistics} alt="lazada-logistics-image" />
+            <img src={GoSend} alt="gosend-image" />
+            <img src={Jnt} alt="jnt-image" />
+          </div>
+          <div className="mt-4 mx-4">
+            <img src={Jne} alt="jne-image" />
+            <img src={Grab} alt="grab-image" className="my-3" />
+            <img src={AnterAja} alt="anteraja-image" />
+          </div>
+          <div>
+            <img src={NinjaExpress} alt="ninja-express-image" />
+            <img src={Sicepat} alt="sicepat-image" className="mt-3" />
+            <img src={Sap} alt="sap-image" />
           </div>
         </div>
       </div>
 
       <div className="flex mx-4 flex-col items-center">
-        <p className="mb-4 text-xs font-medium">Jasa pengiriman</p>
-        <div className="flex">
-          <div>
-            <img src={LazadaLogistics} alt="" />
-            <img src={GoSend} alt="" />
-            <img src={Jnt} alt="" />
-          </div>
-          <div className="mt-4 mx-4">
-            <img src={Jne} alt="" />
-            <img src={Grab} alt="" className="my-3" />
-            <img src={AnterAja} alt="" />
-          </div>
-          <div>
-            <img src={NinjaExpress} alt="" />
-            <img src={Sicepat} alt="" className="mt-3" />
-            <img src={Sap} alt="" />
-          </div>
-        </div>
-      </div>
-
-      <div className="flex mx-4 flex-col items-centerr">
         <div>
-          <p className="text-xs text-center font-medium">Keamanan dan Privasi</p>
+          <p className="text-xs text-center font-medium">
+            Keamanan dan Privasi
+          </p>
         </div>
         <div className="flex mt-7">
-          <img src={Bsi} alt="" />
-          <img src={Dss} alt="" />
+          <img src={Bsi} alt="bsi-image" />
+          <img src={Dss} alt="dss-image" />
         </div>
       </div>
     </div>

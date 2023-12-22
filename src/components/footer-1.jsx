@@ -49,15 +49,15 @@ const Footer1 = () => {
           <img src={LazadaFooter} alt="lazada-logo" />
         </div>
         <div className="mr-4">
-          <a href="https://apps.apple.com/id/app/lazada-online-shopping-app/id785385147">
+          <a href="https://apps.apple.com/id/app/lazada-online-shopping-app/id785385147" target="_blank">
             <img src={AppStore} alt="app-store" className=" mb-8" />
           </a>
-          <a href="https://appgallery.huawei.com/app/C100164557">
+          <a href="https://appgallery.huawei.com/app/C100164557" target="_blank">
             <img src={AppGallery} alt="app-gallery" />
           </a>
         </div>
         <div>
-          <a href="https://play.google.com/store/apps/details?id=com.lazada.android&hl=id&gl=US">
+          <a href="https://play.google.com/store/apps/details?id=com.lazada.android&hl=id&gl=US" target="_blank">
             <img src={PlayStore} alt="play-store" className="mr-4" />
           </a>
         </div>
