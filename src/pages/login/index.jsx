@@ -104,7 +104,9 @@ const Login = () => {
             )}
             <div className="flex justify-center mt-5">
               {loading ? (
-                <Loader2 className="animate-spin w-7 h-7" />
+                <Button className="bg-[#F8009C] hover:bg-[#e691c7] w-48">
+                  <Loader2 className="animate-spin w-7 h-7" />
+                </Button>
               ) : (
                 <Button className="bg-[#F8009C] hover:bg-[#e691c7] w-48">
                   Masuk
