@@ -17,7 +17,7 @@ const Footer2 = () => {
   return (
     <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-48 py-10 bg-[#ffffff]">
       <div className="flex mx-4 flex-col items-center">
-        <p className="mb-4 text-xs font-medium">Metode Pembayaran</p>
+        <p className="mb-4 text-xs font-semibold">Metode Pembayaran</p>
         <div className="flex">
           <div>
             <img src={Visa} alt="visa-image" />
@@ -29,7 +29,7 @@ const Footer2 = () => {
         </div>
       </div>
       <div className="flex mx-4 flex-col items-center">
-        <p className="mb-4 text-xs font-medium">Jasa pengiriman</p>
+        <p className="mb-4 text-xs font-semibold">Jasa pengiriman</p>
         <div className="flex">
           <div>
             <img src={LazadaLogistics} alt="lazada-logistics-image" />
@@ -51,7 +51,7 @@ const Footer2 = () => {
 
       <div className="flex mx-4 flex-col items-center">
         <div>
-          <p className="text-xs text-center font-medium">
+          <p className="text-xs text-center font-semibold">
             Keamanan dan Privasi
           </p>
         </div>
