@@ -57,7 +57,7 @@ const Login = () => {
           Selamat Datang di Lazada! Silahkan Masuk
         </h1>
       </div>
-      <div className="flex flex-col items-center space-y-5 md:space-y-0 md:flex-row md:justify-center md:items-center md:space-x-28">
+      <div className="flex flex-col items-center space-y-5 bg-[#FFFFFF] md:space-y-0 md:flex-row md:justify-center md:items-center md:space-x-28">
         <div>
           <img src={LazadaPhoto} alt="lazada-photo" className="w-60 h-auto" />
         </div>
@@ -104,7 +104,9 @@ const Login = () => {
             )}
             <div className="flex justify-center mt-5">
               {loading ? (
-                <Loader2 className="animate-spin w-7 h-7" />
+                <Button className="bg-[#F8009C] hover:bg-[#e691c7] w-48">
+                  <Loader2 className="animate-spin w-7 h-7" />
+                </Button>
               ) : (
                 <Button className="bg-[#F8009C] hover:bg-[#e691c7] w-48">
                   Masuk
