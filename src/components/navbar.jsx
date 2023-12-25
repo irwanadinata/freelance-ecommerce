@@ -6,11 +6,12 @@ import PackageIcon from "@/assets/icons/package-icon";
 import ProfileIcon from "@/assets/icons/profile-icon";
 import NotificationIcon from "@/assets/icons/notification-icon";
 import MessageOutlineIcon from "@/assets/icons/message-outline-icon";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className="w-full flex justify-center">
-      <div className="w-10/12 shadow-md">
+      <div className="w-10/12 shadow-md bg-white">
         <div className="flex justify-between h-14 items-center p-3 shadow-sm">
           <div className="flex gap-2 items-center">
             <PhoneIcon />
@@ -25,7 +26,9 @@ const Navbar = () => {
           <LazadaIcon className="w-44" />
           <SearchInput />
           <div className="flex gap-3">
-            <CartIcon />
+            <NavLink to="/cart">
+              <CartIcon onClick={() => alert("hello")} />
+            </NavLink>
             <NotificationIcon />
             <MessageOutlineIcon />
             <PackageIcon />
