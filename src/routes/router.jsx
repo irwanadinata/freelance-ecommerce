@@ -1,3 +1,4 @@
+import Cart from "@/pages/cart";
 import Login from "@/pages/login";
 import ProductDetail from "@/pages/product-detail";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -11,6 +12,10 @@ export default function Router() {
     {
       path: "/product/:id",
       element: <ProductDetail />,
+    },
+    {
+      path: "/cart",
+      element: <Cart />,
     },
     {
       path: "*",
