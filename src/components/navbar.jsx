@@ -10,7 +10,7 @@ import MessageOutlineIcon from "@/assets/icons/message-outline-icon";
 const Navbar = () => {
   return (
     <div className="w-full flex justify-center">
-      <div className="w-10/12 shadow-md">
+      <div className="w-10/12 shadow-md bg-white">
         <div className="flex justify-between h-14 items-center p-3 shadow-sm">
           <div className="flex gap-2 items-center">
             <PhoneIcon />
