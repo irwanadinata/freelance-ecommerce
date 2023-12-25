@@ -6,6 +6,7 @@ import PackageIcon from "@/assets/icons/package-icon";
 import ProfileIcon from "@/assets/icons/profile-icon";
 import NotificationIcon from "@/assets/icons/notification-icon";
 import MessageOutlineIcon from "@/assets/icons/message-outline-icon";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -25,7 +26,9 @@ const Navbar = () => {
           <LazadaIcon className="w-44" />
           <SearchInput />
           <div className="flex gap-3">
-            <CartIcon />
+            <NavLink to="/cart">
+              <CartIcon onClick={() => alert("hello")} />
+            </NavLink>
             <NotificationIcon />
             <MessageOutlineIcon />
             <PackageIcon />
