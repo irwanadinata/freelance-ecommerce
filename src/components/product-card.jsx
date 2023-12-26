@@ -2,6 +2,7 @@ import React from "react";
 import Rating from "react-rating";
 import { Star } from "lucide-react";
 import Handuk from "@/assets/sicepat.png";
+import convertToRupiah from "@/utils/formatter/rupiahConverter";
 
 const ProductCard = () => {
   return (
@@ -13,7 +14,7 @@ const ProductCard = () => {
       />
       <div className="card-body text-start p-2">
         <p className="text-sm  mb-1">Handuk Mandi Ukuran...</p>
-        <p className="text-sm text-[#FB8500]">Rp 40.000</p>
+        <p className="text-sm text-[#FB8500]">{convertToRupiah(520000)}</p>
         <div className="flex mb-2">
           <p className="text-xs line-through mr-2">Rp 100.000</p>
           <p className="text-xs text-[#CC0000]">13%</p>

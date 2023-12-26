@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Copy } from "lucide-react";
-import BNI from "@/assets/payment/bni.png";
+import BNI from "@/assets/payment-method/bni.png";
+import convertToRupiah from "@/utils/formatter/rupiahConverter";
 
 const BeforeSucces = () => {
   const [timeRemaining, setTimeRemaining] = useState(getTimeRemaining());
@@ -68,7 +69,7 @@ const BeforeSucces = () => {
         </div>
         <div className="my-4">
           <p className="mb-1 font-semibold">Total Pembayaran</p>
-          <p className="font-semibold">Rp. 64.000</p>
+          <p className="font-semibold">{convertToRupiah(520000)}</p>
         </div>
       </div>
     </div>
