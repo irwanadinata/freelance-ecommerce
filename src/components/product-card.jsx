@@ -5,7 +5,7 @@ import Handuk from "@/assets/sicepat.png";
 
 const ProductCard = () => {
   return (
-    <div className="w-48 h-72 bg-[#FFFFFF] shadow-md rounded-md hover:transform transition duration-100 hover:z-20 hover:scale-110">
+    <div className="w-48 h-72 bg-[#FFFFFF] shadow-md rounded-md hover:transform transition duration-500 hover:z-20 hover:scale-110">
       <img
         src={Handuk}
         alt=""
