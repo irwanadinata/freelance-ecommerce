@@ -1,4 +1,5 @@
 import Cart from "@/pages/cart";
+import ConfirmPayment from "@/pages/confirm-payment/index";
 import Login from "@/pages/login";
 import ProductDetail from "@/pages/product-detail";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -16,6 +17,10 @@ export default function Router() {
     {
       path: "/cart",
       element: <Cart />,
+    },
+    {
+      path: "/confirm-payment",
+      element: <ConfirmPayment />,
     },
     {
       path: "*",
