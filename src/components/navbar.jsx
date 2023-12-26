@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { SearchInput } from "./search-input";
 import CartIcon from "@/assets/icons/cart-icon";
 import PhoneIcon from "@/assets/icons/phone-icon";
@@ -6,12 +7,11 @@ import PackageIcon from "@/assets/icons/package-icon";
 import ProfileIcon from "@/assets/icons/profile-icon";
 import NotificationIcon from "@/assets/icons/notification-icon";
 import MessageOutlineIcon from "@/assets/icons/message-outline-icon";
-import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className="w-full flex justify-center">
-      <div className="w-10/12 shadow-md bg-white">
+      <div className="w-10/12 shadow-md bg-white rounded-md">
         <div className="flex justify-between h-14 items-center p-3 shadow-sm">
           <div className="flex gap-2 items-center">
             <PhoneIcon />
