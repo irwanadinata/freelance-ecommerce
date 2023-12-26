@@ -1,5 +1,6 @@
 import Cart from "@/pages/cart";
 import Login from "@/pages/login";
+import Transaction from "@/pages/transaction";
 import ProductDetail from "@/pages/product-detail";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -16,6 +17,10 @@ export default function Router() {
     {
       path: "/cart",
       element: <Cart />,
+    },
+    {
+      path: "/cart/transaction",
+      element: <Transaction />,
     },
     {
       path: "*",
