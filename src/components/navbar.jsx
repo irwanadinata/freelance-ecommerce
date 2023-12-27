@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom";
 import { SearchInput } from "./search-input";
+import { Notification } from "./notification";
 import CartIcon from "@/assets/icons/cart-icon";
 import PhoneIcon from "@/assets/icons/phone-icon";
 import LazadaIcon from "@/assets/icons/lazada-icon";
 import PackageIcon from "@/assets/icons/package-icon";
 import ProfileIcon from "@/assets/icons/profile-icon";
-import NotificationIcon from "@/assets/icons/notification-icon";
 import MessageOutlineIcon from "@/assets/icons/message-outline-icon";
 
 const Navbar = () => {
@@ -26,10 +26,10 @@ const Navbar = () => {
           <LazadaIcon className="w-44" />
           <SearchInput />
           <div className="flex gap-3">
-            <NavLink to="/cart">
-              <CartIcon onClick={() => alert("hello")} />
+            <NavLink className="cursor-pointer" to="/cart">
+              <CartIcon />
             </NavLink>
-            <NotificationIcon />
+            <Notification />
             <MessageOutlineIcon />
             <PackageIcon />
           </div>
