@@ -8,7 +8,7 @@ import Menu from "@/components/menu";
 import Navbar from "@/components/navbar";
 import Closing from "./components/closing";
 import ProductList from "./components/product";
-import Data from "@/utils/data/product.json"
+import Data from "@/utils/data/product.json";
 
 const Dashboard = () => {
   return (
@@ -17,12 +17,12 @@ const Dashboard = () => {
       <MainImage />
       <Menu />
       <Category />
-      <ProductList products={Data}/>
+      <ProductList products={Data} />
       <Footer1 />
       <Footer2 />
       <Footer3 />
       <Footer4 />
-      <Closing/>
+      <Closing />
     </div>
   );
 };
