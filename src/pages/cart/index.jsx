@@ -3,6 +3,7 @@ import Summary from "./components/summary";
 import Footer1 from "@/components/footer-1";
 import Footer2 from "@/components/footer-2";
 import ProductList from "./components/product-list";
+import Footer4 from "@/components/footer-4";
 
 const Cart = () => {
   return (
@@ -14,6 +15,8 @@ const Cart = () => {
       </div>
       <Footer1 />
       <Footer2 />
+      <Footer4/>
+      
     </div>
   );
 };
