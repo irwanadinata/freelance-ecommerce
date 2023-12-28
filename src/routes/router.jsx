@@ -4,12 +4,17 @@ import Login from "@/pages/login";
 import Transaction from "@/pages/transaction";
 import ProductDetail from "@/pages/product-detail";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Dashboard from "@/pages/dashboard";
 
 export default function Router() {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <Login />,
+    },
+    {
+      path: "/dashboard",
+      element: <Dashboard />,
     },
     {
       path: "/product/:id",
