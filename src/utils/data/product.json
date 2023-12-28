@@ -1,0 +1,1064 @@
+[
+  {
+    "id": 1,
+    "name": "Nakamichi TW 110NC ANC True Wireless Earphone TWS",
+    "category": "electronic",
+    "sold": 80,
+    "overall_rating": 4.8,
+    "review": 80,
+    "ratings": [
+      { "rating": 5, "amount": 70 },
+      { "rating": 4, "amount": 10 },
+      { "rating": 3, "amount": 2 },
+      { "rating": 2, "amount": 1 },
+      { "rating": 1, "amount": 1 }
+    ],
+    "price": 300000,
+    "discount": 40,
+    "store": {
+      "id": 1,
+      "location": "Jakarta Utara",
+      "rating": 94,
+      "response_chat": 97,
+      "on_time": 100
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/7/12/27da6e41-2ce5-4be3-a851-132a571b0f0f.jpg",
+      "additional1": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/5/10/ffedca5d-4886-49a5-bf24-257efc2e5f8b.jpg",
+      "additional2": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/5/9/c3d9b057-f070-4472-9b9d-93967dbe331a.jpg",
+      "additional3": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/5/10/90f8bd69-6ee3-4876-8dc7-506c520ec518.jpg"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/7/12/0c1c821a-c62e-47b9-bdab-838c0e245604.jpg",
+        "title": "white",
+        "stock": 10
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/7/12/feba9eea-3a9a-4ec2-9402-439e8307b4e4.jpg",
+        "title": "black",
+        "stock": 10
+      }
+    ],
+    "stock": 20,
+    "description": [
+      "name: Nakamichi TW 110NC",
+      "Bluetooth: Versi 5.1",
+      "BlUetooth Connection Distance: Sekitar 10m",
+      "Battery: 30mAh",
+      "Waktu bicara nirkabel earphone dan waktu mendengarkan: sekitar 3-4 jam",
+      "Waktu Standby Headshet Bluetooth: Lebih dari 60 jam",
+      "Waktu pengisian: 1 jam",
+      "Produk meliputi:",
+      "1 * sepasang earphone bluetooth",
+      "1 * kotak pengisian",
+      "1 * Kabel pengisian daya",
+      "1 * Panduan Pengguna"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Samsung Galaxy S21",
+    "category": "Electronics",
+    "sold": 120,
+    "overall_rating": 4.5,
+    "review": 100,
+    "ratings": [
+      { "rating": 5, "amount": 80 },
+      { "rating": 4, "amount": 15 },
+      { "rating": 3, "amount": 3 },
+      { "rating": 2, "amount": 1 },
+      { "rating": 1, "amount": 1 }
+    ],
+    "price": 12000000,
+    "discount": 10,
+    "store": {
+      "id": 1,
+      "location": "Jakarta Pusat",
+      "rating": 92,
+      "response_chat": 98,
+      "on_time": 99
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2021/7/1/85fdb0b7-fa76-4c97-ac09-613fe24a6d44.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2021/10/8/989b9975-a81f-44a0-b17c-7ad2915aa554.png.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2021/10/8/61f6f935-598d-4724-9990-cf29cd05a844.png.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2021/10/8/0c753875-9b4a-4e05-915b-791c37e4ef32.jpg.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2021/10/8/1fe1c7ef-e08e-4172-9652-1d0253be7d1a.jpg.webp?ect=4g",
+        "title": "Phantom Gray",
+        "stock": 25
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2021/7/1/1475b7da-1b6e-4403-b2cf-06c4407e6ae3.jpg.webp?ect=4g",
+        "title": "Phantom White",
+        "stock": 15
+      }
+    ],
+    "stock": 40,
+    "description": [
+      "Brand: Samsung",
+      "Model: Galaxy S21",
+      "Display: 6.2 inches, Dynamic AMOLED 2X",
+      "Camera: Triple 12 MP, 64 MP, 12 MP",
+      "Storage: 128GB",
+      "Battery: 4000 mAh",
+      "OS: Android 11, One UI 3.1",
+      "Processor: Exynos 2100 (Global) / Snapdragon 888 (USA)"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Apple MacBook Pro M2",
+    "category": "Electronics",
+    "sold": 50,
+    "overall_rating": 4.8,
+    "review": 45,
+    "ratings": [
+      { "rating": 5, "amount": 35 },
+      { "rating": 4, "amount": 8 },
+      { "rating": 3, "amount": 2 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 15000000,
+    "discount": 5,
+    "store": {
+      "id": 2,
+      "location": "Jakarta Selatan",
+      "rating": 95,
+      "response_chat": 99,
+      "on_time": 98
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2022/8/19/b60140b0-2244-41c1-86cd-eaca982167d3.png.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/5/11/2a47084f-e166-43b2-9d76-b2a9c9d6d4c2.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/5/11/97ace6d1-1375-4c68-b33c-bd41a592ac31.jpg.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/6/24/62e9f445-0769-450e-bbf7-44c877f317e7.jpg.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/4/15/8968f2da-36f7-4db3-98bd-55434f1fded4.jpg.webp?ect=4g",
+        "title": "Space Gray",
+        "stock": 20
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2020/10/4/68c78698-e933-4630-b50a-8e3a30a06a02.jpg.webp?ect=4g",
+        "title": "Silver",
+        "stock": 15
+      }
+    ],
+    "stock": 35,
+    "description": [
+      "Brand: Apple",
+      "Model: MacBook Pro 13-inch",
+      "Processor: Apple M1 chip",
+      "Memory: 8GB RAM",
+      "Storage: 256GB SSD",
+      "Display: 13.3 inches, Retina display",
+      "Battery: Up to 17 hours",
+      "OS: macOS Big Sur"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Sony WH-1000XM4 Wireless Noise-Canceling Headphones",
+    "category": "Electronics",
+    "sold": 80,
+    "overall_rating": 4.9,
+    "review": 60,
+    "ratings": [
+      { "rating": 5, "amount": 55 },
+      { "rating": 4, "amount": 5 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 3500000,
+    "discount": 15,
+    "store": {
+      "id": 3,
+      "location": "Surabaya",
+      "rating": 91,
+      "response_chat": 96,
+      "on_time": 97
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/11/30/1fa7c0df-6abf-47c8-b072-0252b8a131fe.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2021/7/22/7702cfbe-ecf0-4080-91dd-f4a0d1f7855f.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/100-square/product-1/2020/8/28/24485009/24485009_2c47f027-3a26-4ddb-9fee-9a85e5011d84_500_500.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/100-square/product-1/2020/8/14/24485009/24485009_b86ea81b-505c-41b1-8b7f-441f07dab63b_1000_1000.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/product-1/2020/8/14/24485009/24485009_b86ea81b-505c-41b1-8b7f-441f07dab63b_1000_1000.webp?ect=4g",
+        "title": "Black",
+        "stock": 30
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2021/7/22/e2b35042-a211-47dd-b8f4-d090f769d1c5.jpg.webp?ect=4g",
+        "title": "Silver",
+        "stock": 20
+      }
+    ],
+    "stock": 50,
+    "description": [
+      "Brand: Sony",
+      "Model: WH-1000XM4",
+      "Type: Over-Ear, Wireless",
+      "Noise-Canceling: Yes",
+      "Battery: Up to 30 hours",
+      "Quick Charge: 10 minutes for 5 hours",
+      "Touch Controls: Yes",
+      "Connectivity: Bluetooth 5.0"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Dell XPS 13",
+    "category": "Electronics",
+    "sold": 30,
+    "overall_rating": 4.7,
+    "review": 25,
+    "ratings": [
+      { "rating": 5, "amount": 20 },
+      { "rating": 4, "amount": 5 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 16000000,
+    "discount": 8,
+    "store": {
+      "id": 4,
+      "location": "Bandung",
+      "rating": 88,
+      "response_chat": 95,
+      "on_time": 96
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/2/17/e48651e5-e387-4680-9612-8f504e12bca3.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2021/11/2/dea799db-4faa-4670-87ea-2bea1dd53d4e.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2021/11/2/e7f462ac-ee38-4072-b2a8-123dae88fba7.jpg.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2021/11/2/9b663288-ae2a-468e-8235-c4cce98ee3a2.jpg.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2021/11/2/842305f4-583b-4bad-afc2-54d2e52ee45c.jpg.webp?ect=4g",
+        "title": "Platinum Silver",
+        "stock": 15
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/7/31/bd20ea52-f2cc-41e3-bc6e-8f8a3a1f35a8.png.webp?ect=4g",
+        "title": "Frost White",
+        "stock": 10
+      }
+    ],
+    "stock": 25,
+    "description": [
+      "Brand: Dell",
+      "Model: XPS 13",
+      "Processor: Intel Core i7 11th Gen",
+      "Memory: 16GB RAM",
+      "Storage: 512GB SSD",
+      "Display: 13.4 inches, InfinityEdge FHD+",
+      "Graphics: Intel Iris Xe",
+      "OS: Windows 10 Home"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Canon EOS R5 Mirrorless Camera",
+    "category": "Electronics",
+    "sold": 15,
+    "overall_rating": 4.9,
+    "review": 12,
+    "ratings": [
+      { "rating": 5, "amount": 10 },
+      { "rating": 4, "amount": 2 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 28000000,
+    "discount": 5,
+    "store": {
+      "id": 5,
+      "location": "Surabaya",
+      "rating": 93,
+      "response_chat": 97,
+      "on_time": 98
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/6/3/be308867-d60a-4034-945e-a47aa0eb440f.png.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2022/9/12/bddc89a2-5989-468f-bfe3-02fcea18b568.png.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2021/12/5/f1b33602-b486-4203-9482-a8a7ce43b742.png.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2021/12/5/335a1576-e59a-4ac4-990b-c13a9e14fe58.png.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2021/12/5/335a1576-e59a-4ac4-990b-c13a9e14fe58.png.webp?ect=4g",
+        "title": "Black",
+        "stock": 8
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/hDjmkQ/2023/12/11/887d6617-bf4b-4216-8991-a1e5628b9f0e.jpg.webp?ect=4g",
+        "title": "Silver",
+        "stock": 7
+      }
+    ],
+    "stock": 15,
+    "description": [
+      "Brand: Canon",
+      "Model: EOS R5",
+      "Type: Mirrorless",
+      "Sensor: Full-frame CMOS",
+      "Resolution: 45MP",
+      "Video: 8K at 30fps, 4K at 120fps",
+      "Image Stabilization: Yes",
+      "Autofocus: Dual Pixel CMOS AF II"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Sony PlayStation 5",
+    "category": "Electronics",
+    "sold": 40,
+    "overall_rating": 4.8,
+    "review": 35,
+    "ratings": [
+      { "rating": 5, "amount": 30 },
+      { "rating": 4, "amount": 5 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 6500000,
+    "discount": 12,
+    "store": {
+      "id": 6,
+      "location": "Jakarta Barat",
+      "rating": 96,
+      "response_chat": 99,
+      "on_time": 98
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2022/4/3/7f62bc2b-0815-4c69-8437-4580d29c6ad4.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2022/4/3/f9aef445-adb2-4eeb-9407-7c7180270729.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2022/4/3/52f81f63-c7d6-43d5-9015-845f95cc6a48.jpg.webp?ect=3g",
+      "additional3": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2022/4/3/84af7259-9d77-4148-ae61-8b64cbd8efdb.jpg.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2022/4/3/f9aef445-adb2-4eeb-9407-7c7180270729.jpg.webp?ect=4g",
+        "title": "Standard Edition",
+        "stock": 20
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/11/15/67b89755-355f-47c1-ba68-7246685737d7.jpg.webp?ect=4g",
+        "title": "Digital Edition",
+        "stock": 15
+      }
+    ],
+    "stock": 35,
+    "description": [
+      "Brand: Sony",
+      "Model: PlayStation 5",
+      "Type: Gaming Console",
+      "Storage: 825GB SSD",
+      "GPU: AMD RDNA 2",
+      "Max Resolution: 8K",
+      "Backward Compatibility: Yes",
+      "Controller: DualSense Wireless Controller"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Samsung QLED 4K Smart TV",
+    "category": "Electronics",
+    "sold": 30,
+    "overall_rating": 4.7,
+    "review": 25,
+    "ratings": [
+      { "rating": 5, "amount": 20 },
+      { "rating": 4, "amount": 5 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 12000000,
+    "discount": 8,
+    "store": {
+      "id": 7,
+      "location": "Surabaya",
+      "rating": 94,
+      "response_chat": 97,
+      "on_time": 96
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/12/23/96e96197-efac-49d3-a250-e322010790b0.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/100-square/hDjmkQ/2023/4/14/44bfd32c-e986-477b-9e29-5cda3c9864be.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/12/23/2a955522-41dc-46fd-bbad-9e38a6a42ca5.jpg.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/100-square/hDjmkQ/2023/4/14/4109d902-ca79-45a2-a34c-f3ec8b56088c.jpg.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/hDjmkQ/2023/4/14/44bfd32c-e986-477b-9e29-5cda3c9864be.jpg.webp?ect=4g",
+        "title": "55-inch",
+        "stock": 10
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/hDjmkQ/2023/4/14/4109d902-ca79-45a2-a34c-f3ec8b56088c.jpg.webp?ect=4g",
+        "title": "65-inch",
+        "stock": 8
+      }
+    ],
+    "stock": 18,
+    "description": [
+      "Brand: Samsung",
+      "Model: Q80A QLED 4K Smart TV",
+      "Display: 55 inches, QLED",
+      "Resolution: 4K UHD",
+      "HDR: Quantum HDR 12x",
+      "Smart Features: Tizen OS, Bixby Voice Assistant",
+      "Connectivity: HDMI, USB, Bluetooth, Wi-Fi"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Fitbit Charge 4 Fitness Tracker",
+    "category": "Fitness",
+    "sold": 60,
+    "overall_rating": 4.6,
+    "review": 50,
+    "ratings": [
+      { "rating": 5, "amount": 40 },
+      { "rating": 4, "amount": 8 },
+      { "rating": 3, "amount": 2 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 1800000,
+    "discount": 15,
+    "store": {
+      "id": 8,
+      "location": "Bandung",
+      "rating": 90,
+      "response_chat": 95,
+      "on_time": 97
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/100-square/hDjmkQ/2023/2/28/ea1f0660-00bf-490c-9e3c-9cf742d81d20.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/100-square/hDjmkQ/2023/2/28/7bfca5c6-6c9f-4c34-880c-e59b177c5d22.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/100-square/hDjmkQ/2023/2/28/7bfca5c6-6c9f-4c34-880c-e59b177c5d22.jpg.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/4/19/bcd962fc-01e6-458e-9734-554867771885.png.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/hDjmkQ/2023/2/28/d3441ce8-6672-4a1c-85a2-0601bc76553e.jpg.webp?ect=4g",
+        "title": "Black",
+        "stock": 25
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/hDjmkQ/2023/2/28/ea1f0660-00bf-490c-9e3c-9cf742d81d20.jpg.webp?ect=4g",
+        "title": "Rosewood",
+        "stock": 20
+      }
+    ],
+    "stock": 45,
+    "description": [
+      "Brand: Fitbit",
+      "Model: Charge 4",
+      "Type: Fitness Tracker",
+      "Display: OLED",
+      "Features: Heart Rate Monitoring, GPS, Sleep Tracking",
+      "Water Resistance: Up to 50 meters",
+      "Battery Life: Up to 7 days",
+      "Connectivity: Bluetooth"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "LG 65-inch OLED 4K Smart TV",
+    "category": "Electronics",
+    "sold": 20,
+    "overall_rating": 4.8,
+    "review": 25,
+    "ratings": [
+      { "rating": 5, "amount": 20 },
+      { "rating": 4, "amount": 5 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 24000000,
+    "discount": 10,
+    "store": {
+      "id": 9,
+      "location": "Jakarta Selatan",
+      "rating": 93,
+      "response_chat": 97,
+      "on_time": 98
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/10/11/99976055-aa5a-4fdd-ab49-80ce05c1de5a.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/10/27/9d2415b0-31af-4137-90c5-9067d0bc3b06.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/11/9/7313b164-e9d6-47e7-b154-8597ffce8999.jpg.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/11/9/66837152-e2fe-4083-ae8b-8dc8c3f70b80.png.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/11/9/0a223ecc-95f8-478b-9faa-347ba12f18af.png.webp?ect=4g",
+        "title": "65-inch",
+        "stock": 15
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2020/9/25/2af3836c-5bad-4f3e-9eee-37b0e7f8492c.jpg.webp?ect=4g",
+        "title": "77-inch",
+        "stock": 5
+      }
+    ],
+    "stock": 20,
+    "description": [
+      "Brand: LG",
+      "Model: C1 OLED 4K Smart TV",
+      "Display: 65 inches, OLED",
+      "Resolution: 4K UHD",
+      "HDR: Dolby Vision IQ, HDR10, HLG",
+      "Smart Features: webOS, AI ThinQ",
+      "Connectivity: HDMI, USB, Bluetooth, Wi-Fi"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "GoPro HERO10",
+    "category": "Electronics",
+    "sold": 18,
+    "overall_rating": 4.9,
+    "review": 15,
+    "ratings": [
+      { "rating": 5, "amount": 12 },
+      { "rating": 4, "amount": 3 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 5500000,
+    "discount": 8,
+    "store": {
+      "id": 10,
+      "location": "Surabaya",
+      "rating": 95,
+      "response_chat": 98,
+      "on_time": 97
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/12/4/db2b6b45-74ed-4f65-bf2f-267453867036.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/1/17/959b1a57-1ea0-4007-9cd4-e05b99f0b0c1.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/1/17/3ea4339f-96c9-4e10-b5ab-10e195403ca9.jpg.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/1/17/0f6df877-0072-4feb-9fba-6ece18bac54b.jpg.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/1/17/959b1a57-1ea0-4007-9cd4-e05b99f0b0c1.jpg.webp?ect=4g",
+        "title": "Black",
+        "stock": 12
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/4/13/7b4cdaff-1cac-4d72-8f50-72984c116ea3.png.webp?ect=4g",
+        "title": "White",
+        "stock": 6
+      }
+    ],
+    "stock": 18,
+    "description": [
+      "Brand: GoPro",
+      "Model: HERO10 Black",
+      "Resolution: 23.6MP",
+      "Video: 5.3K at 60fps, 4K at 120fps",
+      "Stabilization: HyperSmooth 4.0",
+      "Waterproof: Up to 33 feet",
+      "Features: TimeWarp 3.0, SuperPhoto + HDR",
+      "Connectivity: Wi-Fi, Bluetooth"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "KitchenAid Artisan Stand Mixer",
+    "category": "Home & Kitchen",
+    "sold": 25,
+    "overall_rating": 4.7,
+    "review": 22,
+    "ratings": [
+      { "rating": 5, "amount": 18 },
+      { "rating": 4, "amount": 4 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 4500000,
+    "discount": 10,
+    "store": {
+      "id": 11,
+      "location": "Jakarta Timur",
+      "rating": 94,
+      "response_chat": 97,
+      "on_time": 96
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2021/3/6/afbdcac4-a6c3-4ed3-a6a7-cfa61405b8a5.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2021/3/6/46573155-3d4a-4872-ad59-2714c532728f.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2020/5/2/8a182b77-9d31-4553-8249-15112a5f0590.jpg.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2021/3/6/c90958de-139e-4ca3-9076-9b40e492e772.jpg.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2021/3/6/46573155-3d4a-4872-ad59-2714c532728f.jpg.webp?ect=4g",
+        "title": "Empire Red",
+        "stock": 15
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2020/5/2/8a182b77-9d31-4553-8249-15112a5f0590.jpg.webp?ect=4g",
+        "title": "Onyx Black",
+        "stock": 10
+      }
+    ],
+    "stock": 25,
+    "description": [
+      "Brand: KitchenAid",
+      "Model: Artisan Stand Mixer",
+      "Capacity: 5 quarts",
+      "Speeds: 10 speeds",
+      "Power: 325 watts",
+      "Bowl Type: Stainless steel",
+      "Attachments: Flat beater, dough hook, wire whip",
+      "Features: Tilt-head design, planetary mixing action"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Fitbit Versa 3 Smartwatch",
+    "category": "Fitness",
+    "sold": 35,
+    "overall_rating": 4.6,
+    "review": 30,
+    "ratings": [
+      { "rating": 5, "amount": 22 },
+      { "rating": 4, "amount": 8 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 2500000,
+    "discount": 12,
+    "store": {
+      "id": 12,
+      "location": "Surabaya",
+      "rating": 92,
+      "response_chat": 96,
+      "on_time": 97
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2022/1/28/c60d362f-6621-4598-b1fa-2a2af8b8ef51.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2022/1/28/7dfd857b-7c49-4271-9f66-96b59048978c.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2022/1/28/864a3792-c417-4894-9a2c-ed59a4870424.jpg.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2022/1/28/b3c12849-961b-484b-809a-1fcf29bf519e.jpg.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/2/6/6255ec78-3a63-4f0c-b8be-f1adf365d3db.png.webp?ect=4g",
+        "title": "Midnight Blue",
+        "stock": 18
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/2/6/9e65d904-2dbf-4ffc-ab98-da796294b24a.png.webp?ect=4g",
+        "title": "Rose Gold",
+        "stock": 17
+      }
+    ],
+    "stock": 35,
+    "description": [
+      "Brand: Fitbit",
+      "Model: Versa 3",
+      "Display: AMOLED",
+      "Battery Life: Up to 6 days",
+      "Heart Rate Monitoring: Yes",
+      "GPS: Built-in",
+      "Water Resistance: Up to 50 meters",
+      "Features: Built-in voice assistant, sleep tracking"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Dyson V11 Absolute Cordless Vacuum",
+    "category": "Home & Kitchen",
+    "sold": 15,
+    "overall_rating": 4.9,
+    "review": 12,
+    "ratings": [
+      { "rating": 5, "amount": 10 },
+      { "rating": 4, "amount": 2 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 6500000,
+    "discount": 10,
+    "store": {
+      "id": 13,
+      "location": "Bandung",
+      "rating": 95,
+      "response_chat": 98,
+      "on_time": 97
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/6/13/72c9e01f-f75b-4029-9126-fa0dcf118f6f.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2022/4/26/7442703d-cd3a-4339-a93c-1e0a948eb452.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2022/4/26/86373fec-bfec-4cdb-acd0-551857d942a8.png.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2022/4/26/afb39d5d-effd-4452-9355-6d8a68358750.jpg.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/6/13/72c9e01f-f75b-4029-9126-fa0dcf118f6f.jpg.webp?ect=4g",
+        "title": "Blue",
+        "stock": 8
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2022/7/12/743a7991-78fa-49da-ac8a-334dccc83d80.jpg.webp?ect=4g",
+        "title": "Gold",
+        "stock": 7
+      }
+    ],
+    "stock": 15,
+    "description": [
+      "Brand: Dyson",
+      "Model: V11 Absolute",
+      "Type: Cordless Vacuum",
+      "Suction Power: 185 AW",
+      "Bin Capacity: 0.76 liters",
+      "Run Time: Up to 60 minutes",
+      "Filtration: Whole-machine filtration",
+      "Features: LCD screen, Dynamic Load Sensor"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Garmin Forerunner 945 GPS Smartwatch",
+    "category": "Fitness",
+    "sold": 20,
+    "overall_rating": 4.8,
+    "review": 18,
+    "ratings": [
+      { "rating": 5, "amount": 15 },
+      { "rating": 4, "amount": 3 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 6000000,
+    "discount": 12,
+    "store": {
+      "id": 14,
+      "location": "Jakarta Utara",
+      "rating": 93,
+      "response_chat": 97,
+      "on_time": 98
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2020/10/17/d495ee20-a9fa-4d0e-9397-8e257801a6f9.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2020/10/18/e6b9ade5-b483-467a-b355-f6997cafad9b.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2020/10/18/9947fc01-bef9-4ac7-a51a-c0517dcc1668.jpg.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2020/10/18/d40eff73-7fe8-4896-aa13-9fcb683a1577.jpg.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/7/22/5d340811-1ac1-4d89-b4a2-42320c65a37b.jpg.webp?ect=4g",
+        "title": "Black",
+        "stock": 12
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/3/24/a2a639fe-df54-4af3-ab3d-bbcbc638a453.jpg.webp?ect=4g",
+        "title": "White",
+        "stock": 8
+      }
+    ],
+    "stock": 20,
+    "description": [
+      "Brand: Garmin",
+      "Model: Forerunner 945",
+      "Display: 1.2 inches, sunlight-visible",
+      "Battery Life: Up to 2 weeks",
+      "GPS: Yes, with GLONASS and Galileo",
+      "Heart Rate Monitoring: Yes",
+      "Water Resistance: Up to 50 meters",
+      "Features: Music, Maps, Advanced Training Metrics"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Samsung Galaxy Tab S7+",
+    "category": "Electronics",
+    "sold": 25,
+    "overall_rating": 4.7,
+    "review": 20,
+    "ratings": [
+      { "rating": 5, "amount": 15 },
+      { "rating": 4, "amount": 5 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 11000000,
+    "discount": 8,
+    "store": {
+      "id": 15,
+      "location": "Surabaya",
+      "rating": 92,
+      "response_chat": 96,
+      "on_time": 97
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2022/6/9/2065b85c-6300-43c7-ad36-4bef73f5289a.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/10/22/694ab9ea-2023-418f-951a-de7f2318edb5.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/10/22/1319a217-ebde-40d1-bf96-caf497853d84.jpg.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/10/22/1319a217-ebde-40d1-bf96-caf497853d84.jpg.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/5/16/809553e2-a442-47ec-9cc6-dfd5f9c66507.jpg.webp?ect=4g",
+        "title": "128GB, Mystic Black",
+        "stock": 15
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/8/6/b82b327d-08ca-49a8-97dc-feea76e94e5d.jpg.webp?ect=4g",
+        "title": "256GB, Mystic Bronze",
+        "stock": 10
+      }
+    ],
+    "stock": 25,
+    "description": [
+      "Brand: Samsung",
+      "Model: Galaxy Tab S7+",
+      "Display: 12.4 inches, Super AMOLED",
+      "Resolution: 2800 x 1752 pixels",
+      "Processor: Snapdragon 865+",
+      "Storage: 128GB/256GB, expandable up to 1TB",
+      "S Pen Included: Yes",
+      "Features: DeX mode, Book Cover Keyboard support"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Apple Watch Series 7",
+    "category": "Electronics",
+    "sold": 22,
+    "overall_rating": 4.8,
+    "review": 20,
+    "ratings": [
+      { "rating": 5, "amount": 18 },
+      { "rating": 4, "amount": 2 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 4999000,
+    "discount": 10,
+    "store": {
+      "id": 17,
+      "location": "Jakarta Selatan",
+      "rating": 95,
+      "response_chat": 98,
+      "on_time": 97
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2022/9/13/f45917a6-2614-478e-a690-4a69669fbf45.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2022/6/16/869e009b-843d-4317-ae67-6b561901e71c.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2022/6/16/f30a682b-45c3-4757-8b26-b0c2d78181ac.jpg.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2022/6/16/cd1669c9-9610-4da4-b08c-b9daaf7215d4.jpg.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2022/4/17/aca93e5e-2244-4085-8e46-5f857244f242.jpg.webp?ect=4g",
+        "title": "Black",
+        "stock": 12
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/3/21/a2aba5d6-eae3-424e-bd08-1275f4d8a4a9.jpg.webp?ect=4g",
+        "title": "White",
+        "stock": 10
+      }
+    ],
+    "stock": 22,
+    "description": [
+      "Brand: Apple",
+      "Model: Watch Series 7",
+      "Display: Always-On Retina",
+      "Case Material: Aluminum or Stainless Steel",
+      "Water Resistance: Up to 50 meters",
+      "Health Features: Blood Oxygen app, ECG app",
+      "Fitness Tracking: Advanced, with Fitness+ support",
+      "Connectivity: Bluetooth, Wi-Fi, Cellular"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Instant Pot Duo Evo Plus Electric Pressure Cooker",
+    "category": "Home & Kitchen",
+    "sold": 12,
+    "overall_rating": 4.7,
+    "review": 10,
+    "ratings": [
+      { "rating": 5, "amount": 8 },
+      { "rating": 4, "amount": 2 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 1500000,
+    "discount": 15,
+    "store": {
+      "id": 18,
+      "location": "Jakarta Pusat",
+      "rating": 93,
+      "response_chat": 96,
+      "on_time": 98
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2022/12/23/5b1ac9c9-ff17-46ee-b813-8051f4217c3d.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/7/4/15711fc7-2489-4a8f-aadc-13ed6ad6b72d.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/7/4/4df7facc-331b-4194-9011-fe29637ed7dc.jpg.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/7/4/15711fc7-2489-4a8f-aadc-13ed6ad6b72d.jpg.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/2/7/2b4f26ac-9ce0-43e9-959f-96001eccade3.jpg.webp?ect=4g",
+        "title": "6 Quart",
+        "stock": 8
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/2/20/5667cf31-752a-4852-8e40-6002fce67130.png.webp?ect=4g",
+        "title": "8 Quart",
+        "stock": 4
+      }
+    ],
+    "stock": 12,
+    "description": [
+      "Brand: Instant Pot",
+      "Model: Duo Evo Plus",
+      "Capacity: 6 or 8 quarts",
+      "Cooking Programs: 48 preset programs",
+      "Pressure Levels: 10 levels",
+      "Safety Features: 10+ safety features",
+      "Material: Stainless steel inner pot",
+      "Features: Easy-seal lid, Cook & Bake Smart Programs"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Nike Air Max 270",
+    "category": "Fashion",
+    "sold": 8,
+    "overall_rating": 4.5,
+    "review": 6,
+    "ratings": [
+      { "rating": 5, "amount": 4 },
+      { "rating": 4, "amount": 2 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 1200000,
+    "discount": 15,
+    "store": {
+      "id": 21,
+      "location": "Jakarta Pusat",
+      "rating": 90,
+      "response_chat": 95,
+      "on_time": 96
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/4/14/57d5625a-80cd-4134-8b02-150515fdb564.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2022/8/3/fb19182b-549a-4a63-9305-422bd8dabf99.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/4/14/805fc05d-a02a-4533-aaee-0900d65f4734.jpg.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/4/14/e20e431e-130d-4151-ab5f-324579ccab8a.jpg.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/4/14/805fc05d-a02a-4533-aaee-0900d65f4734.jpg.webp?ect=4g",
+        "title": "Black/White",
+        "stock": 5
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/product-1/2019/1/8/47228850/47228850_6baa8cb9-1aa7-43bf-bb72-b69fc3def304_920_1150.jpg.webp?ect=4g",
+        "title": "Blue/Orange",
+        "stock": 3
+      }
+    ],
+    "stock": 8,
+    "description": [
+      "Brand: Nike",
+      "Model: Air Max 270",
+      "Type: Running Shoes",
+      "Upper Material: Knit",
+      "Sole Material: Rubber",
+      "Cushioning: Air Max unit",
+      "Features: Lightweight, breathable, stylish design",
+      "Suitable for: Running, casual wear"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Bose QuietComfort Earbuds",
+    "category": "Electronics",
+    "sold": 15,
+    "overall_rating": 4.8,
+    "review": 12,
+    "ratings": [
+      { "rating": 5, "amount": 10 },
+      { "rating": 4, "amount": 2 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 2799000,
+    "discount": 12,
+    "store": {
+      "id": 20,
+      "location": "Jakarta Barat",
+      "rating": 94,
+      "response_chat": 97,
+      "on_time": 98
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/10/31/d03acad3-3912-4231-b8ae-9cdbae423db2.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/10/30/7ab00713-5a07-4acf-884c-76e3a80ad8e1.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/10/30/611bde12-7c70-400a-9adc-a8978ef3f6c0.jpg.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/10/31/10e65d27-df2e-4997-bec7-c1c14e72dafd.jpg.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/10/30/611bde12-7c70-400a-9adc-a8978ef3f6c0.jpg.webp?ect=4g",
+        "title": "Black",
+        "stock": 8
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/100-square/VqbcmM/2023/10/30/7ab00713-5a07-4acf-884c-76e3a80ad8e1.jpg.webp?ect=4g",
+        "title": "White smoke",
+        "stock": 7
+      }
+    ],
+    "stock": 15,
+    "description": [
+      "Brand: Bose",
+      "Model: QuietComfort Earbuds",
+      "Type: True Wireless",
+      "Noise-Canceling: Yes",
+      "Battery Life: Up to 6 hours (earbuds), additional 12 hours (case)",
+      "Water Resistance: IPX4",
+      "Touch Controls: Yes",
+      "Connectivity: Bluetooth 5.1"
+    ]
+  }
+]
