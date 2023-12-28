@@ -18,7 +18,7 @@ const MainImage = () => {
 
   return (
     <div className="mx-auto lg:w-10/12 md:w-full mt-4">
-      <img src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} />
+      <img src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} className="w-full" />
     </div>
   );
 };
