@@ -14,7 +14,7 @@ const ProductCard = ({ product }) => {
         <img
           src={product.images.display}
           alt={product.name}
-          className="w-full h-44 object-cover rounded-md"
+          className="w-full h-44 object-cover rounded-t-md"
         />
         <div className="card-body text-start p-2">
           <p className="text-sm  mb-1">{truncatedName}</p>
