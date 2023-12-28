@@ -6,19 +6,20 @@ import Footer4 from "@/components/footer-4";
 import MainImage from "@/components/main-image";
 import Menu from "@/components/menu";
 import Navbar from "@/components/navbar";
-
+import Closing from "./components/closing";
 
 const Dashboard = () => {
   return (
     <div className="bg-[#FFFAF5]">
-    <Navbar/>
-    <MainImage/>
-    <Menu/>
-    <Category/>
-    <Footer1/>
-    <Footer2/>
-    <Footer3/>
-    <Footer4/>   
+      <Navbar />
+      <MainImage />
+      <Menu />
+      <Category />
+      <Footer1 />
+      <Footer2 />
+      <Footer3 />
+      <Footer4 />
+      <Closing/>
     </div>
   );
 };
