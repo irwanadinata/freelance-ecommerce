@@ -1,4 +1,5 @@
 import { CircleUserRound } from "lucide-react";
+import Pagination from "./pagination";
 
 const ReviewCard = ({ user, option, review, firstChild }) => {
   return (
@@ -39,6 +40,7 @@ const Review = () => {
           option="Black"
           review="Pengiriman cepat dan barang sesuai dengan gambar"
         />
+        <Pagination/>
       </div>
     </div>
   );
