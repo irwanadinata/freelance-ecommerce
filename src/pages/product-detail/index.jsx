@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import Detail from "./components/product-detail";
 import { getProductById } from "@/utils/data/dataHandler";
 import { ScrollRestoration, useParams } from "react-router-dom";
+import Footer4 from "@/components/footer-4";
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -36,6 +37,7 @@ const ProductDetail = () => {
       )}
       <Footer1 />
       <Footer2 />
+      <Footer4/>
     </div>
   );
 };
