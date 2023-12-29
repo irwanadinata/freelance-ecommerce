@@ -1,0 +1,319 @@
+[
+  {
+    "id": 6,
+    "name": "Canon EOS R5 Mirrorless Camera",
+    "category": "Electronics",
+    "sold": 15,
+    "overall_rating": 4.9,
+    "review": 12,
+    "ratings": [
+      { "rating": 5, "amount": 10 },
+      { "rating": 4, "amount": 2 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 28000000,
+    "discount": 5,
+    "store": {
+      "id": 6,
+      "location": "Surabaya",
+      "rating": 93,
+      "response_chat": 97,
+      "on_time": 98
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/6/3/be308867-d60a-4034-945e-a47aa0eb440f.png.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/9/12/bddc89a2-5989-468f-bfe3-02fcea18b568.png.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/12/5/f1b33602-b486-4203-9482-a8a7ce43b742.png.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/12/5/335a1576-e59a-4ac4-990b-c13a9e14fe58.png.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/12/5/335a1576-e59a-4ac4-990b-c13a9e14fe58.png.webp?ect=4g",
+        "title": "Black",
+        "stock": 8
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/hDjmkQ/2023/12/11/887d6617-bf4b-4216-8991-a1e5628b9f0e.jpg.webp?ect=4g",
+        "title": "Silver",
+        "stock": 7
+      }
+    ],
+    "stock": 15,
+    "description": [
+      "Brand: Canon",
+      "Model: EOS R5",
+      "Type: Mirrorless",
+      "Sensor: Full-frame CMOS",
+      "Resolution: 45MP",
+      "Video: 8K at 30fps, 4K at 120fps",
+      "Image Stabilization: Yes",
+      "Autofocus: Dual Pixel CMOS AF II"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Fitbit Charge 4 Fitness Tracker",
+    "category": "Fitness",
+    "sold": 60,
+    "overall_rating": 4.6,
+    "review": 50,
+    "ratings": [
+      { "rating": 5, "amount": 40 },
+      { "rating": 4, "amount": 8 },
+      { "rating": 3, "amount": 2 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 1800000,
+    "discount": 15,
+    "store": {
+      "id": 9,
+      "location": "Bandung",
+      "rating": 90,
+      "response_chat": 95,
+      "on_time": 97
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/900/hDjmkQ/2023/2/28/ea1f0660-00bf-490c-9e3c-9cf742d81d20.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/900/hDjmkQ/2023/2/28/7bfca5c6-6c9f-4c34-880c-e59b177c5d22.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/900/hDjmkQ/2023/2/28/7bfca5c6-6c9f-4c34-880c-e59b177c5d22.jpg.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/4/19/bcd962fc-01e6-458e-9734-554867771885.png.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/hDjmkQ/2023/2/28/d3441ce8-6672-4a1c-85a2-0601bc76553e.jpg.webp?ect=4g",
+        "title": "Black",
+        "stock": 25
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/hDjmkQ/2023/2/28/ea1f0660-00bf-490c-9e3c-9cf742d81d20.jpg.webp?ect=4g",
+        "title": "Rosewood",
+        "stock": 20
+      }
+    ],
+    "stock": 45,
+    "description": [
+      "Brand: Fitbit",
+      "Model: Charge 4",
+      "Type: Fitness Tracker",
+      "Display: OLED",
+      "Features: Heart Rate Monitoring, GPS, Sleep Tracking",
+      "Water Resistance: Up to 50 meters",
+      "Battery Life: Up to 7 days",
+      "Connectivity: Bluetooth"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "LG 65-inch OLED 4K Smart TV",
+    "category": "Electronics",
+    "sold": 20,
+    "overall_rating": 4.8,
+    "review": 25,
+    "ratings": [
+      { "rating": 5, "amount": 20 },
+      { "rating": 4, "amount": 5 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 24000000,
+    "discount": 10,
+    "store": {
+      "id": 10,
+      "location": "Jakarta Selatan",
+      "rating": 93,
+      "response_chat": 97,
+      "on_time": 98
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/10/11/99976055-aa5a-4fdd-ab49-80ce05c1de5a.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/10/27/9d2415b0-31af-4137-90c5-9067d0bc3b06.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/11/9/7313b164-e9d6-47e7-b154-8597ffce8999.jpg.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/11/9/66837152-e2fe-4083-ae8b-8dc8c3f70b80.png.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/11/9/0a223ecc-95f8-478b-9faa-347ba12f18af.png.webp?ect=4g",
+        "title": "65-inch",
+        "stock": 15
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2020/9/25/2af3836c-5bad-4f3e-9eee-37b0e7f8492c.jpg.webp?ect=4g",
+        "title": "77-inch",
+        "stock": 5
+      }
+    ],
+    "stock": 20,
+    "description": [
+      "Brand: LG",
+      "Model: C1 OLED 4K Smart TV",
+      "Display: 65 inches, OLED",
+      "Resolution: 4K UHD",
+      "HDR: Dolby Vision IQ, HDR10, HLG",
+      "Smart Features: webOS, AI ThinQ",
+      "Connectivity: HDMI, USB, Bluetooth, Wi-Fi"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Fitbit Versa 3 Smartwatch",
+    "category": "Fitness",
+    "sold": 35,
+    "overall_rating": 4.6,
+    "review": 30,
+    "ratings": [
+      { "rating": 5, "amount": 22 },
+      { "rating": 4, "amount": 8 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 2500000,
+    "discount": 1,
+    "store": {
+      "id": 13,
+      "location": "Surabaya",
+      "rating": 92,
+      "response_chat": 96,
+      "on_time": 97
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/1/28/c60d362f-6621-4598-b1fa-2a2af8b8ef51.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/1/28/7dfd857b-7c49-4271-9f66-96b59048978c.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/1/28/864a3792-c417-4894-9a2c-ed59a4870424.jpg.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/1/28/b3c12849-961b-484b-809a-1fcf29bf519e.jpg.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/2/6/6255ec78-3a63-4f0c-b8be-f1adf365d3db.png.webp?ect=4g",
+        "title": "Midnight Blue",
+        "stock": 18
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/2/6/9e65d904-2dbf-4ffc-ab98-da796294b24a.png.webp?ect=4g",
+        "title": "Rose Gold",
+        "stock": 17
+      }
+    ],
+    "stock": 35,
+    "description": [
+      "Brand: Fitbit",
+      "Model: Versa 3",
+      "Display: AMOLED",
+      "Battery Life: Up to 6 days",
+      "Heart Rate Monitoring: Yes",
+      "GPS: Built-in",
+      "Water Resistance: Up to 50 meters",
+      "Features: Built-in voice assistant, sleep tracking"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Dyson V11 Absolute Cordless Vacuum",
+    "category": "Home & Kitchen",
+    "sold": 15,
+    "overall_rating": 4.9,
+    "review": 12,
+    "ratings": [
+      { "rating": 5, "amount": 10 },
+      { "rating": 4, "amount": 2 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 6500000,
+    "discount": 10,
+    "store": {
+      "id": 14,
+      "location": "Bandung",
+      "rating": 95,
+      "response_chat": 98,
+      "on_time": 97
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/6/13/72c9e01f-f75b-4029-9126-fa0dcf118f6f.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/4/26/7442703d-cd3a-4339-a93c-1e0a948eb452.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/4/26/86373fec-bfec-4cdb-acd0-551857d942a8.png.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/4/26/afb39d5d-effd-4452-9355-6d8a68358750.jpg.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/6/13/72c9e01f-f75b-4029-9126-fa0dcf118f6f.jpg.webp?ect=4g",
+        "title": "Blue",
+        "stock": 8
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/7/12/743a7991-78fa-49da-ac8a-334dccc83d80.jpg.webp?ect=4g",
+        "title": "Gold",
+        "stock": 7
+      }
+    ],
+    "stock": 15,
+    "description": [
+      "Brand: Dyson",
+      "Model: V11 Absolute",
+      "Type: Cordless Vacuum",
+      "Suction Power: 185 AW",
+      "Bin Capacity: 0.76 liters",
+      "Run Time: Up to 60 minutes",
+      "Filtration: Whole-machine filtration",
+      "Features: LCD screen, Dynamic Load Sensor"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Garmin Forerunner 945 GPS Smartwatch",
+    "category": "Fitness",
+    "sold": 20,
+    "overall_rating": 4.8,
+    "review": 18,
+    "ratings": [
+      { "rating": 5, "amount": 15 },
+      { "rating": 4, "amount": 3 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 6000000,
+    "discount": 12,
+    "store": {
+      "id": 15,
+      "location": "Jakarta Utara",
+      "rating": 93,
+      "response_chat": 97,
+      "on_time": 98
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/900/VqbcmM/2020/10/17/d495ee20-a9fa-4d0e-9397-8e257801a6f9.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/900/VqbcmM/2020/10/18/e6b9ade5-b483-467a-b355-f6997cafad9b.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/900/VqbcmM/2020/10/18/9947fc01-bef9-4ac7-a51a-c0517dcc1668.jpg.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/900/VqbcmM/2020/10/18/d40eff73-7fe8-4896-aa13-9fcb683a1577.jpg.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/7/22/5d340811-1ac1-4d89-b4a2-42320c65a37b.jpg.webp?ect=4g",
+        "title": "Black",
+        "stock": 12
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/3/24/a2a639fe-df54-4af3-ab3d-bbcbc638a453.jpg.webp?ect=4g",
+        "title": "White",
+        "stock": 8
+      }
+    ],
+    "stock": 20,
+    "description": [
+      "Brand: Garmin",
+      "Model: Forerunner 945",
+      "Display: 1.2 inches, sunlight-visible",
+      "Battery Life: Up to 2 weeks",
+      "GPS: Yes, with GLONASS and Galileo",
+      "Heart Rate Monitoring: Yes",
+      "Water Resistance: Up to 50 meters",
+      "Features: Music, Maps, Advanced Training Metrics"
+    ]
+  }
+]

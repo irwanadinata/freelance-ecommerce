@@ -1,0 +1,536 @@
+[
+  {
+    "id": 1,
+    "name": "Nakamichi TW 110NC ANC True Wireless Earphone TWS",
+    "category": "electronic",
+    "sold": 80,
+    "overall_rating": 4.8,
+    "review": 80,
+    "ratings": [
+      { "rating": 5, "amount": 70 },
+      { "rating": 4, "amount": 10 },
+      { "rating": 3, "amount": 2 },
+      { "rating": 2, "amount": 1 },
+      { "rating": 1, "amount": 1 }
+    ],
+    "price": 300000,
+    "discount": 40,
+    "store": {
+      "id": 1,
+      "location": "Jakarta Utara",
+      "rating": 94,
+      "response_chat": 97,
+      "on_time": 100
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/7/12/27da6e41-2ce5-4be3-a851-132a571b0f0f.jpg",
+      "additional1": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/5/10/ffedca5d-4886-49a5-bf24-257efc2e5f8b.jpg",
+      "additional2": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/5/9/c3d9b057-f070-4472-9b9d-93967dbe331a.jpg",
+      "additional3": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/5/10/90f8bd69-6ee3-4876-8dc7-506c520ec518.jpg"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/7/12/0c1c821a-c62e-47b9-bdab-838c0e245604.jpg",
+        "title": "white",
+        "stock": 10
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/7/12/feba9eea-3a9a-4ec2-9402-439e8307b4e4.jpg",
+        "title": "black",
+        "stock": 10
+      }
+    ],
+    "stock": 20,
+    "description": [
+      "name: Nakamichi TW 110NC",
+      "Bluetooth: Versi 5.1",
+      "BlUetooth Connection Distance: Sekitar 10m",
+      "Battery: 30mAh",
+      "Waktu bicara nirkabel earphone dan waktu mendengarkan: sekitar 3-4 jam",
+      "Waktu Standby Headshet Bluetooth: Lebih dari 60 jam",
+      "Waktu pengisian: 1 jam",
+      "Produk meliputi:",
+      "1 * sepasang earphone bluetooth",
+      "1 * kotak pengisian",
+      "1 * Kabel pengisian daya",
+      "1 * Panduan Pengguna"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "KitchenAid Artisan Stand Mixer",
+    "category": "Home & Kitchen",
+    "sold": 25,
+    "overall_rating": 4.7,
+    "review": 22,
+    "ratings": [
+      { "rating": 5, "amount": 18 },
+      { "rating": 4, "amount": 4 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 4500000,
+    "discount": 10,
+    "store": {
+      "id": 12,
+      "location": "Jakarta Timur",
+      "rating": 94,
+      "response_chat": 97,
+      "on_time": 96
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/3/6/afbdcac4-a6c3-4ed3-a6a7-cfa61405b8a5.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/3/6/46573155-3d4a-4872-ad59-2714c532728f.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/900/VqbcmM/2020/5/2/8a182b77-9d31-4553-8249-15112a5f0590.jpg.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/3/6/c90958de-139e-4ca3-9076-9b40e492e772.jpg.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/3/6/46573155-3d4a-4872-ad59-2714c532728f.jpg.webp?ect=4g",
+        "title": "Empire Red",
+        "stock": 15
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2020/5/2/8a182b77-9d31-4553-8249-15112a5f0590.jpg.webp?ect=4g",
+        "title": "Onyx Black",
+        "stock": 10
+      }
+    ],
+    "stock": 25,
+    "description": [
+      "Brand: KitchenAid",
+      "Model: Artisan Stand Mixer",
+      "Capacity: 5 quarts",
+      "Speeds: 10 speeds",
+      "Power: 325 watts",
+      "Bowl Type: Stainless steel",
+      "Attachments: Flat beater, dough hook, wire whip",
+      "Features: Tilt-head design, planetary mixing action"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Fitbit Versa 3 Smartwatch",
+    "category": "Fitness",
+    "sold": 35,
+    "overall_rating": 4.6,
+    "review": 30,
+    "ratings": [
+      { "rating": 5, "amount": 22 },
+      { "rating": 4, "amount": 8 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 2500000,
+    "discount": 1,
+    "store": {
+      "id": 13,
+      "location": "Surabaya",
+      "rating": 92,
+      "response_chat": 96,
+      "on_time": 97
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/1/28/c60d362f-6621-4598-b1fa-2a2af8b8ef51.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/1/28/7dfd857b-7c49-4271-9f66-96b59048978c.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/1/28/864a3792-c417-4894-9a2c-ed59a4870424.jpg.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/1/28/b3c12849-961b-484b-809a-1fcf29bf519e.jpg.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/2/6/6255ec78-3a63-4f0c-b8be-f1adf365d3db.png.webp?ect=4g",
+        "title": "Midnight Blue",
+        "stock": 18
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/2/6/9e65d904-2dbf-4ffc-ab98-da796294b24a.png.webp?ect=4g",
+        "title": "Rose Gold",
+        "stock": 17
+      }
+    ],
+    "stock": 35,
+    "description": [
+      "Brand: Fitbit",
+      "Model: Versa 3",
+      "Display: AMOLED",
+      "Battery Life: Up to 6 days",
+      "Heart Rate Monitoring: Yes",
+      "GPS: Built-in",
+      "Water Resistance: Up to 50 meters",
+      "Features: Built-in voice assistant, sleep tracking"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Dyson V11 Absolute Cordless Vacuum",
+    "category": "Home & Kitchen",
+    "sold": 15,
+    "overall_rating": 4.9,
+    "review": 12,
+    "ratings": [
+      { "rating": 5, "amount": 10 },
+      { "rating": 4, "amount": 2 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 6500000,
+    "discount": 10,
+    "store": {
+      "id": 14,
+      "location": "Bandung",
+      "rating": 95,
+      "response_chat": 98,
+      "on_time": 97
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/6/13/72c9e01f-f75b-4029-9126-fa0dcf118f6f.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/4/26/7442703d-cd3a-4339-a93c-1e0a948eb452.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/4/26/86373fec-bfec-4cdb-acd0-551857d942a8.png.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/4/26/afb39d5d-effd-4452-9355-6d8a68358750.jpg.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/6/13/72c9e01f-f75b-4029-9126-fa0dcf118f6f.jpg.webp?ect=4g",
+        "title": "Blue",
+        "stock": 8
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/7/12/743a7991-78fa-49da-ac8a-334dccc83d80.jpg.webp?ect=4g",
+        "title": "Gold",
+        "stock": 7
+      }
+    ],
+    "stock": 15,
+    "description": [
+      "Brand: Dyson",
+      "Model: V11 Absolute",
+      "Type: Cordless Vacuum",
+      "Suction Power: 185 AW",
+      "Bin Capacity: 0.76 liters",
+      "Run Time: Up to 60 minutes",
+      "Filtration: Whole-machine filtration",
+      "Features: LCD screen, Dynamic Load Sensor"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Garmin Forerunner 945 GPS Smartwatch",
+    "category": "Fitness",
+    "sold": 20,
+    "overall_rating": 4.8,
+    "review": 18,
+    "ratings": [
+      { "rating": 5, "amount": 15 },
+      { "rating": 4, "amount": 3 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 6000000,
+    "discount": 12,
+    "store": {
+      "id": 15,
+      "location": "Jakarta Utara",
+      "rating": 93,
+      "response_chat": 97,
+      "on_time": 98
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/900/VqbcmM/2020/10/17/d495ee20-a9fa-4d0e-9397-8e257801a6f9.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/900/VqbcmM/2020/10/18/e6b9ade5-b483-467a-b355-f6997cafad9b.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/900/VqbcmM/2020/10/18/9947fc01-bef9-4ac7-a51a-c0517dcc1668.jpg.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/900/VqbcmM/2020/10/18/d40eff73-7fe8-4896-aa13-9fcb683a1577.jpg.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/7/22/5d340811-1ac1-4d89-b4a2-42320c65a37b.jpg.webp?ect=4g",
+        "title": "Black",
+        "stock": 12
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/3/24/a2a639fe-df54-4af3-ab3d-bbcbc638a453.jpg.webp?ect=4g",
+        "title": "White",
+        "stock": 8
+      }
+    ],
+    "stock": 20,
+    "description": [
+      "Brand: Garmin",
+      "Model: Forerunner 945",
+      "Display: 1.2 inches, sunlight-visible",
+      "Battery Life: Up to 2 weeks",
+      "GPS: Yes, with GLONASS and Galileo",
+      "Heart Rate Monitoring: Yes",
+      "Water Resistance: Up to 50 meters",
+      "Features: Music, Maps, Advanced Training Metrics"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Samsung Galaxy Tab S7+",
+    "category": "Electronics",
+    "sold": 25,
+    "overall_rating": 4.7,
+    "review": 20,
+    "ratings": [
+      { "rating": 5, "amount": 15 },
+      { "rating": 4, "amount": 5 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 11000000,
+    "discount": 8,
+    "store": {
+      "id": 16,
+      "location": "Surabaya",
+      "rating": 92,
+      "response_chat": 96,
+      "on_time": 97
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/6/9/2065b85c-6300-43c7-ad36-4bef73f5289a.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/10/22/694ab9ea-2023-418f-951a-de7f2318edb5.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/10/22/1319a217-ebde-40d1-bf96-caf497853d84.jpg.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/10/22/1319a217-ebde-40d1-bf96-caf497853d84.jpg.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/5/16/809553e2-a442-47ec-9cc6-dfd5f9c66507.jpg.webp?ect=4g",
+        "title": "128GB, Mystic Black",
+        "stock": 15
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/8/6/b82b327d-08ca-49a8-97dc-feea76e94e5d.jpg.webp?ect=4g",
+        "title": "256GB, Mystic Bronze",
+        "stock": 10
+      }
+    ],
+    "stock": 25,
+    "description": [
+      "Brand: Samsung",
+      "Model: Galaxy Tab S7+",
+      "Display: 12.4 inches, Super AMOLED",
+      "Resolution: 2800 x 1752 pixels",
+      "Processor: Snapdragon 865+",
+      "Storage: 128GB/256GB, expandable up to 1TB",
+      "S Pen Included: Yes",
+      "Features: DeX mode, Book Cover Keyboard support"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Apple Watch Series 7",
+    "category": "Electronics",
+    "sold": 22,
+    "overall_rating": 4.8,
+    "review": 20,
+    "ratings": [
+      { "rating": 5, "amount": 18 },
+      { "rating": 4, "amount": 2 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 4999000,
+    "discount": 10,
+    "store": {
+      "id": 17,
+      "location": "Jakarta Selatan",
+      "rating": 95,
+      "response_chat": 98,
+      "on_time": 97
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/9/13/f45917a6-2614-478e-a690-4a69669fbf45.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/6/16/869e009b-843d-4317-ae67-6b561901e71c.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/6/16/f30a682b-45c3-4757-8b26-b0c2d78181ac.jpg.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/6/16/cd1669c9-9610-4da4-b08c-b9daaf7215d4.jpg.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/4/17/aca93e5e-2244-4085-8e46-5f857244f242.jpg.webp?ect=4g",
+        "title": "Black",
+        "stock": 12
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/3/21/a2aba5d6-eae3-424e-bd08-1275f4d8a4a9.jpg.webp?ect=4g",
+        "title": "White",
+        "stock": 10
+      }
+    ],
+    "stock": 22,
+    "description": [
+      "Brand: Apple",
+      "Model: Watch Series 7",
+      "Display: Always-On Retina",
+      "Case Material: Aluminum or Stainless Steel",
+      "Water Resistance: Up to 50 meters",
+      "Health Features: Blood Oxygen app, ECG app",
+      "Fitness Tracking: Advanced, with Fitness+ support",
+      "Connectivity: Bluetooth, Wi-Fi, Cellular"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Instant Pot Duo Evo Plus Electric Pressure Cooker",
+    "category": "Home & Kitchen",
+    "sold": 12,
+    "overall_rating": 4.7,
+    "review": 10,
+    "ratings": [
+      { "rating": 5, "amount": 8 },
+      { "rating": 4, "amount": 2 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 1500000,
+    "discount": 15,
+    "store": {
+      "id": 18,
+      "location": "Jakarta Pusat",
+      "rating": 93,
+      "response_chat": 96,
+      "on_time": 98
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/12/23/5b1ac9c9-ff17-46ee-b813-8051f4217c3d.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/7/4/15711fc7-2489-4a8f-aadc-13ed6ad6b72d.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/7/4/4df7facc-331b-4194-9011-fe29637ed7dc.jpg.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/7/4/15711fc7-2489-4a8f-aadc-13ed6ad6b72d.jpg.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/2/7/2b4f26ac-9ce0-43e9-959f-96001eccade3.jpg.webp?ect=4g",
+        "title": "6 Quart",
+        "stock": 8
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/2/20/5667cf31-752a-4852-8e40-6002fce67130.png.webp?ect=4g",
+        "title": "8 Quart",
+        "stock": 4
+      }
+    ],
+    "stock": 12,
+    "description": [
+      "Brand: Instant Pot",
+      "Model: Duo Evo Plus",
+      "Capacity: 6 or 8 quarts",
+      "Cooking Programs: 48 preset programs",
+      "Pressure Levels: 10 levels",
+      "Safety Features: 10+ safety features",
+      "Material: Stainless steel inner pot",
+      "Features: Easy-seal lid, Cook & Bake Smart Programs"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Nike Air Max 270",
+    "category": "Fashion",
+    "sold": 8,
+    "overall_rating": 4.5,
+    "review": 6,
+    "ratings": [
+      { "rating": 5, "amount": 4 },
+      { "rating": 4, "amount": 2 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 1200000,
+    "discount": 15,
+    "store": {
+      "id": 19,
+      "location": "Jakarta Pusat",
+      "rating": 90,
+      "response_chat": 95,
+      "on_time": 96
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/4/14/57d5625a-80cd-4134-8b02-150515fdb564.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/8/3/fb19182b-549a-4a63-9305-422bd8dabf99.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/4/14/805fc05d-a02a-4533-aaee-0900d65f4734.jpg.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/4/14/e20e431e-130d-4151-ab5f-324579ccab8a.jpg.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/4/14/805fc05d-a02a-4533-aaee-0900d65f4734.jpg.webp?ect=4g",
+        "title": "Black/White",
+        "stock": 5
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/product-1/2019/1/8/47228850/47228850_6baa8cb9-1aa7-43bf-bb72-b69fc3def304_920_1150.jpg.webp?ect=4g",
+        "title": "Blue/Orange",
+        "stock": 3
+      }
+    ],
+    "stock": 8,
+    "description": [
+      "Brand: Nike",
+      "Model: Air Max 270",
+      "Type: Running Shoes",
+      "Upper Material: Knit",
+      "Sole Material: Rubber",
+      "Cushioning: Air Max unit",
+      "Features: Lightweight, breathable, stylish design",
+      "Suitable for: Running, casual wear"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Bose QuietComfort Earbuds",
+    "category": "Electronics",
+    "sold": 15,
+    "overall_rating": 4.8,
+    "review": 12,
+    "ratings": [
+      { "rating": 5, "amount": 10 },
+      { "rating": 4, "amount": 2 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 2799000,
+    "discount": 12,
+    "store": {
+      "id": 20,
+      "location": "Jakarta Barat",
+      "rating": 94,
+      "response_chat": 97,
+      "on_time": 98
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/10/31/d03acad3-3912-4231-b8ae-9cdbae423db2.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/10/30/7ab00713-5a07-4acf-884c-76e3a80ad8e1.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/10/30/611bde12-7c70-400a-9adc-a8978ef3f6c0.jpg.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/10/31/10e65d27-df2e-4997-bec7-c1c14e72dafd.jpg.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/10/30/611bde12-7c70-400a-9adc-a8978ef3f6c0.jpg.webp?ect=4g",
+        "title": "Black",
+        "stock": 8
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/10/30/7ab00713-5a07-4acf-884c-76e3a80ad8e1.jpg.webp?ect=4g",
+        "title": "White smoke",
+        "stock": 7
+      }
+    ],
+    "stock": 15,
+    "description": [
+      "Brand: Bose",
+      "Model: QuietComfort Earbuds",
+      "Type: True Wireless",
+      "Noise-Canceling: Yes",
+      "Battery Life: Up to 6 hours (earbuds), additional 12 hours (case)",
+      "Water Resistance: IPX4",
+      "Touch Controls: Yes",
+      "Connectivity: Bluetooth 5.1"
+    ]
+  }
+]
