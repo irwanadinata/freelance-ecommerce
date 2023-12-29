@@ -8,18 +8,22 @@ import Menu from "@/components/menu";
 import Navbar from "@/components/navbar";
 import Closing from "./components/closing";
 import ProductList from "./components/product";
+import Data from "@/utils/data/product.json";
+import Banner from "@/components/banner";
 import DataProducts from "@/utils/data/product.json";
 import FlashSale from "./components/flashsale";
-import DataFlashSale from "@/utils/data/flash-sale.json"
+import DataFlashSale from "@/utils/data/flash-sale.json";
 
 const Dashboard = () => {
   return (
     <div className="bg-[#FFFAF5]">
+      <Banner />
       <Navbar />
       <MainImage />
       <Menu />
       <Category />
-      <FlashSale products={DataFlashSale}/>
+      <ProductList products={Data} />
+      <FlashSale products={DataFlashSale} />
       <ProductList products={DataProducts} />
       <Footer1 />
       <Footer2 />

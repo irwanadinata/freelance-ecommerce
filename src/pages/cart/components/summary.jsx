@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import convertToRupiah from "@/utils/formatter/rupiahConverter";
 
-const Summary = () => {
+const Summary = ({ amount, totalPrice }) => {
   return (
     <div className="w-4/12 flex flex-col gap-y-3">
       {/* user address */}
@@ -17,8 +17,8 @@ const Summary = () => {
         <div className="flex flex-col">
           <p className="font-medium">Ringkasan Pesanan</p>
           <div className="flex justify-between">
-            <p>subtotal (1 barang)</p>
-            <p>{convertToRupiah(57000)}</p>
+            <p>subtotal ({amount} barang)</p>
+            <p>{convertToRupiah(totalPrice)}</p>
           </div>
         </div>
 
@@ -34,7 +34,7 @@ const Summary = () => {
         {/* total */}
         <div className="flex justify-between">
           <p>Total</p>
-          <p>{convertToRupiah(57000)}</p>
+          <p>{convertToRupiah(totalPrice)}</p>
         </div>
 
         <Button className="bg-[#F8009C] hover:bg-[#F8009C]/80">Buat Pesanan</Button>
