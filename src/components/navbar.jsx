@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { SearchInput } from "./search-input";
+import useCart from "@/utils/store/cartStore";
 import { Notification } from "./notification";
 import CartIcon from "@/assets/icons/cart-icon";
 import LazadaIcon from "@/assets/icons/lazada-icon";
@@ -9,6 +10,7 @@ import ProfileIcon from "@/assets/icons/profile-icon";
 import MessageOutlineIcon from "@/assets/icons/message-outline-icon";
 
 const Navbar = () => {
+  const { cart } = useCart();
   const [isFixed, setIsFixed] = useState(false);
 
   useEffect(() => {
@@ -38,7 +40,14 @@ const Navbar = () => {
         <SearchInput />
         <div className="flex gap-3">
           <NavLink className="cursor-pointer" to="/cart">
-            <CartIcon />
+            <div className="relative">
+              <CartIcon />
+              {cart.length > 0 && (
+                <div className="absolute top-0 -right-1 w-4 h-4 rounded-full bg-red-500 text-xs flex items-center justify-center text-white font-medium">
+                  {cart.length}
+                </div>
+              )}
+            </div>
           </NavLink>
           <Notification />
           <MessageOutlineIcon />

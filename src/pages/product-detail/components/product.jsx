@@ -1,16 +1,36 @@
 import { useState } from "react";
+import useCart from "@/utils/store/cartStore";
 import { Button } from "@/components/ui/button";
 import { Heart, Minus, Plus, Share2, Star } from "lucide-react";
 import convertToRupiah from "@/utils/formatter/rupiahConverter";
 
 const Product = ({ product }) => {
-  const { images, name, sold, overall_rating, review, price, discount, option, stock } = product;
-
+  const { images, name, sold, overall_rating, review, price, discount, option, stock, id } =
+    product;
+  const { increaseCart } = useCart();
   const [stocks, setStocks] = useState(stock);
   const [quantity, setQuantity] = useState(0);
   const [isBookmarked, setIsBookmarked] = useState(false);
   const [selectedOption, setSelectedOption] = useState(option[0]);
   const [displayedProduct, setDisplayedProduct] = useState(images.display);
+
+  const addToCart = (id, option, amount) => {
+    if (amount <= 0) {
+      alert("Masukkan jumlah pembelian");
+    } else {
+      const product = { id, option, amount };
+      const currentCart = JSON.parse(localStorage.getItem("cart")) || [];
+      const isProductExist = currentCart.find((item) => item.id === id && item.option === option);
+
+      if (isProductExist) {
+        alert("Produk sudah ada di keranjang");
+      } else {
+        increaseCart(product);
+        currentCart.push(product);
+        localStorage.setItem("cart", JSON.stringify(currentCart));
+      }
+    }
+  };
 
   return (
     <div className="w-8/12">
@@ -145,7 +165,12 @@ const Product = ({ product }) => {
         </div>
 
         <div className="flex gap-10 mx-auto mt-10">
-          <Button className="w-56 bg-[#F8009C] hover:bg-[#F8009C]/80">Masukkan Keranjang</Button>
+          <Button
+            onClick={() => addToCart(id, selectedOption.title, quantity)}
+            className="w-56 bg-[#F8009C] hover:bg-[#F8009C]/80"
+          >
+            Masukkan Keranjang
+          </Button>
           <Button
             variant="outline"
             className="w-56 border-[#F8009C] border-2 text-[#F8009C] hover:bg-[#F8009C] hover:text-white"
