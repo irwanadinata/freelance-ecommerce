@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MapPin, MessageSquare, QrCode, Speech, StoreIcon, Undo2 } from "lucide-react";
+import QR from "@/assets/QR.png"
 
 const Store = ({ product }) => {
   const { store } = product;
@@ -58,7 +59,7 @@ const Store = ({ product }) => {
       </div>
 
       <div className="flex gap-2 items-center">
-        <QrCode className="w-28 h-28" />
+        <img src={QR} alt="QR-image" className="w-20 h-20" />
         <p>Scan pakai HP kamu</p>
       </div>
     </div>
