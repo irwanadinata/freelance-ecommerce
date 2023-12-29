@@ -3,7 +3,7 @@ import ProductCard from "@/components/product-card";
 
 const ProductList = ({ products }) => {
   return (
-    <div className="bg-[#FFFAF5] lg:py-4">
+    <div className="bg-[#FFFAF5] lg:py-4 mb-6">
       <p className="lg:w-10/12 mx-auto md:w-full font-semibold pb-2">
         Hanya Untukmu
       </p>

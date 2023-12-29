@@ -10,6 +10,9 @@ import Closing from "./components/closing";
 import ProductList from "./components/product";
 import Data from "@/utils/data/product.json";
 import Banner from "@/components/banner";
+import DataProducts from "@/utils/data/product.json";
+import FlashSale from "./components/flashsale";
+import DataFlashSale from "@/utils/data/flash-sale.json";
 
 const Dashboard = () => {
   return (
@@ -20,6 +23,8 @@ const Dashboard = () => {
       <Menu />
       <Category />
       <ProductList products={Data} />
+      <FlashSale products={DataFlashSale} />
+      <ProductList products={DataProducts} />
       <Footer1 />
       <Footer2 />
       <Footer3 />

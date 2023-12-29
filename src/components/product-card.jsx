@@ -18,9 +18,9 @@ const ProductCard = ({ product }) => {
         />
         <div className="card-body text-start p-2">
           <p className="text-sm  mb-1">{truncatedName}</p>
-          <p className="text-sm text-[#FB8500]">{convertToRupiah(product.price)}</p>
+          <p className="text-sm text-[#FB8500]">{convertToRupiah(product.price - (product.discount / 100 * product.price))}</p>
           <div className="flex mb-2">
-            <p className="text-xs line-through mr-2">{convertToRupiah(product.price - (product.discount / 100 * product.price))}</p>
+            <p className="text-xs line-through mr-2">{convertToRupiah(product.price)}</p>
             <p className="text-xs text-[#CC0000]">{product.discount}%</p>
           </div>
           <Rating
