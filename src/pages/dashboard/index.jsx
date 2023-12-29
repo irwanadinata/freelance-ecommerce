@@ -8,7 +8,6 @@ import Menu from "@/components/menu";
 import Navbar from "@/components/navbar";
 import Closing from "./components/closing";
 import ProductList from "./components/product";
-import Data from "@/utils/data/product.json";
 import Banner from "@/components/banner";
 import DataProducts from "@/utils/data/product.json";
 import FlashSale from "./components/flashsale";
@@ -22,7 +21,6 @@ const Dashboard = () => {
       <MainImage />
       <Menu />
       <Category />
-      <ProductList products={Data} />
       <FlashSale products={DataFlashSale} />
       <ProductList products={DataProducts} />
       <Footer1 />
