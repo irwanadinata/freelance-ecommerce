@@ -30,11 +30,10 @@ const ProductDetail = () => {
       {!loading ? (
         <Detail product={product} />
       ) : (
-        <div className="flex items-center justify-center">
-          <Loader2 className="animate-spin w-10 h-10" />
+        <div className="flex items-center h-96 justify-center">
+          <Loader2 className="animate-spin w-10 h-10 text-gray-500" />
         </div>
       )}
-
       <Footer1 />
       <Footer2 />
     </div>
