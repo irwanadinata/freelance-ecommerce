@@ -5,7 +5,7 @@ import { Heart, Minus, Plus, Share2, Star } from "lucide-react";
 import convertToRupiah from "@/utils/formatter/rupiahConverter";
 
 const Product = ({ product }) => {
-  const { images, name, sold, overall_rating, review, price, discount, option, stock, id } =
+  const { images, name, sold, overall_rating, review, price, discount, option, stock, id, store } =
     product;
   const { increaseCart } = useCart();
   const [stocks, setStocks] = useState(stock);
@@ -14,11 +14,12 @@ const Product = ({ product }) => {
   const [selectedOption, setSelectedOption] = useState(option[0]);
   const [displayedProduct, setDisplayedProduct] = useState(images.display);
 
-  const addToCart = (id, option, amount) => {
+  const addToCart = (id, option, amount, store) => {
+    const { id: storeId } = store;
     if (amount <= 0) {
       alert("Masukkan jumlah pembelian");
     } else {
-      const product = { id, option, amount };
+      const product = { id, option, amount, storeId };
       const currentCart = JSON.parse(localStorage.getItem("cart")) || [];
       const isProductExist = currentCart.find((item) => item.id === id && item.option === option);
 
@@ -166,7 +167,7 @@ const Product = ({ product }) => {
 
         <div className="flex gap-10 mx-auto mt-10">
           <Button
-            onClick={() => addToCart(id, selectedOption.title, quantity)}
+            onClick={() => addToCart(id, selectedOption.title, quantity, store)}
             className="w-56 bg-[#F8009C] hover:bg-[#F8009C]/80"
           >
             Masukkan Keranjang
