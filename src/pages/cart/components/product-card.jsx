@@ -46,13 +46,13 @@ const ProductCard = ({ id, amount, selectedOption }) => {
     localStorage.setItem("cart", JSON.stringify(updatedCart));
   };
 
-  const deleteProduct = (id) => {
+  const deleteProduct = (id, option) => {
     const confirmDelete = confirm("Apakah anda yakin ingin menghapus produk");
 
     if (!confirmDelete) {
       alert("Batal menghapus produk");
     } else {
-      const product = cart.filter((product) => product.id !== id);
+      const product = cart.filter((product) => product.option !== option || product.id !== id);
       setCart(product);
       localStorage.setItem("cart", JSON.stringify(product));
       alert("Berhasil menghapus produk");
@@ -103,7 +103,7 @@ const ProductCard = ({ id, amount, selectedOption }) => {
                   size="icon"
                   variant="ghost"
                   className="hover:bg-transparent"
-                  onClick={() => deleteProduct(product.id)}
+                  onClick={() => deleteProduct(product.id, selectedOption)}
                 >
                   <Trash />
                 </Button>
