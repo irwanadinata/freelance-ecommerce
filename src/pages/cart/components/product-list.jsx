@@ -1,7 +1,7 @@
 import ProductCard from "./product-card";
 import { Checkbox } from "@/components/ui/checkbox";
 
-const ProductList = ({ cart, setCart, setLoading }) => {
+const ProductList = ({ cart, setLoading }) => {
   return (
     <div className="w-8/12 flex flex-col gap-y-4 mb-10">
       <div className="flex justify-between p-5 bg-white shadow-md">
@@ -18,7 +18,6 @@ const ProductList = ({ cart, setCart, setLoading }) => {
         <ProductCard
           key={index}
           id={product.id}
-          setCart={setCart}
           setLoading={setLoading}
           amount={product.amount}
           selectedOption={product.option}
