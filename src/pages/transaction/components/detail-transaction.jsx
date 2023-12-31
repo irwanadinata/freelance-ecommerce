@@ -16,7 +16,7 @@ const DetailTransaction = () => {
         <p>Jl. Raden Patah No. 101, Purwokerto, Banyumas, Jawa Tengah</p>
       </div>
 
-      <Shipping />
+      <Shipping store="Toko Bahagia" />
     </div>
   );
 };

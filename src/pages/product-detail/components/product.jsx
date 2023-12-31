@@ -5,30 +5,27 @@ import { Heart, Minus, Plus, Share2, Star } from "lucide-react";
 import convertToRupiah from "@/utils/formatter/rupiahConverter";
 
 const Product = ({ product }) => {
-  const { images, name, sold, overall_rating, review, price, discount, option, stock, id } =
+  const { images, name, sold, overall_rating, review, price, discount, option, stock, id, store } =
     product;
-  const { increaseCart } = useCart();
+  const { cart, increaseCart } = useCart();
   const [stocks, setStocks] = useState(stock);
-  const [quantity, setQuantity] = useState(0);
+  const [quantity, setQuantity] = useState(1);
   const [isBookmarked, setIsBookmarked] = useState(false);
   const [selectedOption, setSelectedOption] = useState(option[0]);
   const [displayedProduct, setDisplayedProduct] = useState(images.display);
 
-  const addToCart = (id, option, amount) => {
-    if (amount <= 0) {
-      alert("Masukkan jumlah pembelian");
-    } else {
-      const product = { id, option, amount };
-      const currentCart = JSON.parse(localStorage.getItem("cart")) || [];
-      const isProductExist = currentCart.find((item) => item.id === id && item.option === option);
+  const addToCart = (id, option, amount, store) => {
+    const { id: storeId } = store;
+    const product = { id, option, amount, storeId };
+    const isProductExist = cart.find((item) => item.id === id && item.option === option);
 
-      if (isProductExist) {
-        alert("Produk sudah ada di keranjang");
-      } else {
-        increaseCart(product);
-        currentCart.push(product);
-        localStorage.setItem("cart", JSON.stringify(currentCart));
-      }
+    if (isProductExist) {
+      alert("Produk sudah ada di keranjang");
+    } else {
+      alert("Berhasil memasukkan produk ke keranjang");
+      increaseCart(product);
+      cart.push(product);
+      localStorage.setItem("cart", JSON.stringify(cart));
     }
   };
 
@@ -112,7 +109,7 @@ const Product = ({ product }) => {
                   selectedOption === option[0] && "border-[#FB8500] border-[1px]"
                 }`}
                 onClick={() => {
-                  setQuantity(0);
+                  setQuantity(1);
                   setStocks(option[0].stock);
                   setSelectedOption(option[0]);
                 }}
@@ -123,7 +120,7 @@ const Product = ({ product }) => {
                   selectedOption === option[1] && "border-[#FB8500] border-[1px]"
                 }`}
                 onClick={() => {
-                  setQuantity(0);
+                  setQuantity(1);
                   setStocks(option[1].stock);
                   setSelectedOption(option[1]);
                 }}
@@ -166,7 +163,7 @@ const Product = ({ product }) => {
 
         <div className="flex gap-10 mx-auto mt-10">
           <Button
-            onClick={() => addToCart(id, selectedOption.title, quantity)}
+            onClick={() => addToCart(id, selectedOption.title, quantity, store)}
             className="w-56 bg-[#F8009C] hover:bg-[#F8009C]/80"
           >
             Masukkan Keranjang

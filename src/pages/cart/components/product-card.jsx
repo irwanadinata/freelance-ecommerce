@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
+import useCart from "@/utils/store/cartStore";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { getProductById } from "@/utils/data/dataHandler";
 import { Heart, Minus, Plus, Store, Trash } from "lucide-react";
 import convertToRupiah from "@/utils/formatter/rupiahConverter";
 
-const ProductCard = ({ id, amount, selectedOption, setCart }) => {
+const ProductCard = ({ id, amount, selectedOption }) => {
+  const { cart, setCart } = useCart();
   const [product, setProduct] = useState();
   const [quantity, setQuantity] = useState(amount);
   const [isBookmarked, setIsBookmarked] = useState(false);
@@ -42,6 +44,19 @@ const ProductCard = ({ id, amount, selectedOption, setCart }) => {
     });
     setCart(updatedCart);
     localStorage.setItem("cart", JSON.stringify(updatedCart));
+  };
+
+  const deleteProduct = (id, option) => {
+    const confirmDelete = confirm("Apakah anda yakin ingin menghapus produk");
+
+    if (!confirmDelete) {
+      alert("Batal menghapus produk");
+    } else {
+      const product = cart.filter((product) => product.option !== option || product.id !== id);
+      setCart(product);
+      localStorage.setItem("cart", JSON.stringify(product));
+      alert("Berhasil menghapus produk");
+    }
   };
 
   return (
@@ -84,7 +99,12 @@ const ProductCard = ({ id, amount, selectedOption, setCart }) => {
                     <Heart />
                   )}
                 </Button>
-                <Button size="icon" variant="ghost" className="hover:bg-transparent">
+                <Button
+                  size="icon"
+                  variant="ghost"
+                  className="hover:bg-transparent"
+                  onClick={() => deleteProduct(product.id, selectedOption)}
+                >
                   <Trash />
                 </Button>
               </div>
