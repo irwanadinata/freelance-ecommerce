@@ -22,6 +22,7 @@ const Product = ({ product }) => {
     if (isProductExist) {
       alert("Produk sudah ada di keranjang");
     } else {
+      alert("Berhasil memasukkan produk ke keranjang");
       increaseCart(product);
       cart.push(product);
       localStorage.setItem("cart", JSON.stringify(cart));
