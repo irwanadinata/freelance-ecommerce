@@ -4,14 +4,14 @@ import Navbar from "@/components/navbar";
 import Footer1 from "@/components/footer-1";
 import Footer2 from "@/components/footer-2";
 import { useEffect, useState } from "react";
-import Detail from "./components/product-detail";
-import { getProductById } from "@/utils/data/dataHandler";
-import { ScrollRestoration, useParams } from "react-router-dom";
 import Footer4 from "@/components/footer-4";
-import MaybeYouLike from "./components/maybe-you-like";
-import maybeYouLikeData from "@/utils/data/maybe-you-like.json";
 import SameShop from "./components/same-shop";
-import sameShopData from "@/utils/data/same-shop.json"
+import Detail from "./components/product-detail";
+import MaybeYouLike from "./components/maybe-you-like";
+import sameShopData from "@/utils/data/same-shop.json";
+import { getProductById } from "@/utils/data/dataHandler";
+import maybeYouLikeData from "@/utils/data/maybe-you-like.json";
+import { ScrollRestoration, useParams } from "react-router-dom";
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -39,11 +39,11 @@ const ProductDetail = () => {
           <Loader2 className="animate-spin w-10 h-10 text-gray-500" />
         </div>
       )}
-      <SameShop products={sameShopData}/>
-      <MaybeYouLike products={maybeYouLikeData}/>
+      <SameShop products={sameShopData} />
+      <MaybeYouLike products={maybeYouLikeData} />
       <Footer1 />
       <Footer2 />
-      <Footer4/>
+      <Footer4 />
     </div>
   );
 };
