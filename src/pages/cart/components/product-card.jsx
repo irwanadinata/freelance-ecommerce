@@ -3,7 +3,7 @@ import useCart from "@/utils/store/cartStore";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { getProductById } from "@/utils/data/dataHandler";
-import { Heart, Minus, Plus, Store, Trash } from "lucide-react";
+import { Heart, Minus, Plus, Store, Trash, Trash2 } from "lucide-react";
 import convertToRupiah from "@/utils/formatter/rupiahConverter";
 
 const ProductCard = ({ id, amount, selectedOption }) => {
@@ -105,7 +105,7 @@ const ProductCard = ({ id, amount, selectedOption }) => {
                   className="hover:bg-transparent"
                   onClick={() => deleteProduct(product.id, selectedOption)}
                 >
-                  <Trash />
+                  <Trash2 />
                 </Button>
               </div>
             </div>
