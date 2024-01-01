@@ -17,7 +17,7 @@ const Footer4 = () => {
     <>
       <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-48 py-10 bg-[#ffffff]">
         <div className="flex flex-col items-center">
-          <p>Lazada Asia Tenggara</p>
+          <p className="text-xs font-semibold">Lazada Asia Tenggara</p>
           <div className="flex mt-4">
             <img src={IndonesiaFlag} alt="indonesia-flag-image" className="mr-1" />
             <img src={MalaysiaFlag} alt="malaysia-flag-image" className="mr-1" />
@@ -29,7 +29,7 @@ const Footer4 = () => {
         </div>
 
         <div className="flex flex-col items-center">
-          <p>Ikuti Kami</p>
+          <p className="text-xs font-semibold">Ikuti Kami</p>
           <div className="flex mt-4">
             <img src={Facebook} alt="facebook-logo" className="mr-1" />
             <img src={Linkedin} alt="linkedin-logo" className="mr-1" />

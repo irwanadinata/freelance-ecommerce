@@ -9,7 +9,7 @@ const Summary = ({ amount, totalPrice }) => {
       {/* user address */}
       <div className="p-3 flex gap-3 rounded-md bg-white">
         <MapPin />
-        <p>Alamat Pembeli</p>
+        <p>Jl. Raden Patah No. 101, Purwokerto, Banyumas, Jawa Tengah</p>
       </div>
 
       {/* summary */}
@@ -37,7 +37,7 @@ const Summary = ({ amount, totalPrice }) => {
           <p>{convertToRupiah(totalPrice)}</p>
         </div>
 
-        <Button className="bg-[#F8009C] hover:bg-[#F8009C]/80">Buat Pesanan</Button>
+        <Button className="bg-[#F8009C] hover:bg-[#F8009C]/80">Pilih Metode Pembayaran</Button>
       </div>
     </div>
   );

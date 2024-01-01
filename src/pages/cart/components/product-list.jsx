@@ -1,3 +1,4 @@
+import {Trash2 } from "lucide-react";
 import ProductCard from "./product-card";
 import { Checkbox } from "@/components/ui/checkbox";
 
@@ -10,7 +11,7 @@ const ProductList = ({ cart, setLoading }) => {
           <p>Pilih semua (0 barang)</p>
         </div>
         <div className="flex rounded-md gap-3">
-          <Checkbox className="w-6 h-6 border-2 data-[state=checked]:bg-white" />
+          <Trash2/>
           <p>Hapus</p>
         </div>
       </div>
