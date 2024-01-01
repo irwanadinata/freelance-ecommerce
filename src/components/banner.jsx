@@ -2,7 +2,7 @@ import PhoneIcon from "@/assets/icons/phone-icon";
 
 const Banner = () => {
   return (
-    <div className="w-10/12 mx-auto bg-white shadow-md flex justify-between h-14 items-center p-3 border-b-2">
+    <div className="lg:w-10/12 md:w-full mx-auto bg-white shadow-md flex justify-between h-14 items-center p-3 border-b-2">
       <div className="flex gap-2 items-center">
         <PhoneIcon />
         <p>Download App</p>
