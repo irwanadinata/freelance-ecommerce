@@ -41,7 +41,7 @@ const Footer4 = () => {
           </div>
         </div>
         <div className="flex items-center justify-center">
-          <p>&copy; Lazada 2023</p>
+          <p className="font-semibold text-xs">&copy; Lazada 2023</p>
         </div>
       </div>
     </>
