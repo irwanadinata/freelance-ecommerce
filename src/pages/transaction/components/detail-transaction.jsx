@@ -1,6 +1,17 @@
 import Shipping from "./shipping";
 
-const DetailTransaction = () => {
+const DetailTransaction = ({ cart }) => {
+  const groupedCart = cart.reduce((acc, item) => {
+    const { storeId, ...rest } = item;
+
+    if (acc[storeId]) {
+      acc[storeId].push(rest);
+    } else {
+      acc[storeId] = [rest];
+    }
+    return acc;
+  }, {});
+
   return (
     <div className="w-8/12 flex flex-col gap-y-3">
       <div className="flex flex-col p-5 bg-white rounded-md shadow-md">
@@ -15,8 +26,9 @@ const DetailTransaction = () => {
         </div>
         <p>Jl. Raden Patah No. 101, Purwokerto, Banyumas, Jawa Tengah</p>
       </div>
-
-      <Shipping store="Toko Bahagia" />
+      {Object.keys(groupedCart).map((storeId) => (
+        <Shipping key={storeId} store={storeId} product={groupedCart[storeId]} />
+      ))}
     </div>
   );
 };

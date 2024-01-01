@@ -1,6 +1,6 @@
 import ProductCard from "./product-card";
-import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
+import { Checkbox } from "@/components/ui/checkbox";
 import convertToRupiah from "@/utils/formatter/rupiahConverter";
 
 const ShippingCard = ({ type, price, expectedArrival1, expectedArrival2, month }) => {
@@ -9,14 +9,14 @@ const ShippingCard = ({ type, price, expectedArrival1, expectedArrival2, month }
       <p>{convertToRupiah(price)}</p>
       <div className="flex justify-between">
         <p>{type}</p>
-        <Checkbox  className="w-6 h-6 border-2 data-[state=checked]:bg-white" />
+        <Checkbox className="w-6 h-6 border-2 data-[state=checked]:bg-white" />
       </div>
       {expectedArrival1} - {expectedArrival2} {month}
     </div>
   );
 };
 
-const Shipping = ({ store }) => {
+const Shipping = ({ store, product }) => {
   const getDate = (approx) => {
     const date = new Date();
     date.setDate(date.getDate() + approx);
@@ -77,9 +77,7 @@ const Shipping = ({ store }) => {
 
         {/* product */}
         <div className="flex flex-col gap-y-4">
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          <ProductCard id={product[0].id} option={product[0].option} quantity={product[0].amount} />
         </div>
       </div>
 
