@@ -72,7 +72,7 @@ const Navbar = () => {
       {/* Small screens */}
       <nav
         className={`lg:hidden bg-[#FFFFFF] p-3 ${
-          isFixed ? "fixed top-0 w-full" : ""
+          isFixed ? "fixed top-0 w-full z-50" : ""
         }`}
       >
         <div className="flex flex-row justify-center items-center gap-3 mx-auto">
