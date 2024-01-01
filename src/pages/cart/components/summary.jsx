@@ -37,7 +37,7 @@ const Summary = ({ amount, totalPrice }) => {
           <p>{convertToRupiah(totalPrice)}</p>
         </div>
 
-        <Button className="bg-[#F8009C] hover:bg-[#F8009C]/80">Pilih Metode Pembayaran</Button>
+        <Button className="bg-[#F8009C] hover:bg-[#F8009C]/80">Buat Pesanan</Button>
       </div>
     </div>
   );
