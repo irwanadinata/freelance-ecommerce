@@ -1,6 +1,8 @@
 import ProductCard from "./product-card";
+import { useEffect, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
+import { getStoreNameById } from "@/utils/data/dataHandler";
 import convertToRupiah from "@/utils/formatter/rupiahConverter";
 
 const ShippingCard = ({ type, price, expectedArrival1, expectedArrival2, month }) => {
@@ -17,6 +19,17 @@ const ShippingCard = ({ type, price, expectedArrival1, expectedArrival2, month }
 };
 
 const Shipping = ({ store, product }) => {
+  const [storeName, setStoreName] = useState();
+
+  useEffect(() => {
+    const getStoreName = async (id) => {
+      const name = await getStoreNameById(id);
+      setStoreName(name);
+    };
+
+    getStoreName(store);
+  }, [store]);
+
   const getDate = (approx) => {
     const date = new Date();
     date.setDate(date.getDate() + approx);
@@ -48,7 +61,7 @@ const Shipping = ({ store, product }) => {
     <>
       <div className="p-5 flex gap-y-5 flex-col shadow-md rounded-md bg-white">
         <div className="flex flex-col">
-          <p className="font-medium">Dikirim Oleh: {store}</p>
+          <p className="font-medium">Dikirim Oleh: {storeName}</p>
           <p className="font-medium">Pilihan Pengiriman</p>
           <div className="flex justify-between">
             <ShippingCard
