@@ -45,7 +45,7 @@ const Navbar = () => {
         }`}
       >
         <div className="flex h-20 items-center p-3 justify-around">
-          <LazadaIcon className="w-44" />
+          <a href="/dashboard"><LazadaIcon className="w-44" /></a>
           <SearchInput />
           <div className="flex gap-3">
             <NavLink className="cursor-pointer" to="/cart">
@@ -76,7 +76,7 @@ const Navbar = () => {
         }`}
       >
         <div className="flex flex-row justify-center items-center gap-3 mx-auto">
-          <img src={LazadaIconSmall} alt="lazada-icon" className="w-8 h-6" />
+          <a href="/dashboard"><img src={LazadaIconSmall} alt="lazada-icon" className="w-8 h-6" /></a>
           <SearchInput />
           <button onClick={toggleNav} className="text-black">
             <Menu />
