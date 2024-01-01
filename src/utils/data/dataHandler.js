@@ -26,7 +26,6 @@ export const getProductPriceById = async (id, amount) => {
 };
 
 export const getStoreNameById = async (id) => {
-  console.log(id);
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       const result = products.find((product) => product.store.id == id);

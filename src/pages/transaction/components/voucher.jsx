@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import PaymentMethodDialog from "./payment-method";
 import convertToRupiah from "@/utils/formatter/rupiahConverter";
 
-const Voucher = () => {
+const Voucher = ({ cart, prices, deliveryFee, voucher = 10000, tax = 2000 }) => {
   return (
     <div className="w-4/12 flex flex-col gap-y-3">
       {/* voucher apply */}
@@ -24,24 +24,24 @@ const Voucher = () => {
         <div>
           <p className="font-medium">Ringkasan Pesanan</p>
           <div className="flex justify-between">
-            <p>Subtotal (1 barang)</p>
-            <p>{convertToRupiah(57000)}</p>
+            <p>Subtotal ({cart.length} barang)</p>
+            <p>{convertToRupiah(prices)}</p>
           </div>
           <div className="flex justify-between">
             <p>Biaya Pengiriman</p>
-            <p>{convertToRupiah(16000)}</p>
+            <p>{convertToRupiah(deliveryFee)}</p>
           </div>
           <div className="flex justify-between">
             <p>Diskon Voucher</p>
-            <p>{convertToRupiah(10000)}</p>
+            <p>{convertToRupiah(voucher)}</p>
           </div>
           <div className="flex justify-between">
             <p>Biaya Layanan</p>
-            <p>{convertToRupiah(1000)}</p>
+            <p>{convertToRupiah(tax)}</p>
           </div>
           <div className="flex justify-between mt-2">
             <p>Total</p>
-            <p>{convertToRupiah(57000)}</p>
+            <p>{convertToRupiah(prices + deliveryFee - voucher + tax)}</p>
           </div>
         </div>
         <PaymentMethodDialog />

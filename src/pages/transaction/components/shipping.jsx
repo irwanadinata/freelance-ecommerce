@@ -5,13 +5,29 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { getStoreNameById } from "@/utils/data/dataHandler";
 import convertToRupiah from "@/utils/formatter/rupiahConverter";
 
-const ShippingCard = ({ type, price, expectedArrival1, expectedArrival2, month }) => {
+const ShippingCard = ({
+  value,
+  checked,
+  onCheckedChange,
+  onChange,
+  type,
+  price,
+  expectedArrival1,
+  expectedArrival2,
+  month,
+}) => {
   return (
     <div className="border-2 flex flex-col gap-y-1 py-2 px-6 w-52 border-black rounded-md">
       <p>{convertToRupiah(price)}</p>
       <div className="flex justify-between">
         <p>{type}</p>
-        <Checkbox className="w-6 h-6 border-2 data-[state=checked]:bg-white" />
+        <Checkbox
+          onChange={onChange}
+          value={value}
+          checked={checked}
+          onCheckedChange={onCheckedChange}
+          className="w-6 h-6 border-2 data-[state=checked]:bg-white"
+        />
       </div>
       {expectedArrival1} - {expectedArrival2} {month}
     </div>
@@ -20,6 +36,11 @@ const ShippingCard = ({ type, price, expectedArrival1, expectedArrival2, month }
 
 const Shipping = ({ store, product }) => {
   const [storeName, setStoreName] = useState();
+  const [{ standard, regular, express }, setChecked] = useState({
+    standard: false,
+    regular: false,
+    express: false,
+  });
 
   useEffect(() => {
     const getStoreName = async (id) => {
@@ -65,6 +86,9 @@ const Shipping = ({ store, product }) => {
           <p className="font-medium">Pilihan Pengiriman</p>
           <div className="flex justify-between">
             <ShippingCard
+              value={1}
+              checked={standard}
+              setChecked={() => !standard}
               type="Standar"
               price={16000}
               expectedArrival1={getDate(0)}
@@ -72,6 +96,9 @@ const Shipping = ({ store, product }) => {
               month={getMonth(5)}
             />
             <ShippingCard
+              value={2}
+              checked={regular}
+              setChecked={() => setChecked(!regular)}
               type="Regular"
               price={20000}
               expectedArrival1={getDate(0)}
@@ -79,6 +106,9 @@ const Shipping = ({ store, product }) => {
               month={getMonth(3)}
             />
             <ShippingCard
+              value={3}
+              checked={express}
+              setChecked={() => setChecked(!express)}
               type="Express"
               price={25000}
               expectedArrival1={getDate(0)}
