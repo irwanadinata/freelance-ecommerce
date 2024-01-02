@@ -6,7 +6,6 @@ import { getStoreNameById } from "@/utils/data/dataHandler";
 import convertToRupiah from "@/utils/formatter/rupiahConverter";
 
 const ShippingCard = ({
-  value,
   checked,
   onCheckedChange,
   type,
@@ -21,7 +20,6 @@ const ShippingCard = ({
       <div className="flex justify-between">
         <p>{type}</p>
         <Checkbox
-          value={value}
           checked={checked}
           onCheckedChange={onCheckedChange}
           className="w-6 h-6 border-2 data-[state=checked]:bg-white"
