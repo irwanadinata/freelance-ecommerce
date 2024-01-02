@@ -9,7 +9,6 @@ const ShippingCard = ({
   value,
   checked,
   onCheckedChange,
-  onChange,
   type,
   price,
   expectedArrival1,
@@ -22,7 +21,6 @@ const ShippingCard = ({
       <div className="flex justify-between">
         <p>{type}</p>
         <Checkbox
-          onChange={onChange}
           value={value}
           checked={checked}
           onCheckedChange={onCheckedChange}
@@ -34,7 +32,7 @@ const ShippingCard = ({
   );
 };
 
-const Shipping = ({ store, product }) => {
+const Shipping = ({ store, product, deliveryFee, setDeliveryFee, index }) => {
   const [storeName, setStoreName] = useState();
   const [{ standard, regular, express }, setChecked] = useState({
     standard: false,
@@ -78,6 +76,18 @@ const Shipping = ({ store, product }) => {
     return month[date.getMonth()];
   };
 
+  const handleCheckboxChange = (option) => {
+    setChecked((prevOptions) => ({
+      ...Object.fromEntries(Object.entries(prevOptions).map(([key]) => [key, key === option])),
+    }));
+  };
+
+  const handleDeliveryFeeChange = (amount, index) => {
+    const data = [...deliveryFee];
+    data.splice(index, 1, amount);
+    setDeliveryFee(data);
+  };
+
   return (
     <>
       <div className="p-5 flex gap-y-5 flex-col shadow-md rounded-md bg-white">
@@ -86,9 +96,11 @@ const Shipping = ({ store, product }) => {
           <p className="font-medium">Pilihan Pengiriman</p>
           <div className="flex justify-between">
             <ShippingCard
-              value={1}
               checked={standard}
-              setChecked={() => !standard}
+              onCheckedChange={() => {
+                handleDeliveryFeeChange(16000, index);
+                handleCheckboxChange("standard");
+              }}
               type="Standar"
               price={16000}
               expectedArrival1={getDate(0)}
@@ -96,9 +108,11 @@ const Shipping = ({ store, product }) => {
               month={getMonth(5)}
             />
             <ShippingCard
-              value={2}
               checked={regular}
-              setChecked={() => setChecked(!regular)}
+              onCheckedChange={() => {
+                handleDeliveryFeeChange(20000, index);
+                handleCheckboxChange("regular");
+              }}
               type="Regular"
               price={20000}
               expectedArrival1={getDate(0)}
@@ -106,9 +120,11 @@ const Shipping = ({ store, product }) => {
               month={getMonth(3)}
             />
             <ShippingCard
-              value={3}
               checked={express}
-              setChecked={() => setChecked(!express)}
+              onCheckedChange={() => {
+                handleDeliveryFeeChange(25000, index);
+                handleCheckboxChange("express");
+              }}
               type="Express"
               price={25000}
               expectedArrival1={getDate(0)}

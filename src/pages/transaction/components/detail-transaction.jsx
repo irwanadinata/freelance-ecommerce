@@ -1,6 +1,6 @@
 import Shipping from "./shipping";
 
-const DetailTransaction = ({ cart }) => {
+const DetailTransaction = ({ cart, deliveryFee, setDeliveryFee }) => {
   const groupedCart = cart.reduce((acc, item) => {
     const { storeId, ...rest } = item;
 
@@ -26,8 +26,15 @@ const DetailTransaction = ({ cart }) => {
         </div>
         <p>Jl. Raden Patah No. 101, Purwokerto, Banyumas, Jawa Tengah</p>
       </div>
-      {Object.keys(groupedCart).map((storeId) => (
-        <Shipping key={storeId} store={storeId} product={groupedCart[storeId]} />
+      {Object.keys(groupedCart).map((storeId, index) => (
+        <Shipping
+          key={storeId}
+          index={index}
+          store={storeId}
+          product={groupedCart[storeId]}
+          deliveryFee={deliveryFee}
+          setDeliveryFee={setDeliveryFee}
+        />
       ))}
     </div>
   );

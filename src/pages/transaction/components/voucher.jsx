@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import PaymentMethodDialog from "./payment-method";
 import convertToRupiah from "@/utils/formatter/rupiahConverter";
 
-const Voucher = ({ cart, prices, deliveryFee, voucher = 10000, tax = 2000 }) => {
+const Voucher = ({ cart, prices, voucher = 10000, tax = 2000, totalDeliveryFee }) => {
   return (
     <div className="w-4/12 flex flex-col gap-y-3">
       {/* voucher apply */}
@@ -29,7 +29,7 @@ const Voucher = ({ cart, prices, deliveryFee, voucher = 10000, tax = 2000 }) => 
           </div>
           <div className="flex justify-between">
             <p>Biaya Pengiriman</p>
-            <p>{convertToRupiah(deliveryFee)}</p>
+            <p>{convertToRupiah(totalDeliveryFee)}</p>
           </div>
           <div className="flex justify-between">
             <p>Diskon Voucher</p>
@@ -41,7 +41,7 @@ const Voucher = ({ cart, prices, deliveryFee, voucher = 10000, tax = 2000 }) => 
           </div>
           <div className="flex justify-between mt-2">
             <p>Total</p>
-            <p>{convertToRupiah(prices + deliveryFee - voucher + tax)}</p>
+            <p>{convertToRupiah(prices + totalDeliveryFee - voucher + tax)}</p>
           </div>
         </div>
         <PaymentMethodDialog />
