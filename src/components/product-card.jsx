@@ -9,7 +9,7 @@ const ProductCard = ({ product }) => {
   const truncatedName = product.name.length > maxLength ? product.name.slice(0, maxLength) + " ..." : product.name;
 
   return (
-    <Link to={`/product/${product.id}`} className="w-48 h-72 bg-[#FFFFFF] shadow-md rounded-md hover:transform transition duration-500 hover:z-20 hover:scale-110 m-1">
+    <Link to={`/product/${product.id}`} className="w-48 h-72 bg-[#FFFFFF] shadow-md rounded-md m-1">
       <div>
         <img
           src={product.images.display}
