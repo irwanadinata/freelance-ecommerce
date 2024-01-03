@@ -44,7 +44,7 @@ const Voucher = ({ cart, prices, voucher = 10000, tax = 2000, totalDeliveryFee }
             <p>{convertToRupiah(prices + totalDeliveryFee - voucher + tax)}</p>
           </div>
         </div>
-        <PaymentMethodDialog />
+        <PaymentMethodDialog totalPrice={prices + totalDeliveryFee - voucher + tax} />
       </div>
     </div>
   );
