@@ -33,15 +33,15 @@
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/7/12/0c1c821a-c62e-47b9-bdab-838c0e245604.jpg",
         "title": "white",
-        "stock": 10
+        "stock": 45
       },
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/7/12/feba9eea-3a9a-4ec2-9402-439e8307b4e4.jpg",
         "title": "black",
-        "stock": 10
+        "stock": 45
       }
     ],
-    "stock": 20,
+    "stock": 90,
     "description": [
       "name: Nakamichi TW 110NC",
       "Bluetooth: Versi 5.1",
@@ -96,10 +96,10 @@
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/7/1/1475b7da-1b6e-4403-b2cf-06c4407e6ae3.jpg.webp?ect=4g",
         "title": "Phantom White",
-        "stock": 15
+        "stock": 25
       }
     ],
-    "stock": 40,
+    "stock": 50,
     "description": [
       "Brand: Samsung",
       "Model: Galaxy S21",
@@ -145,15 +145,15 @@
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/4/15/8968f2da-36f7-4db3-98bd-55434f1fded4.jpg.webp?ect=4g",
         "title": "Space Gray",
-        "stock": 20
+        "stock": 30
       },
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2020/10/4/68c78698-e933-4630-b50a-8e3a30a06a02.jpg.webp?ect=4g",
         "title": "Silver",
-        "stock": 15
+        "stock": 45
       }
     ],
-    "stock": 35,
+    "stock": 75,
     "description": [
       "Brand: Apple",
       "Model: MacBook Pro 13-inch",
@@ -204,10 +204,10 @@
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/7/22/e2b35042-a211-47dd-b8f4-d090f769d1c5.jpg.webp?ect=4g",
         "title": "Silver",
-        "stock": 20
+        "stock": 40
       }
     ],
-    "stock": 50,
+    "stock": 70,
     "description": [
       "Brand: Sony",
       "Model: WH-1000XM4",
@@ -253,15 +253,15 @@
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/11/2/842305f4-583b-4bad-afc2-54d2e52ee45c.jpg.webp?ect=4g",
         "title": "Platinum Silver",
-        "stock": 15
+        "stock": 85
       },
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/7/31/bd20ea52-f2cc-41e3-bc6e-8f8a3a1f35a8.png.webp?ect=4g",
         "title": "Frost White",
-        "stock": 10
+        "stock": 90
       }
     ],
-    "stock": 25,
+    "stock": 175,
     "description": [
       "Brand: Dell",
       "Model: XPS 13",
@@ -307,15 +307,15 @@
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/12/5/335a1576-e59a-4ac4-990b-c13a9e14fe58.png.webp?ect=4g",
         "title": "Black",
-        "stock": 8
+        "stock": 75
       },
       {
         "image": "https://images.tokopedia.net/img/cache/900/hDjmkQ/2023/12/11/887d6617-bf4b-4216-8991-a1e5628b9f0e.jpg.webp?ect=4g",
         "title": "Silver",
-        "stock": 7
+        "stock": 75
       }
     ],
-    "stock": 15,
+    "stock": 150,
     "description": [
       "Brand: Canon",
       "Model: EOS R5",
@@ -361,15 +361,15 @@
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/4/3/f9aef445-adb2-4eeb-9407-7c7180270729.jpg.webp?ect=4g",
         "title": "Standard Edition",
-        "stock": 20
+        "stock": 200
       },
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/11/15/67b89755-355f-47c1-ba68-7246685737d7.jpg.webp?ect=4g",
         "title": "Digital Edition",
-        "stock": 15
+        "stock": 150
       }
     ],
-    "stock": 35,
+    "stock": 350,
     "description": [
       "Brand: Sony",
       "Model: PlayStation 5",
@@ -415,15 +415,15 @@
       {
         "image": "https://images.tokopedia.net/img/cache/900/hDjmkQ/2023/4/14/44bfd32c-e986-477b-9e29-5cda3c9864be.jpg.webp?ect=4g",
         "title": "55-inch",
-        "stock": 10
+        "stock": 100
       },
       {
         "image": "https://images.tokopedia.net/img/cache/900/hDjmkQ/2023/4/14/4109d902-ca79-45a2-a34c-f3ec8b56088c.jpg.webp?ect=4g",
         "title": "65-inch",
-        "stock": 8
+        "stock": 80
       }
     ],
-    "stock": 18,
+    "stock": 180,
     "description": [
       "Brand: Samsung",
       "Model: Q80A QLED 4K Smart TV",
@@ -468,15 +468,15 @@
       {
         "image": "https://images.tokopedia.net/img/cache/900/hDjmkQ/2023/2/28/d3441ce8-6672-4a1c-85a2-0601bc76553e.jpg.webp?ect=4g",
         "title": "Black",
-        "stock": 25
+        "stock": 250
       },
       {
         "image": "https://images.tokopedia.net/img/cache/900/hDjmkQ/2023/2/28/ea1f0660-00bf-490c-9e3c-9cf742d81d20.jpg.webp?ect=4g",
         "title": "Rosewood",
-        "stock": 20
+        "stock": 200
       }
     ],
-    "stock": 45,
+    "stock": 450,
     "description": [
       "Brand: Fitbit",
       "Model: Charge 4",
@@ -522,15 +522,15 @@
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/11/9/0a223ecc-95f8-478b-9faa-347ba12f18af.png.webp?ect=4g",
         "title": "65-inch",
-        "stock": 15
+        "stock": 150
       },
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2020/9/25/2af3836c-5bad-4f3e-9eee-37b0e7f8492c.jpg.webp?ect=4g",
         "title": "77-inch",
-        "stock": 5
+        "stock": 50
       }
     ],
-    "stock": 20,
+    "stock": 200,
     "description": [
       "Brand: LG",
       "Model: C1 OLED 4K Smart TV",
@@ -575,15 +575,15 @@
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/1/17/959b1a57-1ea0-4007-9cd4-e05b99f0b0c1.jpg.webp?ect=4g",
         "title": "Black",
-        "stock": 12
+        "stock": 120
       },
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/4/13/7b4cdaff-1cac-4d72-8f50-72984c116ea3.png.webp?ect=4g",
         "title": "White",
-        "stock": 6
+        "stock": 60
       }
     ],
-    "stock": 18,
+    "stock": 180,
     "description": [
       "Brand: GoPro",
       "Model: HERO10 Black",
@@ -629,15 +629,15 @@
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/3/6/46573155-3d4a-4872-ad59-2714c532728f.jpg.webp?ect=4g",
         "title": "Empire Red",
-        "stock": 15
+        "stock": 150
       },
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2020/5/2/8a182b77-9d31-4553-8249-15112a5f0590.jpg.webp?ect=4g",
         "title": "Onyx Black",
-        "stock": 10
+        "stock": 100
       }
     ],
-    "stock": 25,
+    "stock": 250,
     "description": [
       "Brand: KitchenAid",
       "Model: Artisan Stand Mixer",
@@ -683,15 +683,15 @@
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/2/6/6255ec78-3a63-4f0c-b8be-f1adf365d3db.png.webp?ect=4g",
         "title": "Midnight Blue",
-        "stock": 18
+        "stock": 180
       },
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/2/6/9e65d904-2dbf-4ffc-ab98-da796294b24a.png.webp?ect=4g",
         "title": "Rose Gold",
-        "stock": 17
+        "stock": 170
       }
     ],
-    "stock": 35,
+    "stock": 350,
     "description": [
       "Brand: Fitbit",
       "Model: Versa 3",
@@ -737,15 +737,15 @@
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/6/13/72c9e01f-f75b-4029-9126-fa0dcf118f6f.jpg.webp?ect=4g",
         "title": "Blue",
-        "stock": 8
+        "stock": 80
       },
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/7/12/743a7991-78fa-49da-ac8a-334dccc83d80.jpg.webp?ect=4g",
         "title": "Gold",
-        "stock": 7
+        "stock": 70
       }
     ],
-    "stock": 15,
+    "stock": 150,
     "description": [
       "Brand: Dyson",
       "Model: V11 Absolute",
@@ -791,15 +791,15 @@
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/7/22/5d340811-1ac1-4d89-b4a2-42320c65a37b.jpg.webp?ect=4g",
         "title": "Black",
-        "stock": 12
+        "stock": 120
       },
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/3/24/a2a639fe-df54-4af3-ab3d-bbcbc638a453.jpg.webp?ect=4g",
         "title": "White",
-        "stock": 8
+        "stock": 80
       }
     ],
-    "stock": 20,
+    "stock": 200,
     "description": [
       "Brand: Garmin",
       "Model: Forerunner 945",
@@ -845,15 +845,15 @@
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/5/16/809553e2-a442-47ec-9cc6-dfd5f9c66507.jpg.webp?ect=4g",
         "title": "128GB, Mystic Black",
-        "stock": 15
+        "stock": 150
       },
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/8/6/b82b327d-08ca-49a8-97dc-feea76e94e5d.jpg.webp?ect=4g",
         "title": "256GB, Mystic Bronze",
-        "stock": 10
+        "stock": 100
       }
     ],
-    "stock": 25,
+    "stock": 250,
     "description": [
       "Brand: Samsung",
       "Model: Galaxy Tab S7+",
@@ -899,15 +899,15 @@
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/4/17/aca93e5e-2244-4085-8e46-5f857244f242.jpg.webp?ect=4g",
         "title": "Black",
-        "stock": 12
+        "stock": 120
       },
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/3/21/a2aba5d6-eae3-424e-bd08-1275f4d8a4a9.jpg.webp?ect=4g",
         "title": "White",
-        "stock": 10
+        "stock": 100
       }
     ],
-    "stock": 22,
+    "stock": 220,
     "description": [
       "Brand: Apple",
       "Model: Watch Series 7",
@@ -953,15 +953,15 @@
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/2/7/2b4f26ac-9ce0-43e9-959f-96001eccade3.jpg.webp?ect=4g",
         "title": "6 Quart",
-        "stock": 8
+        "stock": 800
       },
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/2/20/5667cf31-752a-4852-8e40-6002fce67130.png.webp?ect=4g",
         "title": "8 Quart",
-        "stock": 4
+        "stock": 400
       }
     ],
-    "stock": 12,
+    "stock": 1200,
     "description": [
       "Brand: Instant Pot",
       "Model: Duo Evo Plus",
@@ -1007,15 +1007,15 @@
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/4/14/805fc05d-a02a-4533-aaee-0900d65f4734.jpg.webp?ect=4g",
         "title": "Black/White",
-        "stock": 5
+        "stock": 500
       },
       {
         "image": "https://images.tokopedia.net/img/cache/900/product-1/2019/1/8/47228850/47228850_6baa8cb9-1aa7-43bf-bb72-b69fc3def304_920_1150.jpg.webp?ect=4g",
         "title": "Blue/Orange",
-        "stock": 3
+        "stock": 300
       }
     ],
-    "stock": 8,
+    "stock": 800,
     "description": [
       "Brand: Nike",
       "Model: Air Max 270",
@@ -1061,15 +1061,15 @@
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/10/30/611bde12-7c70-400a-9adc-a8978ef3f6c0.jpg.webp?ect=4g",
         "title": "Black",
-        "stock": 8
+        "stock": 800
       },
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/10/30/7ab00713-5a07-4acf-884c-76e3a80ad8e1.jpg.webp?ect=4g",
         "title": "White smoke",
-        "stock": 7
+        "stock": 700
       }
     ],
-    "stock": 15,
+    "stock": 1500,
     "description": [
       "Brand: Bose",
       "Model: QuietComfort Earbuds",
