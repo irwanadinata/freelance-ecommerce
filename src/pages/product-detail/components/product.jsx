@@ -3,6 +3,9 @@ import useCart from "@/utils/store/cartStore";
 import { Button } from "@/components/ui/button";
 import { Heart, Minus, Plus, Share2, Star } from "lucide-react";
 import convertToRupiah from "@/utils/formatter/rupiahConverter";
+import Swal from "sweetalert2";
+import success from "@/assets/alert/success.svg"
+import warning from "@/assets/alert/warning.svg"
 
 const Product = ({ product }) => {
   const { images, name, sold, overall_rating, review, price, discount, option, stock, id, store } =
@@ -18,11 +21,29 @@ const Product = ({ product }) => {
     const { id: storeId } = store;
     const product = { id, option, amount, storeId };
     const isProductExist = cart.find((item) => item.id === id && item.option === option);
-
+    
     if (isProductExist) {
-      alert("Produk sudah ada di keranjang");
+      Swal.fire({
+        showConfirmButton: false,
+        showCloseButton: true,
+        html: `
+          <div class="flex items-center h-20 justify-center text-[#CC0000]">
+            <img src='${warning}' class='w-6 h-6 mr-2' alt='Warning Icon'/>
+            Produk sudah ada di keranjang!
+          </div>
+        `,
+      });
     } else {
-      alert("Berhasil memasukkan produk ke keranjang");
+      Swal.fire({
+        showConfirmButton: false,
+        showCloseButton: true,
+        html: `
+          <div class="flex items-center h-20 justify-center text-[#55C200]">
+            <img src='${success}' class='w-6 h-6 mr-2' alt='Success Icon'/>
+            Produk berhasil ditambahkan ke keranjang.
+          </div>
+        `,
+      });
       increaseCart(product);
       cart.push(product);
       localStorage.setItem("cart", JSON.stringify(cart));
