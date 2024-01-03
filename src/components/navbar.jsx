@@ -1,3 +1,4 @@
+import { Menu } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { SearchInput } from "./search-input";
@@ -7,12 +8,11 @@ import CartIcon from "@/assets/icons/cart-icon";
 import LazadaIcon from "@/assets/icons/lazada-icon";
 import PackageIcon from "@/assets/icons/package-icon";
 import ProfileIcon from "@/assets/icons/profile-icon";
-import MessageOutlineIcon from "@/assets/icons/message-outline-icon";
-import { Menu } from "lucide-react";
 import LazadaIconSmall from "@/assets/lazada-photo.png";
+import MessageOutlineIcon from "@/assets/icons/message-outline-icon";
 
 const Navbar = () => {
-  const { cart } = useCart();
+  const { cart, notification } = useCart();
   const [isFixed, setIsFixed] = useState(false);
   const [isNavOpen, setIsNavOpen] = useState(false);
 
@@ -26,10 +26,6 @@ const Navbar = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
   }, []);
 
   const toggleNav = () => {
@@ -45,7 +41,9 @@ const Navbar = () => {
         }`}
       >
         <div className="flex h-20 items-center p-3 justify-around">
-          <a href="/dashboard"><LazadaIcon className="w-44" /></a>
+          <a href="/dashboard">
+            <LazadaIcon className="w-44" />
+          </a>
           <SearchInput />
           <div className="flex gap-3">
             <NavLink className="cursor-pointer" to="/cart">
@@ -58,7 +56,14 @@ const Navbar = () => {
                 )}
               </div>
             </NavLink>
-            <Notification />
+            <div className="relative">
+              <Notification />
+              {notification.filter((notif) => notif.isRead === false).length > 0 && (
+                <div className="absolute top-0 -right-1 w-4 h-4 rounded-full bg-red-500 text-xs flex items-center justify-center text-white font-medium">
+                  {notification.filter((notif) => notif.isRead === false).length}
+                </div>
+              )}
+            </div>
             <MessageOutlineIcon />
             <PackageIcon />
           </div>
@@ -70,13 +75,11 @@ const Navbar = () => {
       </nav>
 
       {/* Small screens */}
-      <nav
-        className={`lg:hidden bg-[#FFFFFF] p-3 ${
-          isFixed ? "fixed top-0 w-full z-50" : ""
-        }`}
-      >
+      <nav className={`lg:hidden bg-[#FFFFFF] p-3 ${isFixed ? "fixed top-0 w-full z-50" : ""}`}>
         <div className="flex flex-row justify-center items-center gap-3 mx-auto">
-          <a href="/dashboard"><img src={LazadaIconSmall} alt="lazada-icon" className="w-8 h-6" /></a>
+          <a href="/dashboard">
+            <img src={LazadaIconSmall} alt="lazada-icon" className="w-8 h-6" />
+          </a>
           <SearchInput />
           <button onClick={toggleNav} className="text-black">
             <Menu />
