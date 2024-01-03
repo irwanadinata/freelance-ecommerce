@@ -120,11 +120,11 @@ const Product = ({ product }) => {
             />
           </div>
 
-          <div className="ms-10">
+          <div className="ml-20">
             <p className="text-sm mb-2">Warna: {selectedOption.title}</p>
             <div className="flex gap-1">
               <img
-                className={`w-9 h-9 cursor-pointer rounded-md ${
+                className={`w-12 h-12 cursor-pointer rounded-md ${
                   selectedOption === option[0] && "border-[#FB8500] border-[1px]"
                 }`}
                 onClick={() => {
@@ -135,7 +135,7 @@ const Product = ({ product }) => {
                 src={option[0].image}
               />
               <img
-                className={`w-9 h-9 cursor-pointer rounded-md ${
+                className={`w-12 h-12 cursor-pointer rounded-md ${
                   selectedOption === option[1] && "border-[#FB8500] border-[1px]"
                 }`}
                 onClick={() => {
