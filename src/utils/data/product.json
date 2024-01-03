@@ -16,7 +16,8 @@
     "price": 300000,
     "discount": 40,
     "store": {
-      "id": 1,
+      "id": 2,
+      "store_name": "Gadget Solution",
       "location": "Jakarta Utara",
       "rating": 94,
       "response_chat": 97,
@@ -74,6 +75,7 @@
     "discount": 10,
     "store": {
       "id": 2,
+      "store_name": "Gadget Solution",
       "location": "Jakarta Pusat",
       "rating": 92,
       "response_chat": 98,
@@ -127,6 +129,7 @@
     "discount": 5,
     "store": {
       "id": 3,
+      "store_name": "Apple Store",
       "location": "Jakarta Selatan",
       "rating": 95,
       "response_chat": 99,
@@ -179,7 +182,8 @@
     "price": 3500000,
     "discount": 15,
     "store": {
-      "id": 4,
+      "id": 2,
+      "store_name": "Electronics Solution",
       "location": "Surabaya",
       "rating": 91,
       "response_chat": 96,
@@ -232,7 +236,8 @@
     "price": 16000000,
     "discount": 8,
     "store": {
-      "id": 5,
+      "id": 4,
+      "store_name": "Laptop Garage",
       "location": "Bandung",
       "rating": 88,
       "response_chat": 95,
@@ -285,8 +290,9 @@
     "price": 28000000,
     "discount": 5,
     "store": {
-      "id": 6,
-      "location": "Surabaya",
+      "id": 5,
+      "store_name": "Lensa Nusantara",
+      "location": "Jakarta Pusat",
       "rating": 93,
       "response_chat": 97,
       "on_time": 98
@@ -338,7 +344,8 @@
     "price": 6500000,
     "discount": 12,
     "store": {
-      "id": 7,
+      "id": 1,
+      "store_name": "Electronics Solution",
       "location": "Jakarta Barat",
       "rating": 96,
       "response_chat": 99,
@@ -391,7 +398,8 @@
     "price": 12000000,
     "discount": 8,
     "store": {
-      "id": 8,
+      "id": 1,
+      "store_name": "Electronics Solution",
       "location": "Surabaya",
       "rating": 94,
       "response_chat": 97,
@@ -443,7 +451,8 @@
     "price": 1800000,
     "discount": 15,
     "store": {
-      "id": 9,
+      "id": 2,
+      "store_name": "Gadget Solution",
       "location": "Bandung",
       "rating": 90,
       "response_chat": 95,
@@ -496,7 +505,8 @@
     "price": 24000000,
     "discount": 10,
     "store": {
-      "id": 10,
+      "id": 1,
+      "store_name": "Electronics Solution",
       "location": "Jakarta Selatan",
       "rating": 93,
       "response_chat": 97,
@@ -548,8 +558,9 @@
     "price": 5500000,
     "discount": 8,
     "store": {
-      "id": 11,
-      "location": "Surabaya",
+      "id": 5,
+      "store_name": "Lensa Nusantara",
+      "location": "Jakarta Pusat",
       "rating": 95,
       "response_chat": 98,
       "on_time": 97
@@ -601,8 +612,9 @@
     "price": 4500000,
     "discount": 10,
     "store": {
-      "id": 12,
-      "location": "Jakarta Timur",
+      "id": 6,
+      "store_name": "Home n Decor",
+      "location": "Jakarta Pusat",
       "rating": 94,
       "response_chat": 97,
       "on_time": 96
@@ -654,7 +666,8 @@
     "price": 2500000,
     "discount": 1,
     "store": {
-      "id": 13,
+      "id": 2,
+      "store_name": "Gadget Solution",
       "location": "Surabaya",
       "rating": 92,
       "response_chat": 96,
@@ -707,7 +720,8 @@
     "price": 6500000,
     "discount": 10,
     "store": {
-      "id": 14,
+      "id": 6,
+      "store_name": "Home n Decor",
       "location": "Bandung",
       "rating": 95,
       "response_chat": 98,
@@ -760,7 +774,8 @@
     "price": 6000000,
     "discount": 12,
     "store": {
-      "id": 15,
+      "id": 2,
+      "store_name": "Gadget Solution",
       "location": "Jakarta Utara",
       "rating": 93,
       "response_chat": 97,
@@ -813,7 +828,8 @@
     "price": 11000000,
     "discount": 8,
     "store": {
-      "id": 16,
+      "id": 2,
+      "store_name": "Gadget Solution",
       "location": "Surabaya",
       "rating": 92,
       "response_chat": 96,
@@ -866,7 +882,8 @@
     "price": 4999000,
     "discount": 10,
     "store": {
-      "id": 17,
+      "id": 3,
+      "store_name": "Apple Store",
       "location": "Jakarta Selatan",
       "rating": 95,
       "response_chat": 98,
@@ -919,7 +936,8 @@
     "price": 1500000,
     "discount": 15,
     "store": {
-      "id": 18,
+      "id": 6,
+      "store_name": "Home n Decor",
       "location": "Jakarta Pusat",
       "rating": 93,
       "response_chat": 96,
@@ -972,7 +990,8 @@
     "price": 1200000,
     "discount": 15,
     "store": {
-      "id": 19,
+      "id": 7,
+      "store_name": "Foot Locker",
       "location": "Jakarta Pusat",
       "rating": 90,
       "response_chat": 95,
@@ -1025,7 +1044,8 @@
     "price": 2799000,
     "discount": 12,
     "store": {
-      "id": 20,
+      "id": 2,
+      "store_name": "Gadget Solution",
       "location": "Jakarta Barat",
       "rating": 94,
       "response_chat": 97,

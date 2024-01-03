@@ -1,22 +1,52 @@
 import ProductCard from "./product-card";
-import { Checkbox } from "@/components/ui/checkbox";
+import { useEffect, useState } from "react";
 import { Input } from "@/components/ui/input";
+import { Checkbox } from "@/components/ui/checkbox";
+import { getStoreNameById } from "@/utils/data/dataHandler";
 import convertToRupiah from "@/utils/formatter/rupiahConverter";
 
-const ShippingCard = ({ type, price, expectedArrival1, expectedArrival2, month }) => {
+const ShippingCard = ({
+  checked,
+  onCheckedChange,
+  type,
+  price,
+  expectedArrival1,
+  expectedArrival2,
+  month,
+}) => {
   return (
     <div className="border-2 flex flex-col gap-y-1 py-2 px-6 w-52 border-black rounded-md">
       <p>{convertToRupiah(price)}</p>
       <div className="flex justify-between">
         <p>{type}</p>
-        <Checkbox  className="w-6 h-6 border-2 data-[state=checked]:bg-white" />
+        <Checkbox
+          checked={checked}
+          onCheckedChange={onCheckedChange}
+          className="w-6 h-6 border-2 data-[state=checked]:bg-white"
+        />
       </div>
       {expectedArrival1} - {expectedArrival2} {month}
     </div>
   );
 };
 
-const Shipping = ({ store }) => {
+const Shipping = ({ store, product, deliveryFee, setDeliveryFee, index }) => {
+  const [storeName, setStoreName] = useState();
+  const [{ standard, regular, express }, setChecked] = useState({
+    standard: false,
+    regular: false,
+    express: false,
+  });
+
+  useEffect(() => {
+    const getStoreName = async (id) => {
+      const name = await getStoreNameById(id);
+      setStoreName(name);
+    };
+
+    getStoreName(store);
+  }, [store]);
+
   const getDate = (approx) => {
     const date = new Date();
     date.setDate(date.getDate() + approx);
@@ -44,14 +74,31 @@ const Shipping = ({ store }) => {
     return month[date.getMonth()];
   };
 
+  const handleCheckboxChange = (option) => {
+    setChecked((prevOptions) => ({
+      ...Object.fromEntries(Object.entries(prevOptions).map(([key]) => [key, key === option])),
+    }));
+  };
+
+  const handleDeliveryFeeChange = (amount, index) => {
+    const data = [...deliveryFee];
+    data.splice(index, 1, amount);
+    setDeliveryFee(data);
+  };
+
   return (
     <>
       <div className="p-5 flex gap-y-5 flex-col shadow-md rounded-md bg-white">
         <div className="flex flex-col">
-          <p className="font-medium">Dikirim Oleh: {store}</p>
+          <p className="font-medium">Dikirim Oleh: {storeName}</p>
           <p className="font-medium">Pilihan Pengiriman</p>
           <div className="flex justify-between">
             <ShippingCard
+              checked={standard}
+              onCheckedChange={() => {
+                handleDeliveryFeeChange(16000, index);
+                handleCheckboxChange("standard");
+              }}
               type="Standar"
               price={16000}
               expectedArrival1={getDate(0)}
@@ -59,6 +106,11 @@ const Shipping = ({ store }) => {
               month={getMonth(5)}
             />
             <ShippingCard
+              checked={regular}
+              onCheckedChange={() => {
+                handleDeliveryFeeChange(20000, index);
+                handleCheckboxChange("regular");
+              }}
               type="Regular"
               price={20000}
               expectedArrival1={getDate(0)}
@@ -66,6 +118,11 @@ const Shipping = ({ store }) => {
               month={getMonth(3)}
             />
             <ShippingCard
+              checked={express}
+              onCheckedChange={() => {
+                handleDeliveryFeeChange(25000, index);
+                handleCheckboxChange("express");
+              }}
               type="Express"
               price={25000}
               expectedArrival1={getDate(0)}
@@ -77,9 +134,7 @@ const Shipping = ({ store }) => {
 
         {/* product */}
         <div className="flex flex-col gap-y-4">
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          <ProductCard id={product[0].id} option={product[0].option} quantity={product[0].amount} />
         </div>
       </div>
 

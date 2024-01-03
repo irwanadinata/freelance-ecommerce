@@ -3,8 +3,8 @@ import useCart from "@/utils/store/cartStore";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { getProductById } from "@/utils/data/dataHandler";
-import { Heart, Minus, Plus, Store, Trash, Trash2 } from "lucide-react";
 import convertToRupiah from "@/utils/formatter/rupiahConverter";
+import { Heart, Minus, Plus, Store, Trash2 } from "lucide-react";
 
 const ProductCard = ({ id, amount, selectedOption }) => {
   const { cart, setCart } = useCart();
@@ -67,7 +67,7 @@ const ProductCard = ({ id, amount, selectedOption }) => {
           <div className="flex gap-2 items-center">
             <Checkbox className="w-6 h-6 border-2 data-[state=checked]:bg-white" />
             <Store className="w-6 h-6" />
-            <p className="font-medium">{product.store.id}</p>
+            <p className="font-medium">{product.store.store_name}</p>
           </div>
           {/* product detail */}
           <div className="flex items-center justify-between gap-3">

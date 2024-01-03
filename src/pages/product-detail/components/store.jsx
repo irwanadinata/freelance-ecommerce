@@ -1,6 +1,6 @@
+import QR from "@/assets/QR.png";
 import { Button } from "@/components/ui/button";
-import { MapPin, MessageSquare, QrCode, Speech, StoreIcon, Undo2 } from "lucide-react";
-import QR from "@/assets/QR.png"
+import { MapPin, MessageSquare, Speech, StoreIcon, Undo2 } from "lucide-react";
 
 const Store = ({ product }) => {
   const { store } = product;
@@ -18,7 +18,7 @@ const Store = ({ product }) => {
         <div className="flex justify-between">
           <div className="flex gap-2">
             <StoreIcon />
-            <p className="text-base">{store.id}</p>
+            <p className="text-base">{store.store_name}</p>
           </div>
           <MessageSquare />
         </div>

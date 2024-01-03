@@ -1,9 +1,12 @@
 import { MapPin } from "lucide-react";
 import { Input } from "@/components/ui/input";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import convertToRupiah from "@/utils/formatter/rupiahConverter";
 
 const Summary = ({ amount, totalPrice }) => {
+  const navigate = useNavigate();
+
   return (
     <div className="w-4/12 flex flex-col gap-y-3">
       {/* user address */}
@@ -37,7 +40,12 @@ const Summary = ({ amount, totalPrice }) => {
           <p>{convertToRupiah(totalPrice)}</p>
         </div>
 
-        <Button className="bg-[#F8009C] hover:bg-[#F8009C]/80">Buat Pesanan</Button>
+        <Button
+          onClick={() => navigate("/cart/transaction")}
+          className="bg-[#F8009C] hover:bg-[#F8009C]/80"
+        >
+          Buat Pesanan
+        </Button>
       </div>
     </div>
   );
