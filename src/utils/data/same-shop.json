@@ -1,108 +1,110 @@
 [
   {
-    "id": 6,
-    "name": "Canon EOS R5 Mirrorless Camera",
+    "id": 4,
+    "name": "Sony WH-1000XM4 Wireless Noise-Canceling Headphones",
     "category": "Electronics",
-    "sold": 15,
+    "sold": 80,
     "overall_rating": 4.9,
-    "review": 12,
+    "review": 60,
     "ratings": [
-      { "rating": 5, "amount": 10 },
-      { "rating": 4, "amount": 2 },
+      { "rating": 5, "amount": 55 },
+      { "rating": 4, "amount": 5 },
       { "rating": 3, "amount": 0 },
       { "rating": 2, "amount": 0 },
       { "rating": 1, "amount": 0 }
     ],
-    "price": 28000000,
-    "discount": 5,
-    "store": {
-      "id": 6,
-      "location": "Surabaya",
-      "rating": 93,
-      "response_chat": 97,
-      "on_time": 98
-    },
-    "images": {
-      "display": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/6/3/be308867-d60a-4034-945e-a47aa0eb440f.png.webp?ect=4g",
-      "additional1": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/9/12/bddc89a2-5989-468f-bfe3-02fcea18b568.png.webp?ect=4g",
-      "additional2": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/12/5/f1b33602-b486-4203-9482-a8a7ce43b742.png.webp?ect=4g",
-      "additional3": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/12/5/335a1576-e59a-4ac4-990b-c13a9e14fe58.png.webp?ect=4g"
-    },
-    "option": [
-      {
-        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/12/5/335a1576-e59a-4ac4-990b-c13a9e14fe58.png.webp?ect=4g",
-        "title": "Black",
-        "stock": 8
-      },
-      {
-        "image": "https://images.tokopedia.net/img/cache/900/hDjmkQ/2023/12/11/887d6617-bf4b-4216-8991-a1e5628b9f0e.jpg.webp?ect=4g",
-        "title": "Silver",
-        "stock": 7
-      }
-    ],
-    "stock": 15,
-    "description": [
-      "Brand: Canon",
-      "Model: EOS R5",
-      "Type: Mirrorless",
-      "Sensor: Full-frame CMOS",
-      "Resolution: 45MP",
-      "Video: 8K at 30fps, 4K at 120fps",
-      "Image Stabilization: Yes",
-      "Autofocus: Dual Pixel CMOS AF II"
-    ]
-  },
-  {
-    "id": 9,
-    "name": "Fitbit Charge 4 Fitness Tracker",
-    "category": "Fitness",
-    "sold": 60,
-    "overall_rating": 4.6,
-    "review": 50,
-    "ratings": [
-      { "rating": 5, "amount": 40 },
-      { "rating": 4, "amount": 8 },
-      { "rating": 3, "amount": 2 },
-      { "rating": 2, "amount": 0 },
-      { "rating": 1, "amount": 0 }
-    ],
-    "price": 1800000,
+    "price": 3500000,
     "discount": 15,
     "store": {
-      "id": 9,
-      "location": "Bandung",
-      "rating": 90,
-      "response_chat": 95,
+      "id": 2,
+      "store_name": "Electronics Solution",
+      "location": "Surabaya",
+      "rating": 91,
+      "response_chat": 96,
       "on_time": 97
     },
     "images": {
-      "display": "https://images.tokopedia.net/img/cache/900/hDjmkQ/2023/2/28/ea1f0660-00bf-490c-9e3c-9cf742d81d20.jpg.webp?ect=4g",
-      "additional1": "https://images.tokopedia.net/img/cache/900/hDjmkQ/2023/2/28/7bfca5c6-6c9f-4c34-880c-e59b177c5d22.jpg.webp?ect=4g",
-      "additional2": "https://images.tokopedia.net/img/cache/900/hDjmkQ/2023/2/28/7bfca5c6-6c9f-4c34-880c-e59b177c5d22.jpg.webp?ect=4g",
-      "additional3": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/4/19/bcd962fc-01e6-458e-9734-554867771885.png.webp?ect=4g"
+      "display": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/11/30/1fa7c0df-6abf-47c8-b072-0252b8a131fe.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/7/22/7702cfbe-ecf0-4080-91dd-f4a0d1f7855f.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/900/product-1/2020/8/28/24485009/24485009_2c47f027-3a26-4ddb-9fee-9a85e5011d84_500_500.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/900/product-1/2020/8/14/24485009/24485009_b86ea81b-505c-41b1-8b7f-441f07dab63b_1000_1000.webp?ect=4g"
     },
     "option": [
       {
-        "image": "https://images.tokopedia.net/img/cache/900/hDjmkQ/2023/2/28/d3441ce8-6672-4a1c-85a2-0601bc76553e.jpg.webp?ect=4g",
+        "image": "https://images.tokopedia.net/img/cache/900/product-1/2020/8/14/24485009/24485009_b86ea81b-505c-41b1-8b7f-441f07dab63b_1000_1000.webp?ect=4g",
         "title": "Black",
-        "stock": 25
+        "stock": 30
       },
       {
-        "image": "https://images.tokopedia.net/img/cache/900/hDjmkQ/2023/2/28/ea1f0660-00bf-490c-9e3c-9cf742d81d20.jpg.webp?ect=4g",
-        "title": "Rosewood",
-        "stock": 20
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/7/22/e2b35042-a211-47dd-b8f4-d090f769d1c5.jpg.webp?ect=4g",
+        "title": "Silver",
+        "stock": 40
       }
     ],
-    "stock": 45,
+    "stock": 70,
     "description": [
-      "Brand: Fitbit",
-      "Model: Charge 4",
-      "Type: Fitness Tracker",
-      "Display: OLED",
-      "Features: Heart Rate Monitoring, GPS, Sleep Tracking",
-      "Water Resistance: Up to 50 meters",
-      "Battery Life: Up to 7 days",
-      "Connectivity: Bluetooth"
+      "Brand: Sony",
+      "Model: WH-1000XM4",
+      "Type: Over-Ear, Wireless",
+      "Noise-Canceling: Yes",
+      "Battery: Up to 30 hours",
+      "Quick Charge: 10 minutes for 5 hours",
+      "Touch Controls: Yes",
+      "Connectivity: Bluetooth 5.0"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Dell XPS 13",
+    "category": "Electronics",
+    "sold": 30,
+    "overall_rating": 4.7,
+    "review": 25,
+    "ratings": [
+      { "rating": 5, "amount": 20 },
+      { "rating": 4, "amount": 5 },
+      { "rating": 3, "amount": 0 },
+      { "rating": 2, "amount": 0 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 16000000,
+    "discount": 8,
+    "store": {
+      "id": 4,
+      "store_name": "Laptop Garage",
+      "location": "Bandung",
+      "rating": 88,
+      "response_chat": 95,
+      "on_time": 96
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/2/17/e48651e5-e387-4680-9612-8f504e12bca3.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/11/2/dea799db-4faa-4670-87ea-2bea1dd53d4e.jpg.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/11/2/e7f462ac-ee38-4072-b2a8-123dae88fba7.jpg.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/11/2/9b663288-ae2a-468e-8235-c4cce98ee3a2.jpg.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/11/2/842305f4-583b-4bad-afc2-54d2e52ee45c.jpg.webp?ect=4g",
+        "title": "Platinum Silver",
+        "stock": 85
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/7/31/bd20ea52-f2cc-41e3-bc6e-8f8a3a1f35a8.png.webp?ect=4g",
+        "title": "Frost White",
+        "stock": 90
+      }
+    ],
+    "stock": 175,
+    "description": [
+      "Brand: Dell",
+      "Model: XPS 13",
+      "Processor: Intel Core i7 11th Gen",
+      "Memory: 16GB RAM",
+      "Storage: 512GB SSD",
+      "Display: 13.4 inches, InfinityEdge FHD+",
+      "Graphics: Intel Iris Xe",
+      "OS: Windows 10 Home"
     ]
   },
   {
@@ -122,7 +124,8 @@
     "price": 24000000,
     "discount": 10,
     "store": {
-      "id": 10,
+      "id": 1,
+      "store_name": "Electronics Solution",
       "location": "Jakarta Selatan",
       "rating": 93,
       "response_chat": 97,
@@ -138,15 +141,15 @@
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/11/9/0a223ecc-95f8-478b-9faa-347ba12f18af.png.webp?ect=4g",
         "title": "65-inch",
-        "stock": 15
+        "stock": 150
       },
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2020/9/25/2af3836c-5bad-4f3e-9eee-37b0e7f8492c.jpg.webp?ect=4g",
         "title": "77-inch",
-        "stock": 5
+        "stock": 50
       }
     ],
-    "stock": 20,
+    "stock": 200,
     "description": [
       "Brand: LG",
       "Model: C1 OLED 4K Smart TV",
@@ -174,7 +177,8 @@
     "price": 2500000,
     "discount": 1,
     "store": {
-      "id": 13,
+      "id": 2,
+      "store_name": "Gadget Solution",
       "location": "Surabaya",
       "rating": 92,
       "response_chat": 96,
@@ -190,15 +194,15 @@
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/2/6/6255ec78-3a63-4f0c-b8be-f1adf365d3db.png.webp?ect=4g",
         "title": "Midnight Blue",
-        "stock": 18
+        "stock": 180
       },
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/2/6/9e65d904-2dbf-4ffc-ab98-da796294b24a.png.webp?ect=4g",
         "title": "Rose Gold",
-        "stock": 17
+        "stock": 170
       }
     ],
-    "stock": 35,
+    "stock": 350,
     "description": [
       "Brand: Fitbit",
       "Model: Versa 3",
@@ -208,59 +212,6 @@
       "GPS: Built-in",
       "Water Resistance: Up to 50 meters",
       "Features: Built-in voice assistant, sleep tracking"
-    ]
-  },
-  {
-    "id": 14,
-    "name": "Dyson V11 Absolute Cordless Vacuum",
-    "category": "Home & Kitchen",
-    "sold": 15,
-    "overall_rating": 4.9,
-    "review": 12,
-    "ratings": [
-      { "rating": 5, "amount": 10 },
-      { "rating": 4, "amount": 2 },
-      { "rating": 3, "amount": 0 },
-      { "rating": 2, "amount": 0 },
-      { "rating": 1, "amount": 0 }
-    ],
-    "price": 6500000,
-    "discount": 10,
-    "store": {
-      "id": 14,
-      "location": "Bandung",
-      "rating": 95,
-      "response_chat": 98,
-      "on_time": 97
-    },
-    "images": {
-      "display": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/6/13/72c9e01f-f75b-4029-9126-fa0dcf118f6f.jpg.webp?ect=4g",
-      "additional1": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/4/26/7442703d-cd3a-4339-a93c-1e0a948eb452.jpg.webp?ect=4g",
-      "additional2": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/4/26/86373fec-bfec-4cdb-acd0-551857d942a8.png.webp?ect=4g",
-      "additional3": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/4/26/afb39d5d-effd-4452-9355-6d8a68358750.jpg.webp?ect=4g"
-    },
-    "option": [
-      {
-        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/6/13/72c9e01f-f75b-4029-9126-fa0dcf118f6f.jpg.webp?ect=4g",
-        "title": "Blue",
-        "stock": 8
-      },
-      {
-        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/7/12/743a7991-78fa-49da-ac8a-334dccc83d80.jpg.webp?ect=4g",
-        "title": "Gold",
-        "stock": 7
-      }
-    ],
-    "stock": 15,
-    "description": [
-      "Brand: Dyson",
-      "Model: V11 Absolute",
-      "Type: Cordless Vacuum",
-      "Suction Power: 185 AW",
-      "Bin Capacity: 0.76 liters",
-      "Run Time: Up to 60 minutes",
-      "Filtration: Whole-machine filtration",
-      "Features: LCD screen, Dynamic Load Sensor"
     ]
   },
   {
@@ -280,7 +231,8 @@
     "price": 6000000,
     "discount": 12,
     "store": {
-      "id": 15,
+      "id": 2,
+      "store_name": "Gadget Solution",
       "location": "Jakarta Utara",
       "rating": 93,
       "response_chat": 97,
@@ -296,15 +248,15 @@
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/7/22/5d340811-1ac1-4d89-b4a2-42320c65a37b.jpg.webp?ect=4g",
         "title": "Black",
-        "stock": 12
+        "stock": 120
       },
       {
         "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/3/24/a2a639fe-df54-4af3-ab3d-bbcbc638a453.jpg.webp?ect=4g",
         "title": "White",
-        "stock": 8
+        "stock": 80
       }
     ],
-    "stock": 20,
+    "stock": 200,
     "description": [
       "Brand: Garmin",
       "Model: Forerunner 945",
@@ -314,6 +266,59 @@
       "Heart Rate Monitoring: Yes",
       "Water Resistance: Up to 50 meters",
       "Features: Music, Maps, Advanced Training Metrics"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "ACER Aspire Vero AV14 52P 53ED i5 1335U 16/512GB",
+    "category": "Electronics",
+    "sold": 20,
+    "overall_rating": 4.8,
+    "review": 25,
+    "ratings": [
+      { "rating": 5, "amount": 20 },
+      { "rating": 4, "amount": 18 },
+      { "rating": 3, "amount": 4 },
+      { "rating": 2, "amount": 2 },
+      { "rating": 1, "amount": 0 }
+    ],
+    "price": 9400000,
+    "discount": 10,
+    "store": {
+      "id": 1,
+      "store_name": "Electronics Solution",
+      "location": "Jakarta Selatan",
+      "rating": 93,
+      "response_chat": 97,
+      "on_time": 98
+    },
+    "images": {
+      "display": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/12/29/eb85e1aa-a857-4931-9704-172e31e889e6.jpg.webp?ect=4g",
+      "additional1": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/8/4/305595e6-6c9c-4e62-959c-b9044f8c9736.png.webp?ect=4g",
+      "additional2": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/8/3/4c7d1913-09e5-4062-a535-b5c7fc844b33.png.webp?ect=4g",
+      "additional3": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/8/3/7f18c68a-0cb2-41b0-b9ba-bb1b54112e4b.png.webp?ect=4g"
+    },
+    "option": [
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/8/4/305595e6-6c9c-4e62-959c-b9044f8c9736.png.webp?ect=4g",
+        "title": "Blue",
+        "stock": 150
+      },
+      {
+        "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2023/8/3/4c7d1913-09e5-4062-a535-b5c7fc844b33.png.webp?ect=4g",
+        "title": "Grey",
+        "stock": 50
+      }
+    ],
+    "stock": 200,
+    "description": [
+      "Brand: Acer",
+      "Display : IPS LCD Acer CineCrystal Narrow Bezel",
+      "Prosesor : Intel Core i5-1335U 10-core (12 thread)",
+      "Memori : RAM 8GB LPDDR5-4800MHz",
+      "Storage : SSD 512GB PCIe 4.0 x4 M2 NVMe",
+      "Konektivitas : Wi-Fi 6E 802.11ax, Bluetooth 5.2",
+      "Microsoft Windows 11 Home + Microsoft Office Home and Student 2021"
     ]
   }
 ]
