@@ -3,8 +3,8 @@ import useCart from "@/utils/store/cartStore";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { getProductById } from "@/utils/data/dataHandler";
-import { Heart, Minus, Plus, Store, Trash, Trash2 } from "lucide-react";
 import convertToRupiah from "@/utils/formatter/rupiahConverter";
+import { Heart, Minus, Plus, Store, Trash2 } from "lucide-react";
 
 const ProductCard = ({ id, amount, selectedOption }) => {
   const { cart, setCart } = useCart();
