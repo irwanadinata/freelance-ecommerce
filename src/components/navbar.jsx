@@ -35,10 +35,11 @@ const Navbar = () => {
   return (
     <>
       {/* Large screens */}
-      <nav
-        className={`hidden lg:flex lg:w-10/12 lg:mx-auto lg:flex-col lg:justify-center lg:shadow-md lg:bg-white lg:rounded-b-md ${
+      <nav className={`lg:w-full bg-[#FFFFFF] lg:drop-shadow-lg lg:rounded-md ${
           isFixed ? "sticky top-0 z-30" : ""
-        }`}
+        }`}>
+      <div
+        className={`hidden lg:flex lg:w-10/12 lg:mx-auto lg:flex-col lg:justify-center `}
       >
         <div className="flex h-20 items-center p-3 justify-around">
           <a href="/dashboard">
@@ -72,10 +73,11 @@ const Navbar = () => {
             <p>Afifah Vollyani</p>
           </div>
         </div>
+      </div>
       </nav>
 
-      {/* Small screens */}
-      <nav className={`lg:hidden bg-[#FFFFFF] p-3 ${isFixed ? "fixed top-0 w-full z-50" : ""}`}>
+      {/* Small screens */}     
+      <nav className={`lg:hidden bg-[#FFFFFF] drop-shadow-md p-3 ${isFixed ? "fixed top-0 w-full z-50" : ""}`}>
         <div className="flex flex-row justify-center items-center gap-3 mx-auto">
           <a href="/dashboard">
             <img src={LazadaIconSmall} alt="lazada-icon" className="w-8 h-6" />
