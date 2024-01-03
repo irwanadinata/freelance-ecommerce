@@ -1,4 +1,5 @@
 import { useState } from "react";
+import useCart from "@/utils/store/cartStore";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -33,9 +34,9 @@ const PaymentMethod = ({ checked, onCheckedChange, logo, company }) => {
   );
 };
 
-const PaymentMethodDialog = () => {
+const PaymentMethodDialog = ({ totalPrice }) => {
   const navigate = useNavigate();
-  const { setPaymentMethod } = useState("");
+  const { setPaymentMethod, setTotalPrice } = useCart();
   const [checked, setChecked] = useState({
     cod: false,
     dana: false,
@@ -47,11 +48,12 @@ const PaymentMethodDialog = () => {
     indomaret: false,
   });
 
-  const handleCheckboxChange = (option) => {
+  const handleCheckboxChange = (option, id) => {
     setChecked((prevOptions) => ({
       ...Object.fromEntries(Object.entries(prevOptions).map(([key]) => [key, key === option])),
     }));
-    setPaymentMethod("option");
+    setPaymentMethod(id);
+    setTotalPrice(totalPrice);
   };
 
   return (
@@ -66,48 +68,48 @@ const PaymentMethodDialog = () => {
         <div className="border-[1px] border-gray-500 p-4 gap-y-4 flex flex-col rounded-md">
           <PaymentMethod
             checked={checked.cod}
-            onCheckedChange={() => handleCheckboxChange("cod")}
+            onCheckedChange={() => handleCheckboxChange("cod", 99, totalPrice)}
             company="Bayar Ditempat"
           />
           <PaymentMethod
             checked={checked.dana}
-            onCheckedChange={() => handleCheckboxChange("dana")}
+            onCheckedChange={() => handleCheckboxChange("dana", 0)}
             logo={danaLogo}
             company="Dana"
           />
           <PaymentMethod
             checked={checked.cc}
-            onCheckedChange={() => handleCheckboxChange("cc")}
+            onCheckedChange={() => handleCheckboxChange("cc", 1)}
             logo={mastercardLogo}
             company="Kartu Kredit/Debit"
           />
           <PaymentMethod
             checked={checked.bni}
-            onCheckedChange={() => handleCheckboxChange("bni")}
+            onCheckedChange={() => handleCheckboxChange("bni", 2)}
             logo={bniLogo}
             company="BNI"
           />
           <PaymentMethod
             checked={checked.bca}
-            onCheckedChange={() => handleCheckboxChange("bca")}
+            onCheckedChange={() => handleCheckboxChange("bca", 3)}
             logo={bcaLogo}
             company="BCA"
           />
           <PaymentMethod
             checked={checked.bri}
-            onCheckedChange={() => handleCheckboxChange("bri")}
+            onCheckedChange={() => handleCheckboxChange("bri", 4)}
             logo={briLogo}
             company="BRI"
           />
           <PaymentMethod
             checked={checked.alfamart}
-            onCheckedChange={() => handleCheckboxChange("alfamart")}
+            onCheckedChange={() => handleCheckboxChange("alfamart", 5)}
             logo={alfamartLogo}
             company="Alfamart"
           />
           <PaymentMethod
             checked={checked.indomaret}
-            onCheckedChange={() => handleCheckboxChange("indomaret")}
+            onCheckedChange={() => handleCheckboxChange("indomaret", 6)}
             logo={indomaretLogo}
             company="Indomaret"
           />
