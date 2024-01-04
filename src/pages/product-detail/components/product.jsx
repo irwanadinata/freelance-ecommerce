@@ -1,9 +1,9 @@
+import Swal from "sweetalert2";
 import { useState } from "react";
 import useCart from "@/utils/store/cartStore";
 import { Button } from "@/components/ui/button";
 import { Heart, Minus, Plus, Share2, Star } from "lucide-react";
 import convertToRupiah from "@/utils/formatter/rupiahConverter";
-import Swal from "sweetalert2";
 
 const Product = ({ product }) => {
   const { images, name, sold, overall_rating, review, price, discount, option, stock, id, store } =
@@ -50,6 +50,23 @@ const Product = ({ product }) => {
       increaseCart(product);
       cart.push(product);
       localStorage.setItem("cart", JSON.stringify(cart));
+    }
+  };
+
+  const increaseQuantity = () => {
+    if (quantity == 20) {
+      Swal.fire({
+        showConfirmButton: false,
+        showCloseButton: true,
+        html: `
+          <div class="flex items-center h-20 justify-center text-[#CC0000]">
+            <img src="/warning.svg" class='w-6 h-6 mr-2' alt='Warning Icon'/>
+            Jumlah Barang Yang Ditambahkan Telah Mencapai Batas Maksimal!
+          </div>
+        `,
+      });
+    } else {
+      setQuantity(quantity + 1);
     }
   };
 
@@ -179,7 +196,7 @@ const Product = ({ product }) => {
                 size="icon"
                 disabled={quantity >= stocks}
                 variant="ghost"
-                onClick={() => setQuantity(quantity + 1)}
+                onClick={increaseQuantity}
                 className="border-[1px] border-black w-6 h-6 p-1"
               >
                 <Plus />

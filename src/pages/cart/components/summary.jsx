@@ -1,3 +1,4 @@
+import Swal from "sweetalert2";
 import Voucher from "@/components/voucher";
 import { useEffect, useState } from "react";
 import useCart from "@/utils/store/cartStore";
@@ -58,6 +59,23 @@ const Summary = ({ cart }) => {
     }
   };
 
+  const navigateToTransaction = () => {
+    if (selectedCart.length <= 0) {
+      Swal.fire({
+        showConfirmButton: false,
+        showCloseButton: true,
+        html: `
+          <div class="flex items-center h-20 justify-center text-[#CC0000]">
+            <img src="/warning.svg" class='w-6 h-6 mr-2' alt='Warning Icon'/>
+            Mohon Pilih Produk Yang Ingin Anda Beli!
+          </div>
+        `,
+      });
+    } else {
+      navigate("/cart/transaction");
+    }
+  };
+
   return (
     <div className="lg:w-4/12 md:w-full flex flex-col gap-y-3">
       <div className="p-3 flex gap-3 rounded-md bg-white">
@@ -104,7 +122,7 @@ const Summary = ({ cart }) => {
           </p>
         </div>
         <Button
-          onClick={() => navigate("/cart/transaction")}
+          onClick={() => navigateToTransaction()}
           className="bg-[#F8009C] hover:bg-[#F8009C]/80"
         >
           Buat Pesanan
