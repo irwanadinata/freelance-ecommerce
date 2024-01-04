@@ -171,6 +171,7 @@ const Product = ({ product }) => {
                   "border-[#FB8500] border-[1px]"
                 }`}
                 onClick={() => {
+                  setDisplayedProduct(option[0].image)
                   setQuantity(1);
                   setStocks(option[0].stock);
                   setSelectedOption(option[0]);
@@ -183,6 +184,7 @@ const Product = ({ product }) => {
                   "border-[#FB8500] border-[1px]"
                 }`}
                 onClick={() => {
+                  setDisplayedProduct(option[1].image)
                   setQuantity(1);
                   setStocks(option[1].stock);
                   setSelectedOption(option[1]);
