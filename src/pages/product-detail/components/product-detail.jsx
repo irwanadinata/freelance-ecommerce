@@ -6,8 +6,8 @@ import Description from "./description";
 
 const Detail = ({ product }) => {
   return (
-    <div className="w-10/12 mx-auto my-3 flex flex-col gap-y-5">
-      <div className="flex">
+    <div className="lg:w-10/12 mx-auto my-3 flex flex-col gap-y-5">
+      <div className="flex flex-col md:flex-row md:w-full">
         <Product product={product} />
         <Store product={product} />
       </div>
