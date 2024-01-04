@@ -41,7 +41,6 @@ const BeforeSucces = () => {
       });
     }, 1000);
 
-    // Membersihkan interval ketika komponen tidak lagi digunakan
     return () => clearInterval(interval);
   }, []);
 

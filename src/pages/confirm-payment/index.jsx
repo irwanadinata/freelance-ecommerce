@@ -2,12 +2,20 @@ import Navbar from "@/components/navbar";
 import Banner from "@/components/banner";
 import { useState, useEffect } from "react";
 import useCart from "@/utils/store/cartStore";
+import { useNavigate } from "react-router-dom";
 import AfterSuccess from "./component/after-success";
 import BeforeSuccess from "@/pages/confirm-payment/component/before-success";
 
 const ConfirmPayment = () => {
+  const navigate = useNavigate();
   const [showBeforeSuccess, setShowBeforeSuccess] = useState(true);
-  const { cart, setCart, notification, setNotification } = useCart();
+  const { cart, setCart, notification, setNotification, selectedPaymentMethod } = useCart();
+
+  useEffect(() => {
+    if (selectedPaymentMethod === "") {
+      navigate("/dashboard");
+    }
+  }, [selectedPaymentMethod]);
 
   useEffect(() => {
     const removeProductFromCart = () => {
@@ -33,11 +41,17 @@ const ConfirmPayment = () => {
       localStorage.setItem("notification", JSON.stringify(currentNotification));
     };
 
-    setTimeout(() => {
+    if (selectedPaymentMethod === 99) {
       setShowBeforeSuccess(false);
       removeProductFromCart();
       addNotification();
-    }, 10000);
+    } else {
+      setTimeout(() => {
+        setShowBeforeSuccess(false);
+        removeProductFromCart();
+        addNotification();
+      }, 10000);
+    }
   }, []);
 
   return (

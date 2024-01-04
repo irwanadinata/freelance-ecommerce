@@ -79,12 +79,7 @@ const PaymentMethodDialog = ({ totalPrice, deliveryFee }) => {
             logo={danaLogo}
             company="Dana"
           />
-          <PaymentMethod
-            checked={checked.cc}
-            onCheckedChange={() => handleCheckboxChange("cc", 1)}
-            logo={mastercardLogo}
-            company="Kartu Kredit/Debit"
-          />
+          <PaymentMethod checked={false} logo={mastercardLogo} company="Kartu Kredit/Debit" />
           <PaymentMethod
             checked={checked.bni}
             onCheckedChange={() => handleCheckboxChange("bni", 2)}
