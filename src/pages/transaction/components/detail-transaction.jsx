@@ -31,7 +31,7 @@ const DetailTransaction = ({ cart, deliveryFee, setDeliveryFee }) => {
           key={storeId}
           index={index}
           store={storeId}
-          product={groupedCart[storeId]}
+          products={groupedCart[storeId]}
           deliveryFee={deliveryFee}
           setDeliveryFee={setDeliveryFee}
         />

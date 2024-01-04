@@ -30,7 +30,7 @@ const ShippingCard = ({
   );
 };
 
-const Shipping = ({ store, product, deliveryFee, setDeliveryFee, index }) => {
+const Shipping = ({ store, products, deliveryFee, setDeliveryFee, index }) => {
   const [storeName, setStoreName] = useState();
   const [{ standard, regular, express }, setChecked] = useState({
     standard: false,
@@ -134,7 +134,14 @@ const Shipping = ({ store, product, deliveryFee, setDeliveryFee, index }) => {
 
         {/* product */}
         <div className="flex flex-col gap-y-4">
-          <ProductCard id={product[0].id} option={product[0].option} quantity={product[0].amount} />
+          {products.map((product, index) => (
+            <ProductCard
+              key={index}
+              id={product.id}
+              option={product.option}
+              quantity={product.amount}
+            />
+          ))}
         </div>
       </div>
 
