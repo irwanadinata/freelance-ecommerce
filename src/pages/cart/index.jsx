@@ -15,7 +15,7 @@ const Cart = () => {
     <div className="bg-[#FFFAF5]">
       <Banner />
       <Navbar />
-      <div className="w-10/12 flex gap-3 mx-auto my-3">
+      <div className="w-10/12 flex flex-col sm:flex-row gap-3 mx-auto my-3">
         <CartList cart={cart} />
         <Summary cart={cart} />
       </div>

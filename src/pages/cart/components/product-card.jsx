@@ -52,7 +52,9 @@ const ProductCard = ({ id, amount, selectedOption, value, checked, cart }) => {
     if (!confirmDelete) {
       alert("Batal menghapus produk");
     } else {
-      const product = cart.filter((product) => product.option !== option || product.id !== id);
+      const product = cart.filter(
+        (product) => product.option !== option || product.id !== id
+      );
       setCart(product);
       localStorage.setItem("cart", JSON.stringify(product));
       alert("Berhasil menghapus produk");
@@ -74,21 +76,24 @@ const ProductCard = ({ id, amount, selectedOption, value, checked, cart }) => {
   };
 
   return (
-    <div className="flex items-center justify-between gap-3">
+    <div className="flex flex-col md:flex-row items-center justify-between gap-3">
       {!product ? (
         <Loader2 className="animate-spin mx-auto w-7 h-7" />
       ) : (
         <>
-          <div className="flex gap-3 w-96">
+          <div className="flex flex-col md:flex-row gap-3 w-full md:w-96">
             <Checkbox
               value={value}
               checked={checked}
               onClick={() => {
                 checkedProduct(value, !checked);
               }}
-              className="self-center w-6 h-6 border-2 data-[state=checked]:bg-white"
+              className="lg:self-center w-6 h-6 border-2 data-[state=checked]:bg-white"
             />
-            <img src={product.images.display} className="w-20 h-20 rounded-md" />
+            <img
+              src={product.images.display}
+              className="w-20 h-20 rounded-md"
+            />
             <div className="flex flex-col justify-between">
               <p className="text-sm">{product.name}</p>
               <p className="text-sm">{selectedOption}</p>
@@ -97,9 +102,11 @@ const ProductCard = ({ id, amount, selectedOption, value, checked, cart }) => {
 
           <div className="flex flex-col items-center">
             <p className="text-[#FB8500] whitespace-nowrap">
-              {convertToRupiah(product.price - (product.discount / 100) * product.price)}
+              {convertToRupiah(
+                product.price - (product.discount / 100) * product.price
+              )}
             </p>
-            <div className="flex">
+            <div className="flex mt-2">
               <Button
                 size="icon"
                 variant="ghost"
@@ -115,7 +122,7 @@ const ProductCard = ({ id, amount, selectedOption, value, checked, cart }) => {
               <Button
                 size="icon"
                 variant="ghost"
-                className="hover:bg-transparent"
+                className="hover:bg-transparent md:ml-2"
                 onClick={() => deleteProduct(product.id, selectedOption)}
               >
                 <Trash2 />
@@ -123,7 +130,7 @@ const ProductCard = ({ id, amount, selectedOption, value, checked, cart }) => {
             </div>
           </div>
 
-          <div className="flex gap-1 items-center">
+          <div className="flex gap-1 lg:items-center mt-2 md:mt-0">
             <Button
               size="icon"
               variant="ghost"
