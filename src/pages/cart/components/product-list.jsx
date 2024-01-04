@@ -1,25 +1,32 @@
-import {Trash2 } from "lucide-react";
+import { Store } from "lucide-react";
 import ProductCard from "./product-card";
+import { useEffect, useState } from "react";
 import { Checkbox } from "@/components/ui/checkbox";
+import { getStoreNameById } from "@/utils/data/dataHandler";
 
-const ProductList = ({ cart, setLoading }) => {
+const ProductList = ({ store, products }) => {
+  const [storeName, setStoreName] = useState();
+
+  useEffect(() => {
+    const getStoreName = async (id) => {
+      const result = await getStoreNameById(id);
+      setStoreName(result);
+    };
+
+    getStoreName(store);
+  }, [store]);
+
   return (
-    <div className="w-8/12 flex flex-col gap-y-4 mb-10">
-      <div className="flex justify-between p-5 bg-white shadow-md">
-        <div className="flex rounded-md gap-3">
-          <Checkbox className="w-6 h-6 border-2 data-[state=checked]:bg-white" />
-          <p>Pilih semua (0 barang)</p>
-        </div>
-        <div className="flex rounded-md gap-3">
-          <Trash2/>
-          <p>Hapus</p>
-        </div>
+    <div className="p-5 bg-white rounded-md flex flex-col gap-y-3 shadow-md">
+      <div className="flex gap-2 items-center">
+        <Checkbox className="w-6 h-6 border-2 data-[state=checked]:bg-white" />
+        <Store className="w-6 h-6" />
+        <p className="font-medium">{storeName}</p>
       </div>
-      {cart.map((product, index) => (
+      {products.map((product, index) => (
         <ProductCard
           key={index}
           id={product.id}
-          setLoading={setLoading}
           amount={product.amount}
           selectedOption={product.option}
         />

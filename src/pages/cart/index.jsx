@@ -6,7 +6,7 @@ import Footer2 from "@/components/footer-2";
 import { useEffect, useState } from "react";
 import Footer4 from "@/components/footer-4";
 import useCart from "@/utils/store/cartStore";
-import ProductList from "./components/product-list";
+import CartList from "./components/cart-list";
 import { ScrollRestoration } from "react-router-dom";
 import { getProductPriceById } from "@/utils/data/dataHandler";
 
@@ -37,7 +37,7 @@ const Cart = () => {
       <Banner />
       <Navbar />
       <div className="w-10/12 flex gap-3 mx-auto my-3">
-        <ProductList cart={cart} />
+        <CartList cart={cart} />
         <Summary amount={cart.length} totalPrice={totalPrice ? totalPrice : 0} />
       </div>
       <Footer1 />
