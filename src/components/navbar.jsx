@@ -102,6 +102,11 @@ const Navbar = () => {
             </NavLink>
             <div className="flex items-center gap-2">
               <Notification />
+              {notification.filter((notif) => notif.isRead === false).length > 0 && (
+                <div className="absolute w-4 h-4 rounded-full bg-red-500 text-xs flex items-center justify-center text-white font-medium">
+                  {notification.filter((notif) => notif.isRead === false).length}
+                </div>
+              )}
               <span>Notifications</span>
             </div>
             <div className="flex items-center gap-2">
