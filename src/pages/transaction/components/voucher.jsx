@@ -5,7 +5,7 @@ import convertToRupiah from "@/utils/formatter/rupiahConverter";
 
 const Voucher = ({ cart, prices, voucher = 10000, tax = 2000, totalDeliveryFee }) => {
   return (
-    <div className="w-4/12 flex flex-col gap-y-3">
+    <div className="lg:w-4/12 flex flex-col gap-y-3">
       {/* voucher apply */}
       <div className="p-5 flex flex-col gap-y-2 rounded-md shadow-md bg-white">
         <p className="font-medium">Voucher</p>

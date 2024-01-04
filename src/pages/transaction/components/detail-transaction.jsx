@@ -13,7 +13,7 @@ const DetailTransaction = ({ cart, deliveryFee, setDeliveryFee }) => {
   }, {});
 
   return (
-    <div className="w-8/12 flex flex-col gap-y-3">
+    <div className="lg:w-8/12 flex flex-col gap-y-3">
       <div className="flex flex-col p-5 bg-white rounded-md shadow-md">
         <div className="flex justify-between">
           <p className="font-medium">Alamat Pengiriman</p>

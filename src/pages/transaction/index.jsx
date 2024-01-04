@@ -54,7 +54,7 @@ const Transaction = () => {
     <div className="bg-[#FFFAF5]">
       <Banner />
       <Navbar />
-      <div className="w-10/12 flex gap-3 mx-auto my-3">
+      <div className="flex flex-col md:flex-row w-10/12 mx-auto my-3 md:gap-3">
         <DetailTransaction
           cart={selectedCart}
           deliveryFee={deliveryFee}

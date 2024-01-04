@@ -16,7 +16,7 @@ const ProductCard = ({ id, option, quantity }) => {
   }, [id]);
 
   return (
-    <div className="flex justify-between">
+    <div className="flex flex-col md:flex-row justify-between items-center">
       {product ? (
         <>
           <div className="flex">
