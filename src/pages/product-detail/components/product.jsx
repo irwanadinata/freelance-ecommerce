@@ -6,19 +6,8 @@ import convertToRupiah from "@/utils/formatter/rupiahConverter";
 import Swal from "sweetalert2";
 
 const Product = ({ product }) => {
-  const {
-    images,
-    name,
-    sold,
-    overall_rating,
-    review,
-    price,
-    discount,
-    option,
-    stock,
-    id,
-    store,
-  } = product;
+  const { images, name, sold, overall_rating, review, price, discount, option, stock, id, store } =
+    product;
   const { cart, increaseCart } = useCart();
   const [stocks, setStocks] = useState(stock);
   const [quantity, setQuantity] = useState(1);
@@ -32,10 +21,9 @@ const Product = ({ product }) => {
 
   const addToCart = (id, option, amount, store) => {
     const { id: storeId } = store;
-    const product = { id, option, amount, storeId };
-    const isProductExist = cart.find(
-      (item) => item.id === id && item.option === option
-    );
+    const cartId = new Date().getTime();
+    const product = { cartId, id, option, amount, storeId, checked: false };
+    const isProductExist = cart.find((item) => item.id === id && item.option === option);
 
     if (isProductExist) {
       Swal.fire({
@@ -98,9 +86,7 @@ const Product = ({ product }) => {
             {/* product rating */}
             <div className="flex justify-between items-center ">
               <div className="flex items-center">
-                <p className="p-2 text-sm">
-                  Terjual {sold >= 100 ? "100++" : sold}
-                </p>
+                <p className="p-2 text-sm">Terjual {sold >= 100 ? "100++" : sold}</p>
                 <div className="flex border-x-[1px] border-black p-2 text-sm gap-1 items-center">
                   <Star fill="#FFD233" className="text-[#FFD233]" />
                   {overall_rating}
@@ -109,11 +95,7 @@ const Product = ({ product }) => {
               </div>
 
               <div className="flex gap-0">
-                <Button
-                  className="hover:bg-transparent"
-                  size="icon"
-                  variant="ghost"
-                >
+                <Button className="hover:bg-transparent" size="icon" variant="ghost">
                   <Share2 />
                 </Button>
                 <Button
@@ -167,11 +149,10 @@ const Product = ({ product }) => {
             <div className="flex gap-1">
               <img
                 className={`w-12 h-12 cursor-pointer rounded-md ${
-                  selectedOption === option[0] &&
-                  "border-[#FB8500] border-[1px]"
+                  selectedOption === option[0] && "border-[#FB8500] border-[1px]"
                 }`}
                 onClick={() => {
-                  setDisplayedProduct(option[0].image)
+                  setDisplayedProduct(option[0].image);
                   setQuantity(1);
                   setStocks(option[0].stock);
                   setSelectedOption(option[0]);
@@ -180,11 +161,10 @@ const Product = ({ product }) => {
               />
               <img
                 className={`w-12 h-12 cursor-pointer rounded-md ${
-                  selectedOption === option[1] &&
-                  "border-[#FB8500] border-[1px]"
+                  selectedOption === option[1] && "border-[#FB8500] border-[1px]"
                 }`}
                 onClick={() => {
-                  setDisplayedProduct(option[1].image)
+                  setDisplayedProduct(option[1].image);
                   setQuantity(1);
                   setStocks(option[1].stock);
                   setSelectedOption(option[1]);

@@ -12,7 +12,13 @@ const Transaction = () => {
   const { cart } = useCart();
   const [prices, setTotalPrices] = useState(0);
   const [deliveryFee, setDeliveryFee] = useState([]);
+  const [selectedCart, setSelectedCart] = useState([]);
   const [sumDeliveryFee, setSumDeliveryFee] = useState(0);
+
+  useEffect(() => {
+    const result = cart.filter((item) => item.checked);
+    setSelectedCart(result);
+  }, [cart]);
 
   useEffect(() => {
     const getSumDeliveryFee = (deliveryFee) => {
@@ -28,7 +34,7 @@ const Transaction = () => {
 
   useEffect(() => {
     const fetchProductPrices = async () => {
-      const promises = cart.map(async (product) => {
+      const promises = selectedCart.map(async (product) => {
         const { id, amount } = product;
         const price = await getProductPriceById(id, amount);
         return price;
@@ -42,16 +48,20 @@ const Transaction = () => {
     };
 
     fetchProductPrices();
-  }, [cart]);
+  }, [selectedCart]);
 
   return (
     <div className="bg-[#FFFAF5]">
       <Banner />
       <Navbar />
       <div className="w-10/12 flex gap-3 mx-auto my-3">
-        <DetailTransaction cart={cart} deliveryFee={deliveryFee} setDeliveryFee={setDeliveryFee} />
+        <DetailTransaction
+          cart={selectedCart}
+          deliveryFee={deliveryFee}
+          setDeliveryFee={setDeliveryFee}
+        />
         <Voucher
-          cart={cart}
+          cart={selectedCart}
           prices={prices}
           deliveryFee={deliveryFee}
           totalDeliveryFee={sumDeliveryFee}
