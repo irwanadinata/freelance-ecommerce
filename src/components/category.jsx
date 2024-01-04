@@ -25,7 +25,7 @@ const categories = [
   { image: BajuAnak, text: "Fashion dan Aksesoris Anak" },
   { image: MainanAnak, text: "Bayi dan Mainan" },
   { image: Kecantikan, text: "Kesehatan dan Kecantikan" },
-  { image: Sepeda, text: "Keperluan Rumah dan Gaya Hidup" },
+  { image: Sepeda, text: "Olahraga dan Outdoor" },
 ];
 
 const Category = () => {
