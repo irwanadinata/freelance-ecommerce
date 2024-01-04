@@ -1,6 +1,9 @@
 import { create } from "zustand";
 
 const initialCart = localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : [];
+const initialVoucher = localStorage.getItem("voucher")
+  ? JSON.parse(localStorage.getItem("voucher"))
+  : {};
 const initialNotification = localStorage.getItem("notification")
   ? JSON.parse(localStorage.getItem("notification"))
   : [];
@@ -15,6 +18,8 @@ const useCart = create((set) => ({
   setNotification: (params) => set({ notification: params }),
   totalPrice: "",
   setTotalPrice: (params) => set({ totalPrice: params }),
+  selectedVoucher: initialVoucher,
+  setSelectedVoucher: (voucher) => set({ selectedVoucher: voucher }),
 }));
 
 export default useCart;

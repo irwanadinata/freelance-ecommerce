@@ -1,4 +1,5 @@
 import products from "@/utils/data/product.json";
+import vouchers from "@/utils/data/voucher.json";
 
 export const getProductById = async (id) => {
   return new Promise((resolve, reject) => {
@@ -33,6 +34,18 @@ export const getStoreNameById = async (id) => {
         reject("Terjadi Kesalahan saat mencari nama toko");
       }
       resolve(result.store.store_name);
+    }, 1500);
+  });
+};
+
+export const getVoucherCoupon = async (code) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const result = vouchers.find((voucher) => voucher.code === code);
+      if (!result) {
+        reject("Kode voucher salah");
+      }
+      resolve(result);
     }, 1500);
   });
 };

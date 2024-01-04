@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "secret": false,
+    "title": "Gratis ongkir Rp. 10.000",
+    "discount": 10000,
+    "paragraph": "Min. Belanja Rp. 50.000",
+    "minimum_price": 50000
+  },
+  {
+    "id": 2,
+    "secret": false,
+    "title": "Gratis ongkir Rp. 15.000",
+    "discount": 15000,
+    "paragraph": "Min. Belanja Rp. 100.000",
+    "minimum_price": 50000
+  },
+  {
+    "id": 3,
+    "secret": false,
+    "title": "Voucher toko Rp. 2000",
+    "discount": 15000,
+    "paragraph": "Min. Belanja Rp. 25.000",
+    "minimum_price": 50000
+  },
+  {
+    "id": 4,
+    "secret": false,
+    "title": "Voucher toko Rp. 10.000",
+    "discount": 10000,
+    "paragraph": "Min. Belanja Rp. 100.000",
+    "minimum_price": 50000
+  },
+  {
+    "id": 5,
+    "code": "AFIFAH",
+    "secret": true,
+    "title": "Voucher khusus Rp. 50.000",
+    "discount": 50000,
+    "paragraph": "Min. Belanja Rp. 100.000",
+    "minimum_price": 200000
+  },
+  {
+    "id": 6,
+    "code": "FREEONGKIR50",
+    "secret": true,
+    "title": "Voucher ongkir Rp. 50.000",
+    "discount": 50000,
+    "paragraph": "Min. Belanja Rp. 100.000",
+    "minimum_price": 100000
+  }
+]
