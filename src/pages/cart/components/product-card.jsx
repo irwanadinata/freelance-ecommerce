@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import useCart from "@/utils/store/cartStore";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Heart, Loader2, Minus, Plus, Trash2 } from "lucide-react";
 import { getProductById } from "@/utils/data/dataHandler";
 import convertToRupiah from "@/utils/formatter/rupiahConverter";
+import { Heart, Loader2, Minus, Plus, Trash2 } from "lucide-react";
 
-const ProductCard = ({ id, amount, selectedOption }) => {
-  const { cart, setCart } = useCart();
+const ProductCard = ({ id, amount, selectedOption, value, checked, cart }) => {
+  const { setCart } = useCart();
   const [product, setProduct] = useState();
   const [quantity, setQuantity] = useState(amount);
   const [isBookmarked, setIsBookmarked] = useState(false);
@@ -59,6 +59,20 @@ const ProductCard = ({ id, amount, selectedOption }) => {
     }
   };
 
+  const checkedProduct = (id, boolean) => {
+    const cartData = cart.map((item) => {
+      if (item.cartId == id) {
+        return {
+          ...item,
+          checked: boolean,
+        };
+      }
+      return item;
+    });
+    setCart(cartData);
+    localStorage.setItem("cart", JSON.stringify(cartData));
+  };
+
   return (
     <div className="flex items-center justify-between gap-3">
       {!product ? (
@@ -66,7 +80,14 @@ const ProductCard = ({ id, amount, selectedOption }) => {
       ) : (
         <>
           <div className="flex gap-3 w-96">
-            <Checkbox className="self-center w-6 h-6 border-2 data-[state=checked]:bg-white" />
+            <Checkbox
+              value={value}
+              checked={checked}
+              onClick={() => {
+                checkedProduct(value, !checked);
+              }}
+              className="self-center w-6 h-6 border-2 data-[state=checked]:bg-white"
+            />
             <img src={product.images.display} className="w-20 h-20 rounded-md" />
             <div className="flex flex-col justify-between">
               <p className="text-sm">{product.name}</p>

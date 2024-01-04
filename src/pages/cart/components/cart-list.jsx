@@ -1,25 +1,61 @@
 import { Trash2 } from "lucide-react";
 import ProductList from "./product-list";
+import { useEffect, useState } from "react";
+import useCart from "@/utils/store/cartStore";
 import { Checkbox } from "@/components/ui/checkbox";
 
 const CartList = ({ cart }) => {
-  const groupedCart = cart.reduce((acc, item) => {
-    const { storeId, ...rest } = item;
+  const { setCart } = useCart();
+  const [checked, setChecked] = useState(false);
+  const [groupedCart, setGroupedCart] = useState();
 
-    if (acc[storeId]) {
-      acc[storeId].push(rest);
-    } else {
-      acc[storeId] = [rest];
-    }
+  useEffect(() => {
+    const getGroupedCart = (cart) => {
+      const groupedCart = cart.reduce((acc, item) => {
+        const { storeId, ...rest } = item;
 
-    return acc;
-  }, {});
+        if (acc[storeId]) {
+          acc[storeId].push(rest);
+        } else {
+          acc[storeId] = [rest];
+        }
+
+        return acc;
+      }, {});
+
+      return groupedCart;
+    };
+
+    const data = getGroupedCart(cart);
+    setGroupedCart(data);
+  }, [cart]);
+
+  useEffect(() => {
+    const status = cart.every((item) => item.checked);
+    setChecked(status);
+  }, [cart]);
+
+  const checkedAllCart = (boolean) => {
+    const data = cart.map((item) => {
+      return { ...item, checked: boolean };
+    });
+
+    setCart(data);
+    localStorage.setItem("cart", JSON.stringify(data));
+  };
 
   return (
     <div className="w-8/12 flex flex-col gap-y-4 mb-10">
       <div className="flex justify-between p-5 bg-white shadow-md">
         <div className="flex rounded-md gap-3">
-          <Checkbox className="w-6 h-6 border-2 data-[state=checked]:bg-white" />
+          <Checkbox
+            checked={checked}
+            onClick={() => {
+              setChecked(!checked);
+              checkedAllCart(!checked);
+            }}
+            className="w-6 h-6 border-2 data-[state=checked]:bg-white"
+          />
           <p>Pilih semua ({cart.length} barang)</p>
         </div>
         <div className="flex rounded-md gap-3">
@@ -27,9 +63,10 @@ const CartList = ({ cart }) => {
           <p>Hapus</p>
         </div>
       </div>
-      {Object.keys(groupedCart).map((storeId, index) => (
-        <ProductList key={index} products={groupedCart[storeId]} store={storeId} />
-      ))}
+      {groupedCart &&
+        Object.keys(groupedCart).map((storeId, index) => (
+          <ProductList key={index} store={storeId} cart={cart} />
+        ))}
     </div>
   );
 };
