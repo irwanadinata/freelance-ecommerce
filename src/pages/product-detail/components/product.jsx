@@ -6,20 +6,37 @@ import convertToRupiah from "@/utils/formatter/rupiahConverter";
 import Swal from "sweetalert2";
 
 const Product = ({ product }) => {
-  const { images, name, sold, overall_rating, review, price, discount, option, stock, id, store } =
-    product;
+  const {
+    images,
+    name,
+    sold,
+    overall_rating,
+    review,
+    price,
+    discount,
+    option,
+    stock,
+    id,
+    store,
+  } = product;
   const { cart, increaseCart } = useCart();
   const [stocks, setStocks] = useState(stock);
   const [quantity, setQuantity] = useState(1);
   const [isBookmarked, setIsBookmarked] = useState(false);
   const [selectedOption, setSelectedOption] = useState(option[0]);
   const [displayedProduct, setDisplayedProduct] = useState(images.display);
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => setModalOpen(true);
+  const closeModal = () => setModalOpen(false);
 
   const addToCart = (id, option, amount, store) => {
     const { id: storeId } = store;
     const product = { id, option, amount, storeId };
-    const isProductExist = cart.find((item) => item.id === id && item.option === option);
-    
+    const isProductExist = cart.find(
+      (item) => item.id === id && item.option === option
+    );
+
     if (isProductExist) {
       Swal.fire({
         showConfirmButton: false,
@@ -53,7 +70,26 @@ const Product = ({ product }) => {
       <div className="p-3 flex flex-col border-e-2 border-black">
         <div className="flex">
           {/* product img */}
-          <img className="w-64 h-64 object-cover" src={displayedProduct} alt={name} />
+          <img
+            className="w-64 h-64 object-cover cursor-pointer"
+            src={displayedProduct}
+            alt={name}
+            onClick={openModal}
+          />
+
+          {isModalOpen && (
+            <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
+              <div className="bg-white p-4">
+                <img
+                  className="w-96 h-auto"
+                  src={displayedProduct}
+                  alt={name}
+                  onClick={closeModal}
+                />
+              </div>
+            </div>
+          )}
+
           {/* product description */}
           <div className="px-3 gap-y-3 flex flex-col">
             {/* product name */}
@@ -62,7 +98,9 @@ const Product = ({ product }) => {
             {/* product rating */}
             <div className="flex justify-between items-center ">
               <div className="flex items-center">
-                <p className="p-2 text-sm">Terjual {sold >= 100 ? "100++" : sold}</p>
+                <p className="p-2 text-sm">
+                  Terjual {sold >= 100 ? "100++" : sold}
+                </p>
                 <div className="flex border-x-[1px] border-black p-2 text-sm gap-1 items-center">
                   <Star fill="#FFD233" className="text-[#FFD233]" />
                   {overall_rating}
@@ -71,7 +109,11 @@ const Product = ({ product }) => {
               </div>
 
               <div className="flex gap-0">
-                <Button className="hover:bg-transparent" size="icon" variant="ghost">
+                <Button
+                  className="hover:bg-transparent"
+                  size="icon"
+                  variant="ghost"
+                >
                   <Share2 />
                 </Button>
                 <Button
@@ -125,7 +167,8 @@ const Product = ({ product }) => {
             <div className="flex gap-1">
               <img
                 className={`w-12 h-12 cursor-pointer rounded-md ${
-                  selectedOption === option[0] && "border-[#FB8500] border-[1px]"
+                  selectedOption === option[0] &&
+                  "border-[#FB8500] border-[1px]"
                 }`}
                 onClick={() => {
                   setQuantity(1);
@@ -136,7 +179,8 @@ const Product = ({ product }) => {
               />
               <img
                 className={`w-12 h-12 cursor-pointer rounded-md ${
-                  selectedOption === option[1] && "border-[#FB8500] border-[1px]"
+                  selectedOption === option[1] &&
+                  "border-[#FB8500] border-[1px]"
                 }`}
                 onClick={() => {
                   setQuantity(1);
