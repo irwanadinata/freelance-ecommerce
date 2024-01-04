@@ -7,7 +7,7 @@ const Rating = ({ product, rating, ratings }) => {
       <h4 className="border-b-2 border-gray-400 p-3 font-semibold">
         Rata-Rata penilaian dari {product.name}
       </h4>
-      <div className="p-3">
+      <div className="lg:p-3">
         <div className="flex gap-x-10">
           <div className="flex flex-col gap-y-5">
             <h5 className="text-4xl">
