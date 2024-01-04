@@ -22,7 +22,7 @@ const Product = ({ product }) => {
   const addToCart = (id, option, amount, store) => {
     const { id: storeId } = store;
     const cartId = new Date().getTime();
-    const product = { cartId, id, option, amount, storeId };
+    const product = { cartId, id, option, amount, storeId, checked: false };
     const isProductExist = cart.find((item) => item.id === id && item.option === option);
 
     if (isProductExist) {
