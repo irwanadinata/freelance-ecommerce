@@ -1,12 +1,12 @@
 import Navbar from "@/components/navbar";
 import Banner from "@/components/banner";
-import Voucher from "./components/voucher";
+import Summary from "./components/summary";
 import { useEffect, useState } from "react";
 import Footer1 from "@/components/footer-1";
 import Footer2 from "@/components/footer-2";
 import useCart from "@/utils/store/cartStore";
-import DetailTransaction from "./components/detail-transaction";
 import { getProductPriceById } from "@/utils/data/dataHandler";
+import DetailTransaction from "./components/detail-transaction";
 
 const Transaction = () => {
   const { cart } = useCart();
@@ -60,7 +60,7 @@ const Transaction = () => {
           deliveryFee={deliveryFee}
           setDeliveryFee={setDeliveryFee}
         />
-        <Voucher
+        <Summary
           cart={selectedCart}
           prices={prices}
           deliveryFee={deliveryFee}

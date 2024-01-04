@@ -1,15 +1,21 @@
+import Voucher from "@/components/voucher";
 import { useEffect, useState } from "react";
+import useCart from "@/utils/store/cartStore";
 import { Input } from "@/components/ui/input";
 import { Loader2, MapPin } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { getProductPriceById } from "@/utils/data/dataHandler";
 import convertToRupiah from "@/utils/formatter/rupiahConverter";
+import { getProductPriceById, getVoucherCoupon } from "@/utils/data/dataHandler";
 
 const Summary = ({ cart }) => {
   const navigate = useNavigate();
+  const [error, setError] = useState();
+  const { setSelectedVoucher } = useCart();
+  const [voucher, setVoucher] = useState("");
   const [loading, setLoading] = useState(false);
   const [totalPrice, setTotalPrice] = useState(0);
+  const [processing, setProcessing] = useState(false);
   const [selectedCart, setSelectedCart] = useState([]);
 
   useEffect(() => {
@@ -37,6 +43,21 @@ const Summary = ({ cart }) => {
     fetchProductPrices();
   }, [selectedCart]);
 
+  const applyVoucher = async (voucher) => {
+    const toUppercase = voucher.toUpperCase();
+    setProcessing(true);
+    try {
+      const result = await getVoucherCoupon(toUppercase);
+      setSelectedVoucher(result);
+      localStorage.setItem("voucher", JSON.stringify(result));
+      setError();
+    } catch (error) {
+      setError(error);
+    } finally {
+      setProcessing(false);
+    }
+  };
+
   return (
     <div className="lg:w-4/12 md:w-full flex flex-col gap-y-3">
       <div className="p-3 flex gap-3 rounded-md bg-white">
@@ -55,21 +76,33 @@ const Summary = ({ cart }) => {
         </div>
 
         {/* voucher apply */}
-        <div className="flex items-center justify-between">
-          <Input
-            className="h-7 w-56 focus-visible:ring-0 border-black focus-visible:ring-offset-0"
-            placeholder="Masukkan Voucher"
-          />
-          <Button className="h-7 bg-[#0F146D] hover:bg-[#0F146D]/80">Gunakan</Button>
+        <div className="flex flex-col">
+          <div className="flex items-center justify-between">
+            <Input
+              value={voucher}
+              onChange={(e) => setVoucher(e.target.value)}
+              placeholder="Masukkan Voucher"
+              className="h-7 w-56 focus-visible:ring-0 border-black focus-visible:ring-offset-0 uppercase placeholder:normal-case"
+            />
+            <Button
+              disabled={processing}
+              onClick={() => applyVoucher(voucher)}
+              className="h-7 w-20 bg-[#0F146D] hover:bg-[#0F146D]/80"
+            >
+              {processing ? <Loader2 className="animate-spin" /> : "Gunakan"}
+            </Button>
+          </div>
+          <span className="text-sm text-red-500">{error && error}</span>
         </div>
-
+        <div>
+          <Voucher totalPrice={totalPrice} />
+        </div>
         <div className="flex justify-between">
           <p>Total</p>
           <p>
             {loading ? <Loader2 className="animate-spin w-5 h-5" /> : convertToRupiah(totalPrice)}
           </p>
         </div>
-
         <Button
           onClick={() => navigate("/cart/transaction")}
           className="bg-[#F8009C] hover:bg-[#F8009C]/80"

@@ -6,8 +6,8 @@ import AfterSuccess from "./component/after-success";
 import BeforeSuccess from "@/pages/confirm-payment/component/before-success";
 
 const ConfirmPayment = () => {
-  const { cart, setCart, notification, setNotification } = useCart();
   const [showBeforeSuccess, setShowBeforeSuccess] = useState(true);
+  const { cart, setCart, notification, setNotification } = useCart();
 
   useEffect(() => {
     const removeProductFromCart = () => {
@@ -15,6 +15,7 @@ const ConfirmPayment = () => {
 
       setCart(result);
       localStorage.setItem("cart", JSON.stringify(result));
+      localStorage.removeItem("voucher");
     };
 
     const addNotification = () => {
