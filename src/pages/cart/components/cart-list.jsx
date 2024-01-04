@@ -45,7 +45,7 @@ const CartList = ({ cart }) => {
   };
 
   return (
-    <div className="w-8/12 flex flex-col gap-y-4 mb-10">
+    <div className="lg:w-8/12 md:w-full flex flex-col gap-y-4 mb-10">
       <div className="flex justify-between p-5 bg-white shadow-md">
         <div className="flex rounded-md gap-3">
           <Checkbox
