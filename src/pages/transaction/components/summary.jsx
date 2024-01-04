@@ -1,12 +1,12 @@
+import { Loader2 } from "lucide-react";
+import Voucher from "@/components/voucher";
+import { useEffect, useState } from "react";
 import { Input } from "@/components/ui/input";
 import useCart from "@/utils/store/cartStore";
 import { Button } from "@/components/ui/button";
 import PaymentMethodDialog from "./payment-method";
-import convertToRupiah from "@/utils/formatter/rupiahConverter";
-import { useEffect, useState } from "react";
 import { getVoucherCoupon } from "@/utils/data/dataHandler";
-import { Loader2 } from "lucide-react";
-import Voucher from "@/components/voucher";
+import convertToRupiah from "@/utils/formatter/rupiahConverter";
 
 const Summary = ({ cart, prices, tax = 2000, totalDeliveryFee }) => {
   const [error, setError] = useState();
@@ -93,7 +93,10 @@ const Summary = ({ cart, prices, tax = 2000, totalDeliveryFee }) => {
             <p>{convertToRupiah(prices + totalDeliveryFee - discount + tax)}</p>
           </div>
         </div>
-        <PaymentMethodDialog totalPrice={prices + totalDeliveryFee - discount + tax} />
+        <PaymentMethodDialog
+          deliveryFee={totalDeliveryFee}
+          totalPrice={prices + totalDeliveryFee - discount + tax}
+        />
       </div>
     </div>
   );
