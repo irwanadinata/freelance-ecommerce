@@ -54,12 +54,12 @@ const Product = ({ product }) => {
   };
 
   return (
-    <div className="w-8/12">
-      <div className="p-3 flex flex-col border-e-2 border-black">
-        <div className="flex">
+    <div className="lg:w-8/12">
+      <div className="p-3 flex flex-col md:w-full">
+        <div className="flex flex-col md:flex-row ">
           {/* product img */}
           <img
-            className="w-64 h-64 object-cover cursor-pointer"
+            className="lg:w-64 h-64 md:w-full object-cover cursor-pointer"
             src={displayedProduct}
             alt={name}
             onClick={openModal}
@@ -209,13 +209,13 @@ const Product = ({ product }) => {
         <div className="flex gap-10 mx-auto mt-10">
           <Button
             onClick={() => addToCart(id, selectedOption.title, quantity, store)}
-            className="w-56 bg-[#F8009C] hover:bg-[#F8009C]/80"
+            className="lg:w-56 bg-[#F8009C] hover:bg-[#F8009C]/80"
           >
             Masukkan Keranjang
           </Button>
           <Button
             variant="outline"
-            className="w-56 border-[#F8009C] border-2 text-[#F8009C] hover:bg-[#F8009C] hover:text-white"
+            className="lg:w-56 border-[#F8009C] border-2 text-[#F8009C] hover:bg-[#F8009C] hover:text-white"
           >
             Beli Sekarang
           </Button>

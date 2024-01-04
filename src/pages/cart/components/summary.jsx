@@ -59,7 +59,7 @@ const Summary = ({ cart }) => {
   };
 
   return (
-    <div className="w-4/12 flex flex-col gap-y-3">
+    <div className="lg:w-4/12 md:w-full flex flex-col gap-y-3">
       <div className="p-3 flex gap-3 rounded-md bg-white">
         <MapPin />
         <p>Jl. Raden Patah No. 101, Purwokerto, Banyumas, Jawa Tengah</p>

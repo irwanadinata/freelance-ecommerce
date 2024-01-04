@@ -92,7 +92,7 @@ const Shipping = ({ store, products, deliveryFee, setDeliveryFee, index }) => {
         <div className="flex flex-col">
           <p className="font-medium">Dikirim Oleh: {storeName}</p>
           <p className="font-medium">Pilihan Pengiriman</p>
-          <div className="flex justify-between">
+          <div className="flex justify-between flex-wrap">
             <ShippingCard
               checked={standard}
               onCheckedChange={() => {
