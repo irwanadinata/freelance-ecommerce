@@ -1,3 +1,4 @@
+import Swal from "sweetalert2";
 import { useEffect, useState } from "react";
 import useCart from "@/utils/store/cartStore";
 import { Button } from "@/components/ui/button";
@@ -52,9 +53,7 @@ const ProductCard = ({ id, amount, selectedOption, value, checked, cart }) => {
     if (!confirmDelete) {
       alert("Batal menghapus produk");
     } else {
-      const product = cart.filter(
-        (product) => product.option !== option || product.id !== id
-      );
+      const product = cart.filter((product) => product.option !== option || product.id !== id);
       setCart(product);
       localStorage.setItem("cart", JSON.stringify(product));
       alert("Berhasil menghapus produk");
@@ -75,6 +74,24 @@ const ProductCard = ({ id, amount, selectedOption, value, checked, cart }) => {
     localStorage.setItem("cart", JSON.stringify(cartData));
   };
 
+  const increaseQuantity = () => {
+    if (quantity === 20) {
+      Swal.fire({
+        showConfirmButton: false,
+        showCloseButton: true,
+        html: `
+          <div class="flex items-center h-20 justify-center text-[#CC0000]">
+            <img src="/warning.svg" class='w-6 h-6 mr-2' alt='Warning Icon'/>
+            Jumlah Barang Yang Ditambahkan Telah Mencapai Batas Maksimal!
+          </div>
+        `,
+      });
+    } else {
+      setQuantity(quantity + 1);
+      addQuantity(id, selectedOption);
+    }
+  };
+
   return (
     <div className="flex flex-col md:flex-row items-center justify-between gap-3">
       {!product ? (
@@ -90,10 +107,7 @@ const ProductCard = ({ id, amount, selectedOption, value, checked, cart }) => {
               }}
               className="lg:self-center w-6 h-6 border-2 data-[state=checked]:bg-white"
             />
-            <img
-              src={product.images.display}
-              className="w-20 h-20 rounded-md"
-            />
+            <img src={product.images.display} className="w-20 h-20 rounded-md" />
             <div className="flex flex-col justify-between">
               <p className="text-sm">{product.name}</p>
               <p className="text-sm">{selectedOption}</p>
@@ -102,9 +116,7 @@ const ProductCard = ({ id, amount, selectedOption, value, checked, cart }) => {
 
           <div className="flex flex-col items-center">
             <p className="text-[#FB8500] whitespace-nowrap">
-              {convertToRupiah(
-                product.price - (product.discount / 100) * product.price
-              )}
+              {convertToRupiah(product.price - (product.discount / 100) * product.price)}
             </p>
             <div className="flex mt-2">
               <Button
@@ -134,10 +146,11 @@ const ProductCard = ({ id, amount, selectedOption, value, checked, cart }) => {
             <Button
               size="icon"
               variant="ghost"
-              onClick={() => {
-                setQuantity(quantity + 1);
-                addQuantity(id, selectedOption);
-              }}
+              // onClick={() => {
+              //   setQuantity(quantity + 1);
+              //   addQuantity(id, selectedOption);
+              // }}
+              onClick={increaseQuantity}
               className="border-[1px] border-black w-6 h-6 p-1"
             >
               <Plus />

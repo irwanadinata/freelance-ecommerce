@@ -34,7 +34,7 @@ const PaymentMethod = ({ checked, onCheckedChange, logo, company }) => {
   );
 };
 
-const PaymentMethodDialog = ({ totalPrice }) => {
+const PaymentMethodDialog = ({ totalPrice, deliveryFee }) => {
   const navigate = useNavigate();
   const { setPaymentMethod, setTotalPrice } = useCart();
   const [checked, setChecked] = useState({
@@ -59,7 +59,9 @@ const PaymentMethodDialog = ({ totalPrice }) => {
   return (
     <Dialog className="max-h-screen overflow-scroll">
       <DialogTrigger asChild>
-        <Button className="bg-[#F8009C] hover:bg-[#F8009C]/80 mt-2">Pilih Metode Pembayaran</Button>
+        <Button disabled={deliveryFee === 0} className="bg-[#F8009C] hover:bg-[#F8009C]/80 mt-2">
+          Pilih Metode Pembayaran
+        </Button>
       </DialogTrigger>
       <DialogContent className="max-h-screen overflow-scroll">
         <DialogHeader>
@@ -77,12 +79,7 @@ const PaymentMethodDialog = ({ totalPrice }) => {
             logo={danaLogo}
             company="Dana"
           />
-          <PaymentMethod
-            checked={checked.cc}
-            onCheckedChange={() => handleCheckboxChange("cc", 1)}
-            logo={mastercardLogo}
-            company="Kartu Kredit/Debit"
-          />
+          <PaymentMethod checked={false} logo={mastercardLogo} company="Kartu Kredit/Debit" />
           <PaymentMethod
             checked={checked.bni}
             onCheckedChange={() => handleCheckboxChange("bni", 2)}
