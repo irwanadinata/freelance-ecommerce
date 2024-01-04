@@ -40,7 +40,7 @@ const Summary = ({ cart, prices, tax = 2000, totalDeliveryFee }) => {
   };
 
   return (
-    <div className="w-4/12 flex flex-col gap-y-3">
+    <div className="lg:w-4/12 flex flex-col gap-y-3">
       {/* voucher apply */}
 
       <div className="p-5 flex flex-col gap-y-4 rounded-md shadow-md bg-white">

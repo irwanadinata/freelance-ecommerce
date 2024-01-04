@@ -7,6 +7,7 @@ import Footer2 from "@/components/footer-2";
 import useCart from "@/utils/store/cartStore";
 import { getProductPriceById } from "@/utils/data/dataHandler";
 import DetailTransaction from "./components/detail-transaction";
+import Closing from "./components/closing";
 
 const Transaction = () => {
   const { cart } = useCart();
@@ -69,6 +70,7 @@ const Transaction = () => {
       </div>
       <Footer1 />
       <Footer2 />
+      <Closing/>
     </div>
   );
 };
