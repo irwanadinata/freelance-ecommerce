@@ -13,15 +13,27 @@ import clipboardCopy from "clipboard-copy";
 
 const BeforeSucces = () => {
   const { selectedPaymentMethod, totalPrice } = useCart();
-  const [countdown, setCountdown] = useState({ hours: 24, minutes: 0, seconds: 0 });
-  const [paymentMethod, setPaymentMethod] = useState({ name: "", image: "", code: "" });
+  const [countdown, setCountdown] = useState({
+    hours: 24,
+    minutes: 0,
+    seconds: 0,
+  });
+  const [paymentMethod, setPaymentMethod] = useState({
+    name: "",
+    image: "",
+    code: "",
+  });
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCountdown((prevCountdown) => {
         const newCountdown = { ...prevCountdown };
 
-        if (newCountdown.hours === 0 && newCountdown.minutes === 0 && newCountdown.seconds === 0) {
+        if (
+          newCountdown.hours === 0 &&
+          newCountdown.minutes === 0 &&
+          newCountdown.seconds === 0
+        ) {
           clearInterval(interval);
         } else {
           if (newCountdown.seconds === 0) {
@@ -131,7 +143,7 @@ const BeforeSucces = () => {
         <div className="flex items-center my-6">
           <div>{paymentMethod.code}</div>
           <div className="ml-auto">
-          <Copy onClick={() => handleCopyClick(paymentMethod.code)} />
+            <Copy onClick={() => handleCopyClick(paymentMethod.code)} />
           </div>
         </div>
         <div className="my-4">
