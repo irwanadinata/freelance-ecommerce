@@ -44,6 +44,19 @@ const CartList = ({ cart, totalAmount }) => {
     localStorage.setItem("cart", JSON.stringify(data));
   };
 
+  const deleteCart = () => {
+    const confirmDelete = confirm("Apakah anda yakin ingin menghapus produk yang dipilih?");
+
+    if (!confirmDelete) {
+      alert("Batal menghapus produk");
+    } else {
+      const selectedCart = cart.filter((item) => !item.checked);
+      setCart(selectedCart);
+      localStorage.setItem("cart", JSON.stringify(selectedCart));
+      alert("Berhasil menghapus produk");
+    }
+  };
+
   return (
     <div className="lg:w-8/12 md:w-full flex flex-col gap-y-4 mb-10">
       <div className="flex justify-between p-5 bg-white shadow-md">
@@ -58,7 +71,7 @@ const CartList = ({ cart, totalAmount }) => {
           />
           <p>Pilih semua ({totalAmount} barang)</p>
         </div>
-        <div className="flex rounded-md gap-3">
+        <div onClick={deleteCart} className="flex rounded-md gap-3 cursor-pointer">
           <Trash2 />
           <p>Hapus</p>
         </div>
