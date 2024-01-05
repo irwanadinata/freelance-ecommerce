@@ -9,6 +9,7 @@ import convertToRupiah from "@/utils/formatter/rupiahConverter";
 import alfamartLogo from "@/assets/payment-method/alfamart.png";
 import indomaretLogo from "@/assets/payment-method/indomaret.png";
 import mastercardLogo from "@/assets/payment-method/mastercard.png";
+import clipboardCopy from "clipboard-copy";
 
 const BeforeSucces = () => {
   const { selectedPaymentMethod, totalPrice } = useCart();
@@ -86,6 +87,15 @@ const BeforeSucces = () => {
     setPaymentMethod(paymentMethod[id]);
   };
 
+  const handleCopyClick = async (code) => {
+    try {
+      await clipboardCopy(code);
+      console.log("Code copied:", code);
+    } catch (err) {
+      console.error("Unable to copy code to clipboard", err);
+    }
+  };
+
   useEffect(() => {
     getPaymentMethod(selectedPaymentMethod);
   }, [selectedPaymentMethod]);
@@ -121,7 +131,7 @@ const BeforeSucces = () => {
         <div className="flex items-center my-6">
           <div>{paymentMethod.code}</div>
           <div className="ml-auto">
-            <Copy />
+          <Copy onClick={() => handleCopyClick(paymentMethod.code)} />
           </div>
         </div>
         <div className="my-4">
