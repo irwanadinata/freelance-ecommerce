@@ -8,7 +8,7 @@ import PaymentMethodDialog from "./payment-method";
 import { getVoucherCoupon } from "@/utils/data/dataHandler";
 import convertToRupiah from "@/utils/formatter/rupiahConverter";
 
-const Summary = ({ cart, prices, tax = 2000, totalDeliveryFee }) => {
+const Summary = ({ cart, prices, tax = 2000, totalDeliveryFee, totalAmount }) => {
   const [error, setError] = useState();
   const [voucher, setVoucher] = useState("");
   const [discount, setDiscount] = useState(0);
@@ -73,7 +73,7 @@ const Summary = ({ cart, prices, tax = 2000, totalDeliveryFee }) => {
         <div>
           <p className="font-medium">Ringkasan Pesanan</p>
           <div className="flex justify-between">
-            <p>Subtotal ({cart.length} barang)</p>
+            <p>Subtotal ({totalAmount} barang)</p>
             <p>{convertToRupiah(prices)}</p>
           </div>
           <div className="flex justify-between">

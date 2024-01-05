@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import useCart from "@/utils/store/cartStore";
 import { Checkbox } from "@/components/ui/checkbox";
 
-const CartList = ({ cart }) => {
+const CartList = ({ cart, totalAmount }) => {
   const { setCart } = useCart();
   const [checked, setChecked] = useState(false);
   const [groupedCart, setGroupedCart] = useState();
@@ -56,7 +56,7 @@ const CartList = ({ cart }) => {
             }}
             className="w-6 h-6 border-2 data-[state=checked]:bg-white"
           />
-          <p>Pilih semua ({cart.length} barang)</p>
+          <p>Pilih semua ({totalAmount} barang)</p>
         </div>
         <div className="flex rounded-md gap-3">
           <Trash2 />

@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import convertToRupiah from "@/utils/formatter/rupiahConverter";
 import { getProductPriceById, getVoucherCoupon } from "@/utils/data/dataHandler";
 
-const Summary = ({ cart }) => {
+const Summary = ({ cart, totalAmount }) => {
   const navigate = useNavigate();
   const [error, setError] = useState();
   const { setSelectedVoucher } = useCart();
@@ -86,7 +86,7 @@ const Summary = ({ cart }) => {
         <div className="flex flex-col">
           <p className="font-medium">Ringkasan Pesanan</p>
           <div className="flex justify-between">
-            <p>subtotal ({selectedCart.length} barang)</p>
+            <p>subtotal ({totalAmount} barang)</p>
             <p>
               {loading ? <Loader2 className="animate-spin w-5 h-5" /> : convertToRupiah(totalPrice)}
             </p>
