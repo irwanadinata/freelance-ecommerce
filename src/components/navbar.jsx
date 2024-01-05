@@ -14,7 +14,14 @@ import MessageOutlineIcon from "@/assets/icons/message-outline-icon";
 const Navbar = () => {
   const { cart, notification } = useCart();
   const [isFixed, setIsFixed] = useState(false);
+  const [totalAmount, setTotalAmount] = useState(0);
   const [isNavOpen, setIsNavOpen] = useState(false);
+
+  useEffect(() => {
+    const selectedCart = cart.filter((item) => item.checked);
+    const getTotalAmount = selectedCart.reduce((acc, item) => acc + item.amount, 0);
+    setTotalAmount(getTotalAmount);
+  }, [cart]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,49 +42,53 @@ const Navbar = () => {
   return (
     <>
       {/* Large screens */}
-      <nav className={`lg:w-full bg-[#FFFFFF] lg:drop-shadow-lg lg:rounded-md ${
+      <nav
+        className={`lg:w-full bg-[#FFFFFF] lg:drop-shadow-lg lg:rounded-md ${
           isFixed ? "sticky top-0 z-30" : ""
-        }`}>
-      <div
-        className={`hidden lg:flex lg:w-10/12 lg:mx-auto lg:flex-col lg:justify-center `}
+        }`}
       >
-        <div className="flex h-20 items-center p-3 justify-around">
-          <a href="/dashboard">
-            <LazadaIcon className="w-44" />
-          </a>
-          <SearchInput />
-          <div className="flex gap-3">
-            <NavLink className="cursor-pointer" to="/cart">
+        <div className={`hidden lg:flex lg:w-10/12 lg:mx-auto lg:flex-col lg:justify-center `}>
+          <div className="flex h-20 items-center p-3 justify-around">
+            <a href="/dashboard">
+              <LazadaIcon className="w-44" />
+            </a>
+            <SearchInput />
+            <div className="flex gap-3">
+              <NavLink className="cursor-pointer" to="/cart">
+                <div className="relative">
+                  <CartIcon />
+                  {totalAmount > 0 && (
+                    <div className="absolute top-0 -right-1 w-4 h-4 rounded-full bg-red-500 text-xs flex items-center justify-center text-white font-medium">
+                      {totalAmount}
+                    </div>
+                  )}
+                </div>
+              </NavLink>
               <div className="relative">
-                <CartIcon />
-                {cart.length > 0 && (
+                <Notification />
+                {notification.filter((notif) => notif.isRead === false).length > 0 && (
                   <div className="absolute top-0 -right-1 w-4 h-4 rounded-full bg-red-500 text-xs flex items-center justify-center text-white font-medium">
-                    {cart.length}
+                    {notification.filter((notif) => notif.isRead === false).length}
                   </div>
                 )}
               </div>
-            </NavLink>
-            <div className="relative">
-              <Notification />
-              {notification.filter((notif) => notif.isRead === false).length > 0 && (
-                <div className="absolute top-0 -right-1 w-4 h-4 rounded-full bg-red-500 text-xs flex items-center justify-center text-white font-medium">
-                  {notification.filter((notif) => notif.isRead === false).length}
-                </div>
-              )}
+              <MessageOutlineIcon />
+              <PackageIcon />
             </div>
-            <MessageOutlineIcon />
-            <PackageIcon />
-          </div>
-          <div className="flex items-center gap-3">
-            <ProfileIcon />
-            <p>Afifah Vollyani</p>
+            <div className="flex items-center gap-3">
+              <ProfileIcon />
+              <p>Afifah Vollyani</p>
+            </div>
           </div>
         </div>
-      </div>
       </nav>
 
-      {/* Small screens */}     
-      <nav className={`lg:hidden bg-[#FFFFFF] drop-shadow-md p-3 ${isFixed ? "fixed top-0 w-full z-50" : ""}`}>
+      {/* Small screens */}
+      <nav
+        className={`lg:hidden bg-[#FFFFFF] drop-shadow-md p-3 ${
+          isFixed ? "fixed top-0 w-full z-50" : ""
+        }`}
+      >
         <div className="flex flex-row justify-center items-center gap-3 mx-auto">
           <a href="/dashboard">
             <img src={LazadaIconSmall} alt="lazada-icon" className="w-8 h-6" />
