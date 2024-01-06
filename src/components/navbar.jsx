@@ -46,7 +46,9 @@ const Navbar = () => {
           isFixed ? "sticky top-0 z-30" : ""
         }`}
       >
-        <div className={`hidden lg:flex lg:w-10/12 lg:mx-auto lg:flex-col lg:justify-center `}>
+        <div
+          className={`hidden lg:flex lg:w-10/12 lg:mx-auto lg:flex-col lg:justify-center `}
+        >
           <div className="flex h-20 items-center p-3 justify-around">
             <a href="/dashboard">
               <LazadaIcon className="w-44" />
@@ -65,9 +67,13 @@ const Navbar = () => {
               </NavLink>
               <div className="relative">
                 <Notification />
-                {notification.filter((notif) => notif.isRead === false).length > 0 && (
+                {notification.filter((notif) => notif.isRead === false).length >
+                  0 && (
                   <div className="absolute top-0 -right-1 w-4 h-4 rounded-full bg-red-500 text-xs flex items-center justify-center text-white font-medium">
-                    {notification.filter((notif) => notif.isRead === false).length}
+                    {
+                      notification.filter((notif) => notif.isRead === false)
+                        .length
+                    }
                   </div>
                 )}
               </div>
@@ -100,11 +106,11 @@ const Navbar = () => {
         {isNavOpen && (
           <div className="flex flex-col items-end gap-3 p-4 bg-white rounded-md shadow-md transition-transform transform translate-y-0 opacity-100">
             <NavLink to="/cart" className="flex items-center cursor-pointer">
-              <div className="relative mr-2">
+              <div className="relative">
                 <CartIcon />
-                {cart.length > 0 && (
+                {totalAmount > 0 && (
                   <div className="absolute top-0 -right-1 w-4 h-4 rounded-full bg-red-500 text-xs flex items-center justify-center text-white font-medium">
-                    {cart.length}
+                    {totalAmount}
                   </div>
                 )}
               </div>
@@ -112,9 +118,13 @@ const Navbar = () => {
             </NavLink>
             <div className="flex items-center gap-2">
               <Notification />
-              {notification.filter((notif) => notif.isRead === false).length > 0 && (
+              {notification.filter((notif) => notif.isRead === false).length >
+                0 && (
                 <div className="absolute w-4 h-4 rounded-full bg-red-500 text-xs flex items-center justify-center text-white font-medium">
-                  {notification.filter((notif) => notif.isRead === false).length}
+                  {
+                    notification.filter((notif) => notif.isRead === false)
+                      .length
+                  }
                 </div>
               )}
               <span>Notifications</span>
