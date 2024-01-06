@@ -18,8 +18,7 @@ const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   useEffect(() => {
-    const selectedCart = cart.filter((item) => item.checked);
-    const getTotalAmount = selectedCart.reduce((acc, item) => acc + item.amount, 0);
+    const getTotalAmount = cart.reduce((acc, item) => acc + item.amount, 0);
     setTotalAmount(getTotalAmount);
   }, [cart]);
 
