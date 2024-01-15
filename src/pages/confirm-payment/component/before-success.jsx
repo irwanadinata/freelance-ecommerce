@@ -10,6 +10,7 @@ import alfamartLogo from "@/assets/payment-method/alfamart.png";
 import indomaretLogo from "@/assets/payment-method/indomaret.png";
 import mastercardLogo from "@/assets/payment-method/mastercard.png";
 import clipboardCopy from "clipboard-copy";
+import Swal from "sweetalert2";
 
 const BeforeSucces = () => {
   const { selectedPaymentMethod, totalPrice } = useCart();
@@ -102,9 +103,19 @@ const BeforeSucces = () => {
   const handleCopyClick = async (code) => {
     try {
       await clipboardCopy(code);
-      console.log("Code copied:", code);
+      Swal.fire({
+        icon: 'success',
+        title: 'Berhasil disalin!',
+        showConfirmButton: false,
+        timer: 1000,
+      });
     } catch (err) {
-      console.error("Unable to copy code to clipboard", err);
+      Swal.fire({
+        icon: 'error',
+        title: 'Gagal menyalin.',
+        showConfirmButton: false,
+        timer: 1000,
+      });
     }
   };
 
